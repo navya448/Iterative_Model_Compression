@@ -1,12 +1,15 @@
-# PyTorch model checkpoints
+# Model checkpoints
 *.pth
 *.pt
 
-# Python cache
+# CIFAR-10 dataset
+data/*.tar.gz
+
+# Python
 __pycache__/
 *.py[cod]
 
-# Virtual environments
+# Environments
 venv/
 .venv/
 env/
@@ -17,7 +20,3 @@ env/
 # IDE
 .vscode/
 .idea/
-
-# OS files
-.DS_Store
-Thumbs.db
