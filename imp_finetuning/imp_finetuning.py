@@ -16,12 +16,21 @@ import torchvision.transforms as transforms
 from torchvision.models import resnet18
 
 
+PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(PROJECT_DIR, "..", "data-")
+
 # ============================================================
 # 1. SETTINGS
 # ============================================================
 
 # Trained dense model checkpoint
-CHECKPOINT_PATH = "checkpoints/epoch_200.pth"
+CHECKPOINT_PATH = os.path.join(
+    PROJECT_DIR,
+    "..",
+    "base_model_eval",
+    "checkpoints",
+    "epoch_200.pth"
+)
 
 # Sparsity levels to test
 SPARSITY_LEVELS = [0.20, 0.40, 0.60, 0.80, 0.90]
@@ -37,9 +46,11 @@ FINETUNE_LR = 0.001
 BATCH_SIZE = 128
 
 # Output directory
-OUTPUT_DIR = "magnitude_pruning_experiment"
+OUTPUT_DIR = PROJECT_DIR
+PLOTS_DIR = os.path.join(OUTPUT_DIR, "plots")
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
+os.makedirs(PLOTS_DIR, exist_ok=True)
 
 os.makedirs(
     os.path.join(OUTPUT_DIR, "checkpoints"),
@@ -82,14 +93,14 @@ transform_train = transforms.Compose([
 
 
 train_dataset = torchvision.datasets.CIFAR10(
-    root="./data",
+    root=DATA_DIR,
     train=True,
     download=True,
     transform=transform_train
 )
 
 test_dataset = torchvision.datasets.CIFAR10(
-    root="./data",
+    root=DATA_DIR,
     train=False,
     download=True,
     transform=transform_test
@@ -991,7 +1002,7 @@ plt.tight_layout()
 
 plt.savefig(
     os.path.join(
-        OUTPUT_DIR,
+        PLOTS_DIR,
         "accuracy_vs_sparsity.png"
     ),
     dpi=300,
@@ -1036,7 +1047,7 @@ plt.tight_layout()
 
 plt.savefig(
     os.path.join(
-        OUTPUT_DIR,
+        PLOTS_DIR,
         "accuracy_recovery_vs_sparsity.png"
     ),
     dpi=300,
@@ -1074,7 +1085,7 @@ plt.tight_layout()
 
 plt.savefig(
     os.path.join(
-        OUTPUT_DIR,
+        PLOTS_DIR,
         "nonzero_parameters_vs_sparsity.png"
     ),
     dpi=300,
@@ -1096,7 +1107,7 @@ print("============================================================")
 print(
     os.path.abspath(
         os.path.join(
-            OUTPUT_DIR,
+            PLOTS_DIR,
             "accuracy_vs_sparsity.png"
         )
     )
@@ -1105,7 +1116,7 @@ print(
 print(
     os.path.abspath(
         os.path.join(
-            OUTPUT_DIR,
+            PLOTS_DIR,
             "accuracy_recovery_vs_sparsity.png"
         )
     )
@@ -1114,7 +1125,7 @@ print(
 print(
     os.path.abspath(
         os.path.join(
-            OUTPUT_DIR,
+            PLOTS_DIR,
             "nonzero_parameters_vs_sparsity.png"
         )
     )

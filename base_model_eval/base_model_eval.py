@@ -10,9 +10,17 @@ import torch.nn as nn
 import torch.optim as optim
 import torchvision
 import torchvision.transforms as transforms
+import pandas as pd
+import matplotlib.pyplot as plt
 
 from torchvision.models import resnet18
 
+
+PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
+CHECKPOINT_DIR = os.path.join(PROJECT_DIR, "checkpoints")
+DATA_DIR = os.path.join(PROJECT_DIR, "..", "data-")
+METRICS_PATH = os.path.join(PROJECT_DIR, "resnet18_cifar10_training_metrics.csv")
+PLOTS_DIR = os.path.join(PROJECT_DIR, "plots")
 
 # ============================================================
 # 1. DEVICE
@@ -27,10 +35,10 @@ print("Using:", device)
 # 2. CREATE CHECKPOINT FOLDER
 # ============================================================
 
-os.makedirs("checkpoints", exist_ok=True)
+os.makedirs(CHECKPOINT_DIR, exist_ok=True)
 
 print("Checkpoint directory:")
-print(os.path.abspath("checkpoints"))
+print(os.path.abspath(CHECKPOINT_DIR))
 
 
 # ============================================================
@@ -57,14 +65,14 @@ transform_test = transforms.Compose([
 
 
 train_dataset = torchvision.datasets.CIFAR10(
-    root="./data",
+    root=DATA_DIR,
     train=True,
     download=True,
     transform=transform_train
 )
 
 test_dataset = torchvision.datasets.CIFAR10(
-    root="./data",
+    root=DATA_DIR,
     train=False,
     download=True,
     transform=transform_test
@@ -344,6 +352,7 @@ def validate(
 NUM_EPOCHS = 200
 
 previous_weights = save_weights(model)
+history = []
 
 
 for epoch in range(
@@ -391,6 +400,17 @@ for epoch in range(
         previous_weights
     )
 
+    history.append({
+        "epoch": epoch,
+        "train_loss": train_loss,
+        "train_accuracy": train_accuracy,
+        "val_loss": test_loss,
+        "val_accuracy": test_accuracy,
+        "gradient_norm": gradient_norm,
+        "weight_norm": weight_norm,
+        "weight_change": weight_change
+    })
+
 
     # Save current weights for next epoch
     previous_weights = save_weights(model)
@@ -417,7 +437,7 @@ for epoch in range(
     if epoch in [50, 100, 150, 200]:
 
         checkpoint_path = (
-            f"checkpoints/epoch_{epoch:03d}.pth"
+            os.path.join(CHECKPOINT_DIR, f"epoch_{epoch:03d}.pth")
         )
 
         save_checkpoint(
@@ -451,7 +471,7 @@ for epoch in range(
 # ============================================================
 
 final_checkpoint_path = (
-    "checkpoints/resnet18_cifar10_final.pth"
+    os.path.join(CHECKPOINT_DIR, "resnet18_cifar10_final.pth")
 )
 
 save_checkpoint(
@@ -483,8 +503,61 @@ print(
 print()
 print("Saved checkpoints:")
 
-print("  checkpoints/epoch_050.pth")
-print("  checkpoints/epoch_100.pth")
-print("  checkpoints/epoch_150.pth")
-print("  checkpoints/epoch_200.pth")
-print("  checkpoints/resnet18_cifar10_final.pth")
+print(f"  {os.path.join(CHECKPOINT_DIR, 'epoch_050.pth')}")
+print(f"  {os.path.join(CHECKPOINT_DIR, 'epoch_100.pth')}")
+print(f"  {os.path.join(CHECKPOINT_DIR, 'epoch_150.pth')}")
+print(f"  {os.path.join(CHECKPOINT_DIR, 'epoch_200.pth')}")
+print(f"  {os.path.join(CHECKPOINT_DIR, 'resnet18_cifar10_final.pth')}")
+
+
+# ============================================================
+# 13. SAVE METRICS PLOTS
+# ============================================================
+
+pd.DataFrame(history).to_csv(METRICS_PATH, index=False)
+metrics = pd.DataFrame(history)
+os.makedirs(PLOTS_DIR, exist_ok=True)
+
+plot_definitions = [
+    (
+        "loss_vs_epoch.png",
+        "Loss vs Epoch",
+        "Loss",
+        [("train_loss", "Train Loss"), ("val_loss", "Validation Loss")]
+    ),
+    (
+        "accuracy_vs_epoch.png",
+        "Accuracy vs Epoch",
+        "Accuracy (%)",
+        [("train_accuracy", "Train Accuracy"), ("val_accuracy", "Validation Accuracy")]
+    ),
+    (
+        "gradient_weight_norm.png",
+        "Gradient and Weight Norm",
+        "Norm",
+        [("gradient_norm", "Gradient Norm"), ("weight_norm", "Weight Norm")]
+    ),
+    (
+        "weight_change_vs_epoch.png",
+        "Weight Change vs Epoch",
+        "Weight Change",
+        [("weight_change", "Weight Change")]
+    )
+]
+
+for filename, title, ylabel, series in plot_definitions:
+    plt.figure(figsize=(10, 5))
+
+    for column, label in series:
+        plt.plot(metrics["epoch"], metrics[column], label=label)
+
+    plt.xlabel("Epoch")
+    plt.ylabel(ylabel)
+    plt.title(title)
+    plt.legend()
+    plt.grid()
+    plt.tight_layout()
+    plt.savefig(os.path.join(PLOTS_DIR, filename), dpi=300, bbox_inches="tight")
+    plt.close()
+
+print(f"Metrics plots saved to: {os.path.abspath(PLOTS_DIR)}")

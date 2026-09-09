@@ -4,6 +4,7 @@
 
 # CIFAR-10 dataset
 data/*.tar.gz
+data-/*.tar.gz
 
 # Python
 __pycache__/
