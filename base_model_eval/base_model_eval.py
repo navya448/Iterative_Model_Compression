@@ -1,5 +1,5 @@
 # ============================================================
-# RESNET-18 CIFAR-10 BASELINE TRAINING
+# RESNET-56 CIFAR-10 BASELINE TRAINING
 # WITH CHECKPOINT SAVING
 # ============================================================
 
@@ -7,19 +7,109 @@ import os
 
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
 import torch.optim as optim
 import torchvision
 import torchvision.transforms as transforms
 import pandas as pd
 import matplotlib.pyplot as plt
 
-from torchvision.models import resnet18
+
+class BasicBlock(nn.Module):
+    expansion = 1
+
+    def __init__(self, in_channels, out_channels, stride=1):
+        super().__init__()
+        self.conv1 = nn.Conv2d(
+            in_channels,
+            out_channels,
+            kernel_size=3,
+            stride=stride,
+            padding=1,
+            bias=False,
+        )
+        self.bn1 = nn.BatchNorm2d(out_channels)
+        self.conv2 = nn.Conv2d(
+            out_channels,
+            out_channels,
+            kernel_size=3,
+            stride=1,
+            padding=1,
+            bias=False,
+        )
+        self.bn2 = nn.BatchNorm2d(out_channels)
+
+        self.shortcut = nn.Sequential()
+        if stride != 1 or in_channels != out_channels:
+            self.shortcut = nn.Sequential(
+                nn.Conv2d(
+                    in_channels,
+                    out_channels,
+                    kernel_size=1,
+                    stride=stride,
+                    bias=False,
+                ),
+                nn.BatchNorm2d(out_channels),
+            )
+
+    def forward(self, x):
+        identity = x
+
+        out = F.relu(self.bn1(self.conv1(x)))
+        out = self.bn2(self.conv2(out))
+
+        out += self.shortcut(identity)
+        return F.relu(out)
+
+
+class ResNet56(nn.Module):
+    def __init__(self, block=BasicBlock, num_blocks=(9, 9, 9), num_classes=10):
+        super().__init__()
+        self.in_channels = 16
+
+        self.conv1 = nn.Conv2d(
+            3,
+            16,
+            kernel_size=3,
+            stride=1,
+            padding=1,
+            bias=False,
+        )
+        self.bn1 = nn.BatchNorm2d(16)
+        self.relu = nn.ReLU(inplace=True)
+
+        self.layer1 = self._make_layer(block, 16, num_blocks[0], stride=1)
+        self.layer2 = self._make_layer(block, 32, num_blocks[1], stride=2)
+        self.layer3 = self._make_layer(block, 64, num_blocks[2], stride=2)
+
+        self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
+        self.fc = nn.Linear(64, num_classes)
+
+    def _make_layer(self, block, out_channels, num_blocks, stride):
+        layers = []
+        layers.append(block(self.in_channels, out_channels, stride))
+        self.in_channels = out_channels
+
+        for _ in range(1, num_blocks):
+            layers.append(block(out_channels, out_channels, stride=1))
+
+        return nn.Sequential(*layers)
+
+    def forward(self, x):
+        x = self.relu(self.bn1(self.conv1(x)))
+        x = self.layer1(x)
+        x = self.layer2(x)
+        x = self.layer3(x)
+        x = self.avgpool(x)
+        x = torch.flatten(x, 1)
+        x = self.fc(x)
+        return x
 
 
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 CHECKPOINT_DIR = os.path.join(PROJECT_DIR, "checkpoints")
 DATA_DIR = os.path.join(PROJECT_DIR, "..", "data-")
-METRICS_PATH = os.path.join(PROJECT_DIR, "resnet18_cifar10_training_metrics.csv")
+METRICS_PATH = os.path.join(PROJECT_DIR, "resnet56_cifar10_training_metrics.csv")
 PLOTS_DIR = os.path.join(PROJECT_DIR, "plots")
 
 # ============================================================
@@ -98,22 +188,7 @@ test_loader = torch.utils.data.DataLoader(
 # 4. MODEL
 # ============================================================
 
-model = resnet18(num_classes=10)
-
-# CIFAR-10: 32x32 images
-model.conv1 = nn.Conv2d(
-    3,
-    64,
-    kernel_size=3,
-    stride=1,
-    padding=1,
-    bias=False
-)
-
-# Remove ImageNet-style max pooling
-model.maxpool = nn.Identity()
-
-model = model.to(device)
+model = ResNet56(num_classes=10).to(device)
 
 
 # ============================================================
@@ -122,16 +197,19 @@ model = model.to(device)
 
 criterion = nn.CrossEntropyLoss()
 
+# ResNet-56 on CIFAR-10 typically benefits from a slightly
+# stronger regularization and a later LR drop schedule than the
+# shallower ResNet-18 setup.
 optimizer = optim.SGD(
     model.parameters(),
     lr=0.1,
     momentum=0.9,
-    weight_decay=5e-4
+    weight_decay=1e-4
 )
 
 scheduler = optim.lr_scheduler.MultiStepLR(
     optimizer,
-    milestones=[100, 150],
+    milestones=[150, 175],
     gamma=0.1
 )
 
@@ -471,7 +549,7 @@ for epoch in range(
 # ============================================================
 
 final_checkpoint_path = (
-    os.path.join(CHECKPOINT_DIR, "resnet18_cifar10_final.pth")
+    os.path.join(CHECKPOINT_DIR, "resnet56_cifar10_final.pth")
 )
 
 save_checkpoint(
@@ -507,7 +585,7 @@ print(f"  {os.path.join(CHECKPOINT_DIR, 'epoch_050.pth')}")
 print(f"  {os.path.join(CHECKPOINT_DIR, 'epoch_100.pth')}")
 print(f"  {os.path.join(CHECKPOINT_DIR, 'epoch_150.pth')}")
 print(f"  {os.path.join(CHECKPOINT_DIR, 'epoch_200.pth')}")
-print(f"  {os.path.join(CHECKPOINT_DIR, 'resnet18_cifar10_final.pth')}")
+print(f"  {os.path.join(CHECKPOINT_DIR, 'resnet56_cifar10_final.pth')}")
 
 
 # ============================================================

@@ -1,6 +1,6 @@
 # ============================================================
 # GLOBAL MAGNITUDE PRUNING + FINE-TUNING EXPERIMENT
-# CIFAR-10 / RESNET-18
+# CIFAR-10 / RESNET-56
 # ============================================================
 
 import os
@@ -9,11 +9,101 @@ import csv
 
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
 import torch.optim as optim
 import torchvision
 import torchvision.transforms as transforms
 
-from torchvision.models import resnet18
+
+class BasicBlock(nn.Module):
+    expansion = 1
+
+    def __init__(self, in_channels, out_channels, stride=1):
+        super().__init__()
+        self.conv1 = nn.Conv2d(
+            in_channels,
+            out_channels,
+            kernel_size=3,
+            stride=stride,
+            padding=1,
+            bias=False,
+        )
+        self.bn1 = nn.BatchNorm2d(out_channels)
+        self.conv2 = nn.Conv2d(
+            out_channels,
+            out_channels,
+            kernel_size=3,
+            stride=1,
+            padding=1,
+            bias=False,
+        )
+        self.bn2 = nn.BatchNorm2d(out_channels)
+
+        self.shortcut = nn.Sequential()
+        if stride != 1 or in_channels != out_channels:
+            self.shortcut = nn.Sequential(
+                nn.Conv2d(
+                    in_channels,
+                    out_channels,
+                    kernel_size=1,
+                    stride=stride,
+                    bias=False,
+                ),
+                nn.BatchNorm2d(out_channels),
+            )
+
+    def forward(self, x):
+        identity = x
+
+        out = F.relu(self.bn1(self.conv1(x)))
+        out = self.bn2(self.conv2(out))
+
+        out += self.shortcut(identity)
+        return F.relu(out)
+
+
+class ResNet56(nn.Module):
+    def __init__(self, block=BasicBlock, num_blocks=(9, 9, 9), num_classes=10):
+        super().__init__()
+        self.in_channels = 16
+
+        self.conv1 = nn.Conv2d(
+            3,
+            16,
+            kernel_size=3,
+            stride=1,
+            padding=1,
+            bias=False,
+        )
+        self.bn1 = nn.BatchNorm2d(16)
+        self.relu = nn.ReLU(inplace=True)
+
+        self.layer1 = self._make_layer(block, 16, num_blocks[0], stride=1)
+        self.layer2 = self._make_layer(block, 32, num_blocks[1], stride=2)
+        self.layer3 = self._make_layer(block, 64, num_blocks[2], stride=2)
+
+        self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
+        self.fc = nn.Linear(64, num_classes)
+
+    def _make_layer(self, block, out_channels, num_blocks, stride):
+        layers = []
+        layers.append(block(self.in_channels, out_channels, stride))
+        self.in_channels = out_channels
+
+        for _ in range(1, num_blocks):
+            layers.append(block(out_channels, out_channels, stride=1))
+
+        return nn.Sequential(*layers)
+
+    def forward(self, x):
+        x = self.relu(self.bn1(self.conv1(x)))
+        x = self.layer1(x)
+        x = self.layer2(x)
+        x = self.layer3(x)
+        x = self.avgpool(x)
+        x = torch.flatten(x, 1)
+        x = self.fc(x)
+        return x
 
 
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -29,7 +119,7 @@ CHECKPOINT_PATH = os.path.join(
     "..",
     "base_model_eval",
     "checkpoints",
-    "epoch_200.pth"
+    "resnet56_cifar10_final.pth"
 )
 
 # Sparsity levels to test
@@ -38,9 +128,9 @@ SPARSITY_LEVELS = [0.20, 0.40, 0.60, 0.80, 0.90]
 # Number of fine-tuning epochs
 FINETUNE_EPOCHS = 50
 
-# Learning rate used for fine-tuning
-# This is the final LR from the original training schedule.
-FINETUNE_LR = 0.001
+# Fine-tuning a deeper residual network is usually more stable
+# with a smaller learning rate than the original ResNet-18 run.
+FINETUNE_LR = 0.0005
 
 # Batch size
 BATCH_SIZE = 128
@@ -128,21 +218,7 @@ test_loader = torch.utils.data.DataLoader(
 
 def create_model():
 
-    model = resnet18(num_classes=10)
-
-    # CIFAR-10 uses 32x32 images
-    model.conv1 = nn.Conv2d(
-        3,
-        64,
-        kernel_size=3,
-        stride=1,
-        padding=1,
-        bias=False
-    )
-
-    # Remove ImageNet-style max pooling
-    model.maxpool = nn.Identity()
-
+    model = ResNet56(num_classes=10)
     return model.to(device)
 
 
