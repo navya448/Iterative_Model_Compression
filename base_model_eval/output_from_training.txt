@@ -1,0 +1,251 @@
+C:\ProgramData\Anaconda3\python.exe "C:/Users/nj255/major project/base_model_eval/base_model_eval.py"
+Using: cuda
+Checkpoint directory:
+C:\Users\nj255\major project\base_model_eval\checkpoints
+Epoch [1/200] Train Loss: 1.8787 Train Acc: 29.25% Test Loss: 1.6290 Test Acc: 40.84% Grad Norm: 1.0725 Weight Norm: 56.9445 Weight Change: 25.5290 LR: 0.100000
+Epoch [2/200] Train Loss: 1.4484 Train Acc: 46.49% Test Loss: 1.5099 Test Acc: 48.40% Grad Norm: 1.0826 Weight Norm: 56.7428 Weight Change: 11.3695 LR: 0.100000
+Epoch [3/200] Train Loss: 1.1576 Train Acc: 58.31% Test Loss: 1.1031 Test Acc: 60.50% Grad Norm: 1.1990 Weight Norm: 57.1207 Weight Change: 11.9776 LR: 0.100000
+Epoch [4/200] Train Loss: 0.9432 Train Acc: 66.61% Test Loss: 0.9645 Test Acc: 66.78% Grad Norm: 1.6504 Weight Norm: 57.7042 Weight Change: 11.3066 LR: 0.100000
+Epoch [5/200] Train Loss: 0.7783 Train Acc: 72.58% Test Loss: 0.7718 Test Acc: 73.45% Grad Norm: 1.1573 Weight Norm: 58.3164 Weight Change: 10.9605 LR: 0.100000
+Epoch [6/200] Train Loss: 0.6770 Train Acc: 76.48% Test Loss: 0.7232 Test Acc: 75.87% Grad Norm: 1.0021 Weight Norm: 58.7540 Weight Change: 10.2476 LR: 0.100000
+Epoch [7/200] Train Loss: 0.6081 Train Acc: 78.86% Test Loss: 0.7039 Test Acc: 77.13% Grad Norm: 1.2743 Weight Norm: 59.1274 Weight Change: 10.0262 LR: 0.100000
+Epoch [8/200] Train Loss: 0.5540 Train Acc: 80.74% Test Loss: 0.6411 Test Acc: 78.81% Grad Norm: 1.2177 Weight Norm: 59.4290 Weight Change: 9.8284 LR: 0.100000
+Epoch [9/200] Train Loss: 0.5116 Train Acc: 82.21% Test Loss: 0.6300 Test Acc: 79.38% Grad Norm: 1.2474 Weight Norm: 59.6749 Weight Change: 9.8055 LR: 0.100000
+Epoch [10/200] Train Loss: 0.4866 Train Acc: 83.10% Test Loss: 0.7378 Test Acc: 76.16% Grad Norm: 0.9889 Weight Norm: 60.0098 Weight Change: 9.9481 LR: 0.100000
+Epoch [11/200] Train Loss: 0.4558 Train Acc: 84.34% Test Loss: 0.5254 Test Acc: 82.19% Grad Norm: 1.0594 Weight Norm: 60.2724 Weight Change: 9.8809 LR: 0.100000
+Epoch [12/200] Train Loss: 0.4326 Train Acc: 85.19% Test Loss: 0.5934 Test Acc: 79.98% Grad Norm: 1.1906 Weight Norm: 60.5259 Weight Change: 10.0240 LR: 0.100000
+Epoch [13/200] Train Loss: 0.4079 Train Acc: 86.00% Test Loss: 0.5022 Test Acc: 83.16% Grad Norm: 1.1154 Weight Norm: 60.8118 Weight Change: 10.1298 LR: 0.100000
+Epoch [14/200] Train Loss: 0.3915 Train Acc: 86.47% Test Loss: 0.4943 Test Acc: 83.86% Grad Norm: 0.7106 Weight Norm: 61.1432 Weight Change: 10.4412 LR: 0.100000
+Epoch [15/200] Train Loss: 0.3764 Train Acc: 87.00% Test Loss: 0.4792 Test Acc: 83.92% Grad Norm: 0.8543 Weight Norm: 61.4768 Weight Change: 10.5265 LR: 0.100000
+Epoch [16/200] Train Loss: 0.3628 Train Acc: 87.42% Test Loss: 0.4306 Test Acc: 85.37% Grad Norm: 1.0126 Weight Norm: 61.7993 Weight Change: 10.6201 LR: 0.100000
+Epoch [17/200] Train Loss: 0.3530 Train Acc: 87.81% Test Loss: 0.4286 Test Acc: 85.08% Grad Norm: 1.0843 Weight Norm: 62.1202 Weight Change: 10.7068 LR: 0.100000
+Epoch [18/200] Train Loss: 0.3376 Train Acc: 88.30% Test Loss: 0.4920 Test Acc: 84.18% Grad Norm: 1.2011 Weight Norm: 62.4669 Weight Change: 10.7906 LR: 0.100000
+Epoch [19/200] Train Loss: 0.3237 Train Acc: 88.81% Test Loss: 0.5792 Test Acc: 82.01% Grad Norm: 1.1148 Weight Norm: 62.7543 Weight Change: 10.8984 LR: 0.100000
+Epoch [20/200] Train Loss: 0.3186 Train Acc: 88.89% Test Loss: 0.4476 Test Acc: 85.20% Grad Norm: 1.4188 Weight Norm: 63.1620 Weight Change: 11.2143 LR: 0.100000
+Epoch [21/200] Train Loss: 0.3059 Train Acc: 89.47% Test Loss: 0.4219 Test Acc: 85.65% Grad Norm: 1.3439 Weight Norm: 63.5125 Weight Change: 11.2474 LR: 0.100000
+Epoch [22/200] Train Loss: 0.3067 Train Acc: 89.39% Test Loss: 0.5039 Test Acc: 83.95% Grad Norm: 1.1487 Weight Norm: 63.8581 Weight Change: 11.3256 LR: 0.100000
+Epoch [23/200] Train Loss: 0.2916 Train Acc: 89.92% Test Loss: 0.4603 Test Acc: 85.21% Grad Norm: 1.0405 Weight Norm: 64.1587 Weight Change: 11.2521 LR: 0.100000
+Epoch [24/200] Train Loss: 0.2841 Train Acc: 89.98% Test Loss: 0.4784 Test Acc: 84.37% Grad Norm: 0.9014 Weight Norm: 64.4571 Weight Change: 11.4227 LR: 0.100000
+Epoch [25/200] Train Loss: 0.2758 Train Acc: 90.53% Test Loss: 0.4808 Test Acc: 84.15% Grad Norm: 1.5065 Weight Norm: 64.7643 Weight Change: 11.4956 LR: 0.100000
+Epoch [26/200] Train Loss: 0.2671 Train Acc: 90.59% Test Loss: 0.4148 Test Acc: 86.26% Grad Norm: 1.1531 Weight Norm: 65.0485 Weight Change: 11.5319 LR: 0.100000
+Epoch [27/200] Train Loss: 0.2747 Train Acc: 90.53% Test Loss: 0.5702 Test Acc: 82.75% Grad Norm: 1.8791 Weight Norm: 65.3681 Weight Change: 11.6751 LR: 0.100000
+Epoch [28/200] Train Loss: 0.2604 Train Acc: 90.90% Test Loss: 0.4480 Test Acc: 85.77% Grad Norm: 1.1273 Weight Norm: 65.7352 Weight Change: 11.8112 LR: 0.100000
+Epoch [29/200] Train Loss: 0.2645 Train Acc: 90.75% Test Loss: 0.4048 Test Acc: 86.80% Grad Norm: 1.2679 Weight Norm: 66.0242 Weight Change: 11.9171 LR: 0.100000
+Epoch [30/200] Train Loss: 0.2526 Train Acc: 91.20% Test Loss: 0.5494 Test Acc: 83.55% Grad Norm: 1.1138 Weight Norm: 66.3040 Weight Change: 11.7885 LR: 0.100000
+Epoch [31/200] Train Loss: 0.2525 Train Acc: 91.10% Test Loss: 0.5845 Test Acc: 82.75% Grad Norm: 1.4149 Weight Norm: 66.6206 Weight Change: 11.9851 LR: 0.100000
+Epoch [32/200] Train Loss: 0.2436 Train Acc: 91.54% Test Loss: 0.4751 Test Acc: 84.89% Grad Norm: 0.9191 Weight Norm: 66.8955 Weight Change: 11.9826 LR: 0.100000
+Epoch [33/200] Train Loss: 0.2379 Train Acc: 91.66% Test Loss: 0.4281 Test Acc: 86.59% Grad Norm: 1.6794 Weight Norm: 67.1438 Weight Change: 12.0119 LR: 0.100000
+Epoch [34/200] Train Loss: 0.2362 Train Acc: 91.73% Test Loss: 0.4299 Test Acc: 86.43% Grad Norm: 1.1710 Weight Norm: 67.4249 Weight Change: 12.1774 LR: 0.100000
+Epoch [35/200] Train Loss: 0.2325 Train Acc: 91.74% Test Loss: 0.3793 Test Acc: 87.77% Grad Norm: 1.1185 Weight Norm: 67.5958 Weight Change: 12.0945 LR: 0.100000
+Epoch [36/200] Train Loss: 0.2276 Train Acc: 91.98% Test Loss: 0.4772 Test Acc: 85.22% Grad Norm: 0.8421 Weight Norm: 67.8130 Weight Change: 12.1602 LR: 0.100000
+Epoch [37/200] Train Loss: 0.2310 Train Acc: 91.86% Test Loss: 0.4513 Test Acc: 86.81% Grad Norm: 1.2939 Weight Norm: 68.1093 Weight Change: 12.3601 LR: 0.100000
+Epoch [38/200] Train Loss: 0.2209 Train Acc: 92.30% Test Loss: 0.4578 Test Acc: 85.64% Grad Norm: 1.2436 Weight Norm: 68.2121 Weight Change: 12.0819 LR: 0.100000
+Epoch [39/200] Train Loss: 0.2200 Train Acc: 92.15% Test Loss: 0.4521 Test Acc: 86.07% Grad Norm: 1.0218 Weight Norm: 68.4300 Weight Change: 12.3354 LR: 0.100000
+Epoch [40/200] Train Loss: 0.2203 Train Acc: 92.12% Test Loss: 0.4653 Test Acc: 85.86% Grad Norm: 1.7646 Weight Norm: 68.6684 Weight Change: 12.4244 LR: 0.100000
+Epoch [41/200] Train Loss: 0.2104 Train Acc: 92.73% Test Loss: 0.4422 Test Acc: 86.34% Grad Norm: 1.5399 Weight Norm: 68.7258 Weight Change: 12.0436 LR: 0.100000
+Epoch [42/200] Train Loss: 0.2176 Train Acc: 92.34% Test Loss: 0.4415 Test Acc: 86.45% Grad Norm: 1.3311 Weight Norm: 68.9012 Weight Change: 12.3383 LR: 0.100000
+Epoch [43/200] Train Loss: 0.2121 Train Acc: 92.63% Test Loss: 0.4567 Test Acc: 86.20% Grad Norm: 0.9299 Weight Norm: 69.0590 Weight Change: 12.3548 LR: 0.100000
+Epoch [44/200] Train Loss: 0.2077 Train Acc: 92.79% Test Loss: 0.4413 Test Acc: 87.03% Grad Norm: 1.3024 Weight Norm: 69.1543 Weight Change: 12.2771 LR: 0.100000
+Epoch [45/200] Train Loss: 0.2053 Train Acc: 92.86% Test Loss: 0.3723 Test Acc: 88.64% Grad Norm: 1.3816 Weight Norm: 69.3021 Weight Change: 12.4157 LR: 0.100000
+Epoch [46/200] Train Loss: 0.1986 Train Acc: 93.03% Test Loss: 0.4022 Test Acc: 87.53% Grad Norm: 1.2185 Weight Norm: 69.4211 Weight Change: 12.3336 LR: 0.100000
+Epoch [47/200] Train Loss: 0.1972 Train Acc: 93.09% Test Loss: 0.4684 Test Acc: 85.81% Grad Norm: 1.4155 Weight Norm: 69.5453 Weight Change: 12.4965 LR: 0.100000
+Epoch [48/200] Train Loss: 0.2064 Train Acc: 92.66% Test Loss: 0.3935 Test Acc: 88.04% Grad Norm: 0.9518 Weight Norm: 69.7902 Weight Change: 12.7260 LR: 0.100000
+Epoch [49/200] Train Loss: 0.1941 Train Acc: 93.09% Test Loss: 0.4119 Test Acc: 86.92% Grad Norm: 1.3448 Weight Norm: 69.9268 Weight Change: 12.6136 LR: 0.100000
+
+==============================================
+CHECKPOINT SAVED - EPOCH 50
+==============================================
+C:\Users\nj255\major project\base_model_eval\checkpoints\epoch_050.pth
+
+Epoch [50/200] Train Loss: 0.2014 Train Acc: 93.06% Test Loss: 0.4684 Test Acc: 86.52% Grad Norm: 1.4370 Weight Norm: 70.0923 Weight Change: 12.6312 LR: 0.100000
+Epoch [51/200] Train Loss: 0.1938 Train Acc: 93.12% Test Loss: 0.3766 Test Acc: 88.48% Grad Norm: 1.0381 Weight Norm: 70.1408 Weight Change: 12.3886 LR: 0.100000
+Epoch [52/200] Train Loss: 0.1955 Train Acc: 93.20% Test Loss: 0.4648 Test Acc: 86.07% Grad Norm: 1.2331 Weight Norm: 70.2497 Weight Change: 12.7223 LR: 0.100000
+Epoch [53/200] Train Loss: 0.1922 Train Acc: 93.20% Test Loss: 0.3933 Test Acc: 87.92% Grad Norm: 0.7221 Weight Norm: 70.3433 Weight Change: 12.6458 LR: 0.100000
+Epoch [54/200] Train Loss: 0.1921 Train Acc: 93.30% Test Loss: 0.4090 Test Acc: 87.69% Grad Norm: 1.1306 Weight Norm: 70.4386 Weight Change: 12.6480 LR: 0.100000
+Epoch [55/200] Train Loss: 0.1934 Train Acc: 93.23% Test Loss: 0.4779 Test Acc: 86.22% Grad Norm: 1.2325 Weight Norm: 70.5526 Weight Change: 12.6243 LR: 0.100000
+Epoch [56/200] Train Loss: 0.1899 Train Acc: 93.35% Test Loss: 0.4255 Test Acc: 87.01% Grad Norm: 1.6986 Weight Norm: 70.6961 Weight Change: 12.7823 LR: 0.100000
+Epoch [57/200] Train Loss: 0.1852 Train Acc: 93.52% Test Loss: 0.4105 Test Acc: 87.74% Grad Norm: 1.7417 Weight Norm: 70.7380 Weight Change: 12.6623 LR: 0.100000
+Epoch [58/200] Train Loss: 0.1895 Train Acc: 93.32% Test Loss: 0.3620 Test Acc: 88.30% Grad Norm: 1.0430 Weight Norm: 70.8552 Weight Change: 12.8255 LR: 0.100000
+Epoch [59/200] Train Loss: 0.1769 Train Acc: 93.93% Test Loss: 0.4236 Test Acc: 87.41% Grad Norm: 1.4642 Weight Norm: 70.8111 Weight Change: 12.5089 LR: 0.100000
+Epoch [60/200] Train Loss: 0.1812 Train Acc: 93.60% Test Loss: 0.4705 Test Acc: 86.29% Grad Norm: 1.3991 Weight Norm: 70.9278 Weight Change: 12.8895 LR: 0.100000
+Epoch [61/200] Train Loss: 0.1827 Train Acc: 93.61% Test Loss: 0.3444 Test Acc: 89.22% Grad Norm: 1.3026 Weight Norm: 71.0143 Weight Change: 12.7319 LR: 0.100000
+Epoch [62/200] Train Loss: 0.1819 Train Acc: 93.67% Test Loss: 0.3922 Test Acc: 88.04% Grad Norm: 1.4082 Weight Norm: 71.0714 Weight Change: 12.7220 LR: 0.100000
+Epoch [63/200] Train Loss: 0.1783 Train Acc: 93.75% Test Loss: 0.4582 Test Acc: 86.64% Grad Norm: 1.1853 Weight Norm: 71.1466 Weight Change: 12.8297 LR: 0.100000
+Epoch [64/200] Train Loss: 0.1782 Train Acc: 93.74% Test Loss: 0.3686 Test Acc: 89.16% Grad Norm: 1.7876 Weight Norm: 71.2153 Weight Change: 12.8037 LR: 0.100000
+Epoch [65/200] Train Loss: 0.1785 Train Acc: 93.76% Test Loss: 0.4086 Test Acc: 87.66% Grad Norm: 0.8896 Weight Norm: 71.2554 Weight Change: 12.7307 LR: 0.100000
+Epoch [66/200] Train Loss: 0.1731 Train Acc: 93.96% Test Loss: 0.4094 Test Acc: 87.89% Grad Norm: 1.6665 Weight Norm: 71.2850 Weight Change: 12.7899 LR: 0.100000
+Epoch [67/200] Train Loss: 0.1770 Train Acc: 93.87% Test Loss: 0.3628 Test Acc: 89.18% Grad Norm: 0.6742 Weight Norm: 71.3901 Weight Change: 12.9339 LR: 0.100000
+Epoch [68/200] Train Loss: 0.1733 Train Acc: 93.99% Test Loss: 0.4203 Test Acc: 87.71% Grad Norm: 1.0126 Weight Norm: 71.4404 Weight Change: 12.9110 LR: 0.100000
+Epoch [69/200] Train Loss: 0.1744 Train Acc: 93.86% Test Loss: 0.3713 Test Acc: 88.81% Grad Norm: 1.6026 Weight Norm: 71.5229 Weight Change: 12.9549 LR: 0.100000
+Epoch [70/200] Train Loss: 0.1713 Train Acc: 93.99% Test Loss: 0.3550 Test Acc: 89.56% Grad Norm: 1.6305 Weight Norm: 71.5073 Weight Change: 12.6620 LR: 0.100000
+Epoch [71/200] Train Loss: 0.1745 Train Acc: 93.86% Test Loss: 0.4308 Test Acc: 86.87% Grad Norm: 1.4701 Weight Norm: 71.6150 Weight Change: 13.0681 LR: 0.100000
+Epoch [72/200] Train Loss: 0.1733 Train Acc: 94.00% Test Loss: 0.4879 Test Acc: 85.95% Grad Norm: 1.2353 Weight Norm: 71.6175 Weight Change: 12.8307 LR: 0.100000
+Epoch [73/200] Train Loss: 0.1700 Train Acc: 94.01% Test Loss: 0.5308 Test Acc: 84.58% Grad Norm: 1.5799 Weight Norm: 71.6902 Weight Change: 13.0761 LR: 0.100000
+Epoch [74/200] Train Loss: 0.1741 Train Acc: 93.90% Test Loss: 0.4372 Test Acc: 86.98% Grad Norm: 1.8388 Weight Norm: 71.7339 Weight Change: 12.9774 LR: 0.100000
+Epoch [75/200] Train Loss: 0.1664 Train Acc: 94.18% Test Loss: 0.4034 Test Acc: 88.18% Grad Norm: 1.2727 Weight Norm: 71.7703 Weight Change: 12.9817 LR: 0.100000
+Epoch [76/200] Train Loss: 0.1735 Train Acc: 93.88% Test Loss: 0.5105 Test Acc: 85.77% Grad Norm: 1.3358 Weight Norm: 71.8144 Weight Change: 12.8244 LR: 0.100000
+Epoch [77/200] Train Loss: 0.1652 Train Acc: 94.21% Test Loss: 0.4260 Test Acc: 87.38% Grad Norm: 1.3665 Weight Norm: 71.7919 Weight Change: 12.8131 LR: 0.100000
+Epoch [78/200] Train Loss: 0.1628 Train Acc: 94.31% Test Loss: 0.3570 Test Acc: 88.89% Grad Norm: 1.5180 Weight Norm: 71.7303 Weight Change: 12.7597 LR: 0.100000
+Epoch [79/200] Train Loss: 0.1663 Train Acc: 94.23% Test Loss: 0.4273 Test Acc: 86.98% Grad Norm: 1.0089 Weight Norm: 71.8006 Weight Change: 13.1038 LR: 0.100000
+Epoch [80/200] Train Loss: 0.1643 Train Acc: 94.21% Test Loss: 0.4035 Test Acc: 88.06% Grad Norm: 1.6819 Weight Norm: 71.8008 Weight Change: 12.9393 LR: 0.100000
+Epoch [81/200] Train Loss: 0.1687 Train Acc: 94.12% Test Loss: 0.4209 Test Acc: 87.87% Grad Norm: 1.3210 Weight Norm: 71.9019 Weight Change: 13.2325 LR: 0.100000
+Epoch [82/200] Train Loss: 0.1641 Train Acc: 94.25% Test Loss: 0.4269 Test Acc: 87.67% Grad Norm: 1.5591 Weight Norm: 71.9340 Weight Change: 13.1101 LR: 0.100000
+Epoch [83/200] Train Loss: 0.1676 Train Acc: 94.17% Test Loss: 0.3528 Test Acc: 88.99% Grad Norm: 1.6991 Weight Norm: 71.9874 Weight Change: 13.0927 LR: 0.100000
+Epoch [84/200] Train Loss: 0.1679 Train Acc: 94.04% Test Loss: 0.3943 Test Acc: 88.22% Grad Norm: 1.1482 Weight Norm: 72.0619 Weight Change: 13.0691 LR: 0.100000
+Epoch [85/200] Train Loss: 0.1613 Train Acc: 94.38% Test Loss: 0.4965 Test Acc: 85.98% Grad Norm: 1.3967 Weight Norm: 72.0288 Weight Change: 12.9409 LR: 0.100000
+Epoch [86/200] Train Loss: 0.1669 Train Acc: 94.14% Test Loss: 0.3603 Test Acc: 89.04% Grad Norm: 1.5780 Weight Norm: 72.0541 Weight Change: 13.0228 LR: 0.100000
+Epoch [87/200] Train Loss: 0.1588 Train Acc: 94.34% Test Loss: 0.4765 Test Acc: 86.53% Grad Norm: 1.4992 Weight Norm: 72.0815 Weight Change: 13.0306 LR: 0.100000
+Epoch [88/200] Train Loss: 0.1615 Train Acc: 94.28% Test Loss: 0.3815 Test Acc: 88.69% Grad Norm: 1.2954 Weight Norm: 72.1210 Weight Change: 13.1934 LR: 0.100000
+Epoch [89/200] Train Loss: 0.1575 Train Acc: 94.43% Test Loss: 0.3728 Test Acc: 89.13% Grad Norm: 1.3505 Weight Norm: 72.0867 Weight Change: 12.9067 LR: 0.100000
+Epoch [90/200] Train Loss: 0.1616 Train Acc: 94.44% Test Loss: 0.3733 Test Acc: 88.63% Grad Norm: 0.8537 Weight Norm: 72.1703 Weight Change: 13.1549 LR: 0.100000
+Epoch [91/200] Train Loss: 0.1598 Train Acc: 94.38% Test Loss: 0.3954 Test Acc: 87.97% Grad Norm: 1.0661 Weight Norm: 72.2311 Weight Change: 13.2195 LR: 0.100000
+Epoch [92/200] Train Loss: 0.1588 Train Acc: 94.49% Test Loss: 0.4818 Test Acc: 86.36% Grad Norm: 1.4938 Weight Norm: 72.2577 Weight Change: 13.1427 LR: 0.100000
+Epoch [93/200] Train Loss: 0.1623 Train Acc: 94.36% Test Loss: 0.4276 Test Acc: 87.53% Grad Norm: 0.7902 Weight Norm: 72.3647 Weight Change: 13.2860 LR: 0.100000
+Epoch [94/200] Train Loss: 0.1635 Train Acc: 94.19% Test Loss: 0.4423 Test Acc: 86.64% Grad Norm: 1.6481 Weight Norm: 72.3635 Weight Change: 13.1293 LR: 0.100000
+Epoch [95/200] Train Loss: 0.1569 Train Acc: 94.54% Test Loss: 0.3599 Test Acc: 88.99% Grad Norm: 1.6102 Weight Norm: 72.3468 Weight Change: 13.0683 LR: 0.100000
+Epoch [96/200] Train Loss: 0.1561 Train Acc: 94.47% Test Loss: 0.5528 Test Acc: 85.04% Grad Norm: 1.2646 Weight Norm: 72.4011 Weight Change: 13.2488 LR: 0.100000
+Epoch [97/200] Train Loss: 0.1610 Train Acc: 94.36% Test Loss: 0.4021 Test Acc: 88.14% Grad Norm: 1.1815 Weight Norm: 72.3934 Weight Change: 13.0897 LR: 0.100000
+Epoch [98/200] Train Loss: 0.1564 Train Acc: 94.55% Test Loss: 0.4198 Test Acc: 87.52% Grad Norm: 1.3176 Weight Norm: 72.4036 Weight Change: 13.0561 LR: 0.100000
+Epoch [99/200] Train Loss: 0.1562 Train Acc: 94.59% Test Loss: 0.4077 Test Acc: 87.97% Grad Norm: 1.2522 Weight Norm: 72.3902 Weight Change: 13.0573 LR: 0.100000
+
+==============================================
+CHECKPOINT SAVED - EPOCH 100
+==============================================
+C:\Users\nj255\major project\base_model_eval\checkpoints\epoch_100.pth
+
+Epoch [100/200] Train Loss: 0.1546 Train Acc: 94.57% Test Loss: 0.4022 Test Acc: 87.73% Grad Norm: 1.6979 Weight Norm: 72.3655 Weight Change: 13.0097 LR: 0.100000
+Epoch [101/200] Train Loss: 0.1519 Train Acc: 94.68% Test Loss: 0.4429 Test Acc: 87.80% Grad Norm: 1.4490 Weight Norm: 72.3511 Weight Change: 13.0684 LR: 0.100000
+Epoch [102/200] Train Loss: 0.1535 Train Acc: 94.70% Test Loss: 0.4515 Test Acc: 87.27% Grad Norm: 1.0624 Weight Norm: 72.3824 Weight Change: 13.2618 LR: 0.100000
+Epoch [103/200] Train Loss: 0.1549 Train Acc: 94.67% Test Loss: 0.5359 Test Acc: 85.43% Grad Norm: 1.7862 Weight Norm: 72.3728 Weight Change: 12.9972 LR: 0.100000
+Epoch [104/200] Train Loss: 0.1546 Train Acc: 94.69% Test Loss: 0.3701 Test Acc: 88.71% Grad Norm: 1.1493 Weight Norm: 72.3434 Weight Change: 13.0231 LR: 0.100000
+Epoch [105/200] Train Loss: 0.1607 Train Acc: 94.42% Test Loss: 0.3489 Test Acc: 89.23% Grad Norm: 1.5299 Weight Norm: 72.4320 Weight Change: 13.2954 LR: 0.100000
+Epoch [106/200] Train Loss: 0.1514 Train Acc: 94.70% Test Loss: 0.5549 Test Acc: 84.81% Grad Norm: 1.0631 Weight Norm: 72.4125 Weight Change: 13.0503 LR: 0.100000
+Epoch [107/200] Train Loss: 0.1533 Train Acc: 94.66% Test Loss: 0.3485 Test Acc: 89.55% Grad Norm: 1.7884 Weight Norm: 72.4652 Weight Change: 13.2514 LR: 0.100000
+Epoch [108/200] Train Loss: 0.1495 Train Acc: 94.78% Test Loss: 0.4042 Test Acc: 88.01% Grad Norm: 1.6648 Weight Norm: 72.4348 Weight Change: 13.0685 LR: 0.100000
+Epoch [109/200] Train Loss: 0.1539 Train Acc: 94.61% Test Loss: 0.3760 Test Acc: 89.18% Grad Norm: 1.2512 Weight Norm: 72.4883 Weight Change: 13.2960 LR: 0.100000
+Epoch [110/200] Train Loss: 0.1566 Train Acc: 94.45% Test Loss: 0.4128 Test Acc: 88.32% Grad Norm: 1.4380 Weight Norm: 72.6053 Weight Change: 13.3868 LR: 0.100000
+Epoch [111/200] Train Loss: 0.1489 Train Acc: 94.73% Test Loss: 0.4627 Test Acc: 87.58% Grad Norm: 1.2354 Weight Norm: 72.5931 Weight Change: 13.1462 LR: 0.100000
+Epoch [112/200] Train Loss: 0.1517 Train Acc: 94.69% Test Loss: 0.3822 Test Acc: 88.83% Grad Norm: 1.4043 Weight Norm: 72.6860 Weight Change: 13.4154 LR: 0.100000
+Epoch [113/200] Train Loss: 0.1536 Train Acc: 94.68% Test Loss: 0.4626 Test Acc: 87.22% Grad Norm: 1.0148 Weight Norm: 72.7047 Weight Change: 13.3149 LR: 0.100000
+Epoch [114/200] Train Loss: 0.1495 Train Acc: 94.79% Test Loss: 0.3663 Test Acc: 89.23% Grad Norm: 1.6470 Weight Norm: 72.6791 Weight Change: 13.2739 LR: 0.100000
+Epoch [115/200] Train Loss: 0.1556 Train Acc: 94.53% Test Loss: 0.3601 Test Acc: 88.92% Grad Norm: 1.7659 Weight Norm: 72.6686 Weight Change: 13.1471 LR: 0.100000
+Epoch [116/200] Train Loss: 0.1544 Train Acc: 94.68% Test Loss: 0.4201 Test Acc: 87.81% Grad Norm: 1.6656 Weight Norm: 72.6874 Weight Change: 13.2152 LR: 0.100000
+Epoch [117/200] Train Loss: 0.1481 Train Acc: 94.75% Test Loss: 0.4670 Test Acc: 87.03% Grad Norm: 1.1695 Weight Norm: 72.6822 Weight Change: 13.2106 LR: 0.100000
+Epoch [118/200] Train Loss: 0.1504 Train Acc: 94.77% Test Loss: 0.3453 Test Acc: 89.34% Grad Norm: 1.4744 Weight Norm: 72.6396 Weight Change: 13.1124 LR: 0.100000
+Epoch [119/200] Train Loss: 0.1502 Train Acc: 94.78% Test Loss: 0.4204 Test Acc: 87.69% Grad Norm: 1.4044 Weight Norm: 72.6587 Weight Change: 13.2055 LR: 0.100000
+Epoch [120/200] Train Loss: 0.1468 Train Acc: 94.87% Test Loss: 0.5135 Test Acc: 86.20% Grad Norm: 1.4684 Weight Norm: 72.6138 Weight Change: 13.1572 LR: 0.100000
+Epoch [121/200] Train Loss: 0.1476 Train Acc: 94.81% Test Loss: 0.3707 Test Acc: 89.18% Grad Norm: 2.5787 Weight Norm: 72.5700 Weight Change: 13.1203 LR: 0.100000
+Epoch [122/200] Train Loss: 0.1506 Train Acc: 94.75% Test Loss: 0.3603 Test Acc: 89.08% Grad Norm: 1.6115 Weight Norm: 72.6961 Weight Change: 13.4692 LR: 0.100000
+Epoch [123/200] Train Loss: 0.1486 Train Acc: 94.87% Test Loss: 0.4388 Test Acc: 87.45% Grad Norm: 1.6163 Weight Norm: 72.6318 Weight Change: 13.1074 LR: 0.100000
+Epoch [124/200] Train Loss: 0.1453 Train Acc: 94.86% Test Loss: 0.4542 Test Acc: 87.13% Grad Norm: 1.7336 Weight Norm: 72.6705 Weight Change: 13.2301 LR: 0.100000
+Epoch [125/200] Train Loss: 0.1499 Train Acc: 94.79% Test Loss: 0.3782 Test Acc: 89.17% Grad Norm: 1.3327 Weight Norm: 72.7107 Weight Change: 13.3385 LR: 0.100000
+Epoch [126/200] Train Loss: 0.1446 Train Acc: 94.91% Test Loss: 0.3625 Test Acc: 89.36% Grad Norm: 1.1528 Weight Norm: 72.7021 Weight Change: 13.1637 LR: 0.100000
+Epoch [127/200] Train Loss: 0.1494 Train Acc: 94.71% Test Loss: 0.4647 Test Acc: 87.24% Grad Norm: 1.0018 Weight Norm: 72.7384 Weight Change: 13.3282 LR: 0.100000
+Epoch [128/200] Train Loss: 0.1451 Train Acc: 94.88% Test Loss: 0.4106 Test Acc: 88.55% Grad Norm: 1.0010 Weight Norm: 72.7634 Weight Change: 13.4035 LR: 0.100000
+Epoch [129/200] Train Loss: 0.1454 Train Acc: 94.84% Test Loss: 0.5045 Test Acc: 86.16% Grad Norm: 0.8415 Weight Norm: 72.7319 Weight Change: 13.2226 LR: 0.100000
+Epoch [130/200] Train Loss: 0.1444 Train Acc: 94.97% Test Loss: 0.5550 Test Acc: 85.78% Grad Norm: 1.4541 Weight Norm: 72.6909 Weight Change: 13.1708 LR: 0.100000
+Epoch [131/200] Train Loss: 0.1484 Train Acc: 94.84% Test Loss: 0.4438 Test Acc: 86.86% Grad Norm: 1.3790 Weight Norm: 72.6633 Weight Change: 13.2011 LR: 0.100000
+Epoch [132/200] Train Loss: 0.1476 Train Acc: 94.84% Test Loss: 0.5419 Test Acc: 85.30% Grad Norm: 1.6690 Weight Norm: 72.7568 Weight Change: 13.4800 LR: 0.100000
+Epoch [133/200] Train Loss: 0.1475 Train Acc: 94.84% Test Loss: 0.3629 Test Acc: 89.05% Grad Norm: 1.5601 Weight Norm: 72.7702 Weight Change: 13.3386 LR: 0.100000
+Epoch [134/200] Train Loss: 0.1521 Train Acc: 94.70% Test Loss: 0.3350 Test Acc: 90.12% Grad Norm: 1.1834 Weight Norm: 72.8313 Weight Change: 13.4938 LR: 0.100000
+Epoch [135/200] Train Loss: 0.1434 Train Acc: 94.94% Test Loss: 0.4522 Test Acc: 87.83% Grad Norm: 0.9537 Weight Norm: 72.7855 Weight Change: 13.1864 LR: 0.100000
+Epoch [136/200] Train Loss: 0.1394 Train Acc: 95.19% Test Loss: 0.4284 Test Acc: 87.65% Grad Norm: 1.3304 Weight Norm: 72.6605 Weight Change: 13.0773 LR: 0.100000
+Epoch [137/200] Train Loss: 0.1431 Train Acc: 95.08% Test Loss: 0.4202 Test Acc: 88.54% Grad Norm: 1.0564 Weight Norm: 72.6722 Weight Change: 13.3856 LR: 0.100000
+Epoch [138/200] Train Loss: 0.1481 Train Acc: 94.75% Test Loss: 0.3938 Test Acc: 87.93% Grad Norm: 1.3704 Weight Norm: 72.7706 Weight Change: 13.5339 LR: 0.100000
+Epoch [139/200] Train Loss: 0.1472 Train Acc: 94.77% Test Loss: 0.3917 Test Acc: 88.74% Grad Norm: 1.9624 Weight Norm: 72.9505 Weight Change: 13.7111 LR: 0.100000
+Epoch [140/200] Train Loss: 0.1442 Train Acc: 94.89% Test Loss: 0.3255 Test Acc: 90.38% Grad Norm: 1.1687 Weight Norm: 72.9506 Weight Change: 13.3680 LR: 0.100000
+Epoch [141/200] Train Loss: 0.1437 Train Acc: 94.97% Test Loss: 0.3572 Test Acc: 89.34% Grad Norm: 1.4744 Weight Norm: 72.9301 Weight Change: 13.3054 LR: 0.100000
+Epoch [142/200] Train Loss: 0.1420 Train Acc: 95.12% Test Loss: 0.3552 Test Acc: 89.39% Grad Norm: 1.2692 Weight Norm: 72.9249 Weight Change: 13.3346 LR: 0.100000
+Epoch [143/200] Train Loss: 0.1386 Train Acc: 95.01% Test Loss: 0.3302 Test Acc: 89.74% Grad Norm: 0.7256 Weight Norm: 72.7996 Weight Change: 13.0863 LR: 0.100000
+Epoch [144/200] Train Loss: 0.1387 Train Acc: 95.11% Test Loss: 0.3771 Test Acc: 88.87% Grad Norm: 0.9191 Weight Norm: 72.7322 Weight Change: 13.2664 LR: 0.100000
+Epoch [145/200] Train Loss: 0.1425 Train Acc: 95.00% Test Loss: 0.3938 Test Acc: 88.68% Grad Norm: 1.6844 Weight Norm: 72.7039 Weight Change: 13.2856 LR: 0.100000
+Epoch [146/200] Train Loss: 0.1427 Train Acc: 94.99% Test Loss: 0.4155 Test Acc: 88.70% Grad Norm: 1.1968 Weight Norm: 72.7750 Weight Change: 13.5560 LR: 0.100000
+Epoch [147/200] Train Loss: 0.1408 Train Acc: 95.01% Test Loss: 0.4010 Test Acc: 88.36% Grad Norm: 0.8981 Weight Norm: 72.7927 Weight Change: 13.3338 LR: 0.100000
+Epoch [148/200] Train Loss: 0.1447 Train Acc: 95.01% Test Loss: 0.3487 Test Acc: 90.13% Grad Norm: 1.1116 Weight Norm: 72.8433 Weight Change: 13.3797 LR: 0.100000
+Epoch [149/200] Train Loss: 0.1427 Train Acc: 95.00% Test Loss: 0.3353 Test Acc: 89.89% Grad Norm: 1.4084 Weight Norm: 72.9079 Weight Change: 13.4868 LR: 0.100000
+
+==============================================
+CHECKPOINT SAVED - EPOCH 150
+==============================================
+C:\Users\nj255\major project\base_model_eval\checkpoints\epoch_150.pth
+
+Epoch [150/200] Train Loss: 0.1419 Train Acc: 95.02% Test Loss: 0.4778 Test Acc: 86.96% Grad Norm: 0.9745 Weight Norm: 72.9368 Weight Change: 13.4215 LR: 0.010000
+Epoch [151/200] Train Loss: 0.0684 Train Acc: 97.74% Test Loss: 0.2425 Test Acc: 92.86% Grad Norm: 0.3846 Weight Norm: 72.7073 Weight Change: 1.7534 LR: 0.010000
+Epoch [152/200] Train Loss: 0.0436 Train Acc: 98.65% Test Loss: 0.2393 Test Acc: 92.96% Grad Norm: 0.5404 Weight Norm: 72.4667 Weight Change: 1.1356 LR: 0.010000
+Epoch [153/200] Train Loss: 0.0345 Train Acc: 98.97% Test Loss: 0.2381 Test Acc: 93.01% Grad Norm: 0.9212 Weight Norm: 72.2245 Weight Change: 0.9976 LR: 0.010000
+Epoch [154/200] Train Loss: 0.0288 Train Acc: 99.20% Test Loss: 0.2414 Test Acc: 93.25% Grad Norm: 0.7549 Weight Norm: 71.9791 Weight Change: 0.9365 LR: 0.010000
+Epoch [155/200] Train Loss: 0.0264 Train Acc: 99.25% Test Loss: 0.2419 Test Acc: 93.30% Grad Norm: 0.4689 Weight Norm: 71.7316 Weight Change: 0.9120 LR: 0.010000
+Epoch [156/200] Train Loss: 0.0235 Train Acc: 99.31% Test Loss: 0.2460 Test Acc: 93.34% Grad Norm: 0.1965 Weight Norm: 71.4828 Weight Change: 0.8906 LR: 0.010000
+Epoch [157/200] Train Loss: 0.0217 Train Acc: 99.39% Test Loss: 0.2437 Test Acc: 93.48% Grad Norm: 0.3723 Weight Norm: 71.2335 Weight Change: 0.8715 LR: 0.010000
+Epoch [158/200] Train Loss: 0.0194 Train Acc: 99.44% Test Loss: 0.2450 Test Acc: 93.39% Grad Norm: 1.0263 Weight Norm: 70.9833 Weight Change: 0.8380 LR: 0.010000
+Epoch [159/200] Train Loss: 0.0177 Train Acc: 99.52% Test Loss: 0.2455 Test Acc: 93.43% Grad Norm: 0.3332 Weight Norm: 70.7332 Weight Change: 0.8198 LR: 0.010000
+Epoch [160/200] Train Loss: 0.0167 Train Acc: 99.53% Test Loss: 0.2441 Test Acc: 93.54% Grad Norm: 0.1113 Weight Norm: 70.4837 Weight Change: 0.8242 LR: 0.010000
+Epoch [161/200] Train Loss: 0.0158 Train Acc: 99.55% Test Loss: 0.2497 Test Acc: 93.62% Grad Norm: 0.4655 Weight Norm: 70.2335 Weight Change: 0.8079 LR: 0.010000
+Epoch [162/200] Train Loss: 0.0146 Train Acc: 99.63% Test Loss: 0.2546 Test Acc: 93.52% Grad Norm: 0.5971 Weight Norm: 69.9841 Weight Change: 0.7891 LR: 0.010000
+Epoch [163/200] Train Loss: 0.0134 Train Acc: 99.68% Test Loss: 0.2538 Test Acc: 93.53% Grad Norm: 0.2712 Weight Norm: 69.7341 Weight Change: 0.7714 LR: 0.010000
+Epoch [164/200] Train Loss: 0.0124 Train Acc: 99.69% Test Loss: 0.2584 Test Acc: 93.43% Grad Norm: 0.3675 Weight Norm: 69.4844 Weight Change: 0.7357 LR: 0.010000
+Epoch [165/200] Train Loss: 0.0122 Train Acc: 99.68% Test Loss: 0.2627 Test Acc: 93.36% Grad Norm: 0.3298 Weight Norm: 69.2350 Weight Change: 0.7710 LR: 0.010000
+Epoch [166/200] Train Loss: 0.0114 Train Acc: 99.73% Test Loss: 0.2589 Test Acc: 93.56% Grad Norm: 1.1249 Weight Norm: 68.9860 Weight Change: 0.7577 LR: 0.010000
+Epoch [167/200] Train Loss: 0.0110 Train Acc: 99.73% Test Loss: 0.2622 Test Acc: 93.54% Grad Norm: 0.2685 Weight Norm: 68.7371 Weight Change: 0.7518 LR: 0.010000
+Epoch [168/200] Train Loss: 0.0100 Train Acc: 99.77% Test Loss: 0.2654 Test Acc: 93.49% Grad Norm: 0.0421 Weight Norm: 68.4894 Weight Change: 0.7390 LR: 0.010000
+Epoch [169/200] Train Loss: 0.0097 Train Acc: 99.78% Test Loss: 0.2683 Test Acc: 93.39% Grad Norm: 0.3625 Weight Norm: 68.2416 Weight Change: 0.7154 LR: 0.010000
+Epoch [170/200] Train Loss: 0.0095 Train Acc: 99.79% Test Loss: 0.2687 Test Acc: 93.48% Grad Norm: 0.6090 Weight Norm: 67.9953 Weight Change: 0.7341 LR: 0.010000
+Epoch [171/200] Train Loss: 0.0086 Train Acc: 99.82% Test Loss: 0.2699 Test Acc: 93.51% Grad Norm: 0.2983 Weight Norm: 67.7489 Weight Change: 0.6929 LR: 0.010000
+Epoch [172/200] Train Loss: 0.0087 Train Acc: 99.79% Test Loss: 0.2698 Test Acc: 93.40% Grad Norm: 0.3338 Weight Norm: 67.5035 Weight Change: 0.7106 LR: 0.010000
+Epoch [173/200] Train Loss: 0.0073 Train Acc: 99.87% Test Loss: 0.2705 Test Acc: 93.50% Grad Norm: 1.3576 Weight Norm: 67.2579 Weight Change: 0.6397 LR: 0.010000
+Epoch [174/200] Train Loss: 0.0076 Train Acc: 99.83% Test Loss: 0.2759 Test Acc: 93.47% Grad Norm: 0.1338 Weight Norm: 67.0129 Weight Change: 0.6816 LR: 0.010000
+Epoch [175/200] Train Loss: 0.0073 Train Acc: 99.86% Test Loss: 0.2757 Test Acc: 93.67% Grad Norm: 1.0222 Weight Norm: 66.7689 Weight Change: 0.6753 LR: 0.001000
+Epoch [176/200] Train Loss: 0.0065 Train Acc: 99.88% Test Loss: 0.2732 Test Acc: 93.58% Grad Norm: 0.8613 Weight Norm: 66.7442 Weight Change: 0.0736 LR: 0.001000
+Epoch [177/200] Train Loss: 0.0073 Train Acc: 99.84% Test Loss: 0.2723 Test Acc: 93.67% Grad Norm: 1.4567 Weight Norm: 66.7194 Weight Change: 0.0771 LR: 0.001000
+Epoch [178/200] Train Loss: 0.0069 Train Acc: 99.86% Test Loss: 0.2720 Test Acc: 93.71% Grad Norm: 0.0241 Weight Norm: 66.6947 Weight Change: 0.0734 LR: 0.001000
+Epoch [179/200] Train Loss: 0.0064 Train Acc: 99.87% Test Loss: 0.2708 Test Acc: 93.61% Grad Norm: 0.0540 Weight Norm: 66.6700 Weight Change: 0.0697 LR: 0.001000
+Epoch [180/200] Train Loss: 0.0063 Train Acc: 99.89% Test Loss: 0.2720 Test Acc: 93.63% Grad Norm: 0.9847 Weight Norm: 66.6453 Weight Change: 0.0656 LR: 0.001000
+Epoch [181/200] Train Loss: 0.0067 Train Acc: 99.86% Test Loss: 0.2715 Test Acc: 93.61% Grad Norm: 0.1778 Weight Norm: 66.6206 Weight Change: 0.0698 LR: 0.001000
+Epoch [182/200] Train Loss: 0.0062 Train Acc: 99.88% Test Loss: 0.2719 Test Acc: 93.69% Grad Norm: 0.0508 Weight Norm: 66.5959 Weight Change: 0.0672 LR: 0.001000
+Epoch [183/200] Train Loss: 0.0069 Train Acc: 99.85% Test Loss: 0.2709 Test Acc: 93.69% Grad Norm: 0.5175 Weight Norm: 66.5712 Weight Change: 0.0726 LR: 0.001000
+Epoch [184/200] Train Loss: 0.0063 Train Acc: 99.89% Test Loss: 0.2686 Test Acc: 93.70% Grad Norm: 0.1609 Weight Norm: 66.5465 Weight Change: 0.0650 LR: 0.001000
+Epoch [185/200] Train Loss: 0.0058 Train Acc: 99.89% Test Loss: 0.2693 Test Acc: 93.70% Grad Norm: 0.8114 Weight Norm: 66.5218 Weight Change: 0.0618 LR: 0.001000
+Epoch [186/200] Train Loss: 0.0060 Train Acc: 99.88% Test Loss: 0.2679 Test Acc: 93.72% Grad Norm: 0.2442 Weight Norm: 66.4971 Weight Change: 0.0660 LR: 0.001000
+Epoch [187/200] Train Loss: 0.0056 Train Acc: 99.91% Test Loss: 0.2676 Test Acc: 93.77% Grad Norm: 0.1790 Weight Norm: 66.4725 Weight Change: 0.0623 LR: 0.001000
+Epoch [188/200] Train Loss: 0.0064 Train Acc: 99.86% Test Loss: 0.2667 Test Acc: 93.72% Grad Norm: 0.1786 Weight Norm: 66.4477 Weight Change: 0.0662 LR: 0.001000
+Epoch [189/200] Train Loss: 0.0057 Train Acc: 99.89% Test Loss: 0.2684 Test Acc: 93.65% Grad Norm: 0.8786 Weight Norm: 66.4230 Weight Change: 0.0604 LR: 0.001000
+Epoch [190/200] Train Loss: 0.0060 Train Acc: 99.90% Test Loss: 0.2682 Test Acc: 93.78% Grad Norm: 0.3143 Weight Norm: 66.3984 Weight Change: 0.0655 LR: 0.001000
+Epoch [191/200] Train Loss: 0.0057 Train Acc: 99.92% Test Loss: 0.2698 Test Acc: 93.84% Grad Norm: 0.2228 Weight Norm: 66.3737 Weight Change: 0.0607 LR: 0.001000
+Epoch [192/200] Train Loss: 0.0060 Train Acc: 99.90% Test Loss: 0.2708 Test Acc: 93.54% Grad Norm: 0.4149 Weight Norm: 66.3491 Weight Change: 0.0624 LR: 0.001000
+Epoch [193/200] Train Loss: 0.0057 Train Acc: 99.89% Test Loss: 0.2677 Test Acc: 93.66% Grad Norm: 1.0193 Weight Norm: 66.3244 Weight Change: 0.0615 LR: 0.001000
+Epoch [194/200] Train Loss: 0.0054 Train Acc: 99.91% Test Loss: 0.2692 Test Acc: 93.75% Grad Norm: 0.1037 Weight Norm: 66.2998 Weight Change: 0.0596 LR: 0.001000
+Epoch [195/200] Train Loss: 0.0061 Train Acc: 99.86% Test Loss: 0.2679 Test Acc: 93.77% Grad Norm: 0.1047 Weight Norm: 66.2752 Weight Change: 0.0661 LR: 0.001000
+Epoch [196/200] Train Loss: 0.0054 Train Acc: 99.90% Test Loss: 0.2702 Test Acc: 93.68% Grad Norm: 0.1545 Weight Norm: 66.2506 Weight Change: 0.0603 LR: 0.001000
+Epoch [197/200] Train Loss: 0.0056 Train Acc: 99.90% Test Loss: 0.2680 Test Acc: 93.79% Grad Norm: 0.2310 Weight Norm: 66.2260 Weight Change: 0.0620 LR: 0.001000
+Epoch [198/200] Train Loss: 0.0055 Train Acc: 99.91% Test Loss: 0.2685 Test Acc: 93.74% Grad Norm: 0.1374 Weight Norm: 66.2014 Weight Change: 0.0625 LR: 0.001000
+Epoch [199/200] Train Loss: 0.0057 Train Acc: 99.90% Test Loss: 0.2693 Test Acc: 93.65% Grad Norm: 0.2576 Weight Norm: 66.1768 Weight Change: 0.0631 LR: 0.001000
+
+==============================================
+CHECKPOINT SAVED - EPOCH 200
+==============================================
+C:\Users\nj255\major project\base_model_eval\checkpoints\epoch_200.pth
+
+Epoch [200/200] Train Loss: 0.0056 Train Acc: 99.92% Test Loss: 0.2679 Test Acc: 93.79% Grad Norm: 0.7186 Weight Norm: 66.1523 Weight Change: 0.0624 LR: 0.001000
+
+==============================================
+CHECKPOINT SAVED - EPOCH 200
+==============================================
+C:\Users\nj255\major project\base_model_eval\checkpoints\resnet56_cifar10_final.pth
+
+
+==============================================
+TRAINING COMPLETE
+==============================================
+Final Test Loss: 0.2679
+Final Test Accuracy: 93.79%
+
+Saved checkpoints:
+  C:\Users\nj255\major project\base_model_eval\checkpoints\epoch_050.pth
+  C:\Users\nj255\major project\base_model_eval\checkpoints\epoch_100.pth
+  C:\Users\nj255\major project\base_model_eval\checkpoints\epoch_150.pth
+  C:\Users\nj255\major project\base_model_eval\checkpoints\epoch_200.pth
+  C:\Users\nj255\major project\base_model_eval\checkpoints\resnet56_cifar10_final.pth
+OMP: Error #15: Initializing libiomp5md.dll, but found libiomp5md.dll already initialized.
+OMP: Hint This means that multiple copies of the OpenMP runtime have been linked into the program. That is dangerous, since it can degrade performance or cause incorrect results. The best thing to do is to ensure that only a single OpenMP runtime is linked into the process, e.g. by avoiding static linking of the OpenMP runtime in any library. As an unsafe, unsupported, undocumented workaround you can set the environment variable KMP_DUPLICATE_LIB_OK=TRUE to allow the program to continue to execute, but that may cause crashes or silently produce incorrect results. For more information, please see http://www.intel.com/software/products/support/.
+
+Process finished with exit code 3
