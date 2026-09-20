@@ -54,6 +54,12 @@ Run the base experiment first so that the dense checkpoint is available:
 python base_model_eval/base_model_eval.py
 ```
 
+To run the same ResNet-56/CIFAR-10 experiment with a constant learning rate:
+
+```powershell
+python base_model_eval/base_model_eval_no_lr_decay.py
+```
+
 Then run pruning and fine-tuning:
 
 ```powershell
