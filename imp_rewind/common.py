@@ -38,7 +38,18 @@ STD = torch.tensor([0.2470, 0.2435, 0.2616]).view(1, 3, 1, 1)
 
 
 def get_device():
-    return torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    """Use the CUDA GPU when PyTorch can see one, else the CPU. Prints which."""
+    if torch.cuda.is_available():
+        device = torch.device("cuda")
+        print(f"Using device: cuda ({torch.cuda.get_device_name(0)}, "
+              f"torch {torch.__version__}, CUDA {torch.version.cuda})")
+    else:
+        device = torch.device("cpu")
+        print(f"Using device: cpu (torch {torch.__version__}, CUDA build: {torch.version.cuda})")
+        print("  WARNING: CUDA not available. If this machine has an NVIDIA GPU, install a "
+              "CUDA build of PyTorch, e.g.\n"
+              "  pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124")
+    return device
 
 
 def set_seed(seed):

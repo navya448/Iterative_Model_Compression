@@ -234,6 +234,7 @@ def main():
     p.add_argument("--test_runs", nargs="*", default=[], help="held-out seeds, only scored")
     p.add_argument("--out", default="analysis")
     args = p.parse_args()
+    print("Using device: cpu (analysis is pandas/matplotlib only; no GPU needed)")
     figs = os.path.join(args.out, "figures")
     os.makedirs(figs, exist_ok=True)
 

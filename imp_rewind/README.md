@@ -17,7 +17,12 @@ Setup (from the plan): ResNet-20 on CIFAR-10, 45k train / 5k val / 10k test, T =
 ## How to run
 
 ```bash
-pip install torch torchvision pandas matplotlib
+# CUDA build of PyTorch (plain `pip install torch` on Windows gives a CPU-only build).
+# Pick the cuXXX that matches your driver: see https://pytorch.org/get-started/locally/
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
+pip install pandas matplotlib
+# check: should print True and your GPU name
+python -c "import torch; print(torch.cuda.is_available(), torch.cuda.get_device_name(0))"
 
 # 0. Smoke test first (a few minutes): tiny T, 2 rounds
 python train_dense.py --seed 99 --run_dir runs/smoke --epochs 4
