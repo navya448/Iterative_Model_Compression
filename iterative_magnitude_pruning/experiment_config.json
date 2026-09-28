@@ -1,0 +1,23 @@
+{
+    "model": "ResNet-18",
+    "dataset": "CIFAR-10",
+    "device": "cuda",
+    "dense_checkpoint": "checkpoints/epoch_200.pth",
+    "pruning_method": "Global Iterative Magnitude Pruning",
+    "target_sparsities": [
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        0.9
+    ],
+    "fine_tune_epochs": 50,
+    "fine_tune_learning_rate": 0.001,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "batch_size": 128,
+    "pruned_parameters": "Convolutional and Linear weights",
+    "biases_pruned": false,
+    "batchnorm_pruned": false,
+    "mask_reapplied_after_optimizer_step": true
+}

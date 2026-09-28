@@ -1,0 +1,8 @@
+{
+    "test_loss": 0.20896522989273073,
+    "test_accuracy": 94.72,
+    "total_prunable_parameters": 11164352,
+    "nonzero_parameters": 11164352,
+    "zero_parameters": 0,
+    "sparsity": 0.0
+}

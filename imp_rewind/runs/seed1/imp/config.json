@@ -1,0 +1,25 @@
+{
+  "seed": 1,
+  "run_dir": "runs/seed1",
+  "data_dir": "data",
+  "rounds": 10,
+  "prune_frac": 0.2,
+  "tol": 0.5,
+  "resolution": 2,
+  "t_min": 2,
+  "bn_batches": 100,
+  "epochs": 80,
+  "batch_size": 128,
+  "lr": 0.1,
+  "momentum": 0.9,
+  "weight_decay": 0.0001,
+  "milestones": [
+    40,
+    60
+  ],
+  "gamma": 0.1,
+  "val_size": 5000,
+  "train_eval_size": 10000,
+  "split_seed": 0,
+  "target_val_acc": 90.62
+}

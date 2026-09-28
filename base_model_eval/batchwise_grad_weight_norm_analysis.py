@@ -254,7 +254,7 @@ def main():
             "checkpoints",
             "resnet56_cifar10_final.pth",
         ),
-        help="Path to the trained model checkpoint.",
+        help="C:\\Users\\nj255\major project\\base_model_eval\checkpoints",
     )
     parser.add_argument(
         "--data-dir",
@@ -266,7 +266,7 @@ def main():
         "--output-dir",
         type=str,
         default=os.path.join("base_model_eval", "analysis"),
-        help="Directory where the CSV and plot will be saved.",
+        help="C:\\Users\\nj255\major project\\base_model_eval",
     )
     parser.add_argument(
         "--batch-size",

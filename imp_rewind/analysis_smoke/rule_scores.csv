@@ -1,0 +1,9 @@
+rule,n,mean_abs_error_epochs,mean_signed_error,n_too_late_would_fail,mean_wasted_epochs_when_early,spearman_with_t_star
+"Loss match (val, vs dense)",2,0.0,0.0,0,0.0,
+Loss match (val),2,0.5,-0.5,0,0.5,
+Loss match (train),2,0.5,-0.5,0,0.5,
+Accuracy match (val),2,0.5,-0.5,0,0.5,
+Weight-movement match,2,1.0,-1.0,0,1.0,
+Baseline: 5% of T,2,4.0,-4.0,0,4.0,
+Baseline: before 1st LR drop,2,35.0,35.0,2,0.0,
+Baseline: before last LR drop,2,55.0,55.0,2,0.0,
