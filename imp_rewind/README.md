@@ -13,6 +13,7 @@ Setup (from the plan): ResNet-20 on CIFAR-10, 45k train / 5k val / 10k test, T =
 | `train_dense.py` | Experiment A: dense run, checkpoint + metrics every epoch |
 | `run_imp.py` | Experiment B: IMP rounds with binary search for t* |
 | `analyze.py` | Experiment C: tables and plots to find the formula |
+| `repeated_experiments/run_repeated.py` | Run the same experiment for multiple independent seeds |
 
 ## How to run
 
@@ -40,6 +41,19 @@ python analyze.py --runs runs/seed1 runs/seed2 --out analysis
 python train_dense.py --seed 3 --run_dir runs/seed3
 python run_imp.py     --seed 3 --run_dir runs/seed3
 python analyze.py --runs runs/seed1 runs/seed2 --test_runs runs/seed3 --out analysis
+```
+
+To repeat the full experiment for at least 10 seeds, use the dedicated
+wrapper. It defaults to seeds 1 through 10 and stores all outputs separately:
+
+```powershell
+python repeated_experiments\run_repeated.py
+```
+
+For a quick wrapper check before the full run:
+
+```powershell
+python repeated_experiments\run_repeated.py --seeds 1 2 --epochs 2 --rounds 1
 ```
 
 Both training scripts **resume automatically** if interrupted: just rerun the same command. On Colab or Kaggle, put `runs/` on Google Drive or in the persistent output folder so it survives a disconnect.
