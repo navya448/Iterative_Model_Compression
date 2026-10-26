@@ -44,7 +44,7 @@ def main():
 
     start = 0
     if os.path.exists(resume_path):
-        st = torch.load(resume_path, map_location=device)
+        st = torch.load(resume_path, map_location="cpu")
         model.load_state_dict(st["model"])
         opt.load_state_dict(st["opt"])
         gen.set_state(st["gen"])
