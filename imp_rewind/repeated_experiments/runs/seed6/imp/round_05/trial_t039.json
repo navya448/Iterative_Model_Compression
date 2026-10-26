@@ -1,0 +1,11 @@
+{
+  "round": 5,
+  "t": 39,
+  "retrain_epochs": 41,
+  "final_val_loss": 0.3398954284667969,
+  "final_val_acc": 90.66,
+  "final_train_loss": 0.05763915977478027,
+  "final_train_acc": 97.98,
+  "final_test_loss": 0.34806595153808595,
+  "final_test_acc": 90.26
+}

@@ -1,0 +1,143 @@
+
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\train_dense.py" --seed 1 --run_dir "C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed1" --data_dir data --epochs 2
+Using device: cuda (NVIDIA RTX A4000, torch 2.8.0+cu126, CUDA 12.6)
+epoch   1 | lr 0.1000 | train 1.405/49.58% | val 1.411/48.66%
+epoch   2 | lr 0.1000 | train 0.994/64.48% | val 1.003/63.86%
+Dense done: {'val_loss': 1.0027185668945313, 'val_acc': 63.86, 'train_loss': 0.9935338684082031, 'train_acc': 64.48, 'test_loss': 1.0182773193359376, 'test_acc': 63.28}
+
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\run_imp.py" --seed 1 --run_dir "C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed1" --data_dir data --rounds 1 --prune_frac 0.2 --tol 0.5 --resolution 2 --t_min 2 --bn_batches 100
+Using device: cuda (NVIDIA RTX A4000, torch 2.8.0+cu126, CUDA 12.6)
+Dense val acc 63.86% -> recovery target 63.36%
+Round 1: sparsity 20.0% | D_loss_val -0.0584 | D_acc_val -2.22 | loss-match predicts t=2
+Round 1: t* = 2 (0 retraining epochs, 0 trials)
+IMP done. Results in C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed1\imp
+
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\train_dense.py" --seed 1 --run_dir "C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed1" --data_dir data
+Using device: cuda (NVIDIA RTX A4000, torch 2.8.0+cu126, CUDA 12.6)
+Traceback (most recent call last):
+  File "C:\Users\nj255\major project\imp_rewind\train_dense.py", line 94, in <module>
+    main()
+  File "C:\Users\nj255\major project\imp_rewind\train_dense.py", line 50, in main
+    gen.set_state(st["gen"])
+TypeError: RNG state must be a torch.ByteTensor
+
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\train_dense.py" --seed 1 --run_dir "C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed1" --data_dir data
+Using device: cuda (NVIDIA RTX A4000, torch 2.8.0+cu126, CUDA 12.6)
+Traceback (most recent call last):
+  File "C:\Users\nj255\major project\imp_rewind\train_dense.py", line 94, in <module>
+    main()
+  File "C:\Users\nj255\major project\imp_rewind\train_dense.py", line 50, in main
+    gen.set_state(st["gen"])
+TypeError: RNG state must be a torch.ByteTensor
+[0m
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\train_dense.py" --seed 1 --run_dir "C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed1" --data_dir data
+Using device: cuda (NVIDIA RTX A4000, torch 2.8.0+cu126, CUDA 12.6)
+Resuming dense training from epoch 5
+epoch   6 | lr 0.1000 | train 0.667/76.61% | val 0.696/75.66%
+epoch   7 | lr 0.1000 | train 0.682/76.90% | val 0.712/75.92%
+epoch   8 | lr 0.1000 | train 0.687/77.30% | val 0.711/76.34%
+epoch   9 | lr 0.1000 | train 0.503/82.73% | val 0.546/81.66%
+epoch  10 | lr 0.1000 | train 0.571/80.71% | val 0.629/78.36%
+epoch  11 | lr 0.1000 | train 0.535/81.89% | val 0.605/79.90%
+epoch  12 | lr 0.1000 | train 0.586/80.20% | val 0.633/78.94%
+epoch  13 | lr 0.1000 | train 0.540/81.90% | val 0.582/80.72%
+epoch  14 | lr 0.1000 | train 0.460/84.32% | val 0.545/81.76%
+epoch  15 | lr 0.1000 | train 0.395/86.07% | val 0.457/84.36%
+epoch  16 | lr 0.1000 | train 0.422/85.47% | val 0.497/83.54%
+epoch  17 | lr 0.1000 | train 0.431/85.70% | val 0.511/83.16%
+epoch  18 | lr 0.1000 | train 0.378/87.19% | val 0.457/84.74%
+epoch  19 | lr 0.1000 | train 0.431/85.79% | val 0.532/82.96%
+epoch  20 | lr 0.1000 | train 0.409/86.32% | val 0.507/83.30%
+epoch  21 | lr 0.1000 | train 0.331/88.93% | val 0.434/85.20%
+epoch  22 | lr 0.1000 | train 0.434/85.85% | val 0.547/83.80%
+epoch  23 | lr 0.1000 | train 0.405/86.35% | val 0.523/82.96%
+epoch  24 | lr 0.1000 | train 0.344/88.22% | val 0.456/84.64%
+epoch  25 | lr 0.1000 | train 0.451/85.52% | val 0.560/82.20%
+epoch  26 | lr 0.1000 | train 0.379/87.22% | val 0.475/84.16%
+epoch  27 | lr 0.1000 | train 0.364/87.43% | val 0.476/84.34%
+epoch  28 | lr 0.1000 | train 0.456/84.62% | val 0.558/82.04%
+epoch  29 | lr 0.1000 | train 0.364/87.27% | val 0.481/84.26%
+epoch  30 | lr 0.1000 | train 0.353/88.14% | val 0.502/84.50%
+epoch  31 | lr 0.1000 | train 0.322/89.13% | val 0.436/85.48%
+epoch  32 | lr 0.1000 | train 0.284/89.68% | val 0.402/86.14%
+epoch  33 | lr 0.1000 | train 0.299/89.51% | val 0.430/86.02%
+epoch  34 | lr 0.1000 | train 0.272/90.54% | val 0.392/86.56%
+epoch  35 | lr 0.1000 | train 0.410/85.97% | val 0.553/82.34%
+epoch  36 | lr 0.1000 | train 0.287/90.49% | val 0.417/86.44%
+epoch  37 | lr 0.1000 | train 0.307/89.52% | val 0.425/86.02%
+epoch  38 | lr 0.1000 | train 0.292/89.89% | val 0.407/86.26%
+epoch  39 | lr 0.1000 | train 0.342/88.19% | val 0.487/84.76%
+epoch  40 | lr 0.1000 | train 0.319/88.56% | val 0.473/84.32%
+epoch  41 | lr 0.0100 | train 0.142/95.13% | val 0.286/90.82%
+epoch  42 | lr 0.0100 | train 0.129/95.54% | val 0.282/90.80%
+epoch  43 | lr 0.0100 | train 0.118/95.98% | val 0.284/90.94%
+epoch  44 | lr 0.0100 | train 0.113/96.12% | val 0.289/90.84%
+epoch  45 | lr 0.0100 | train 0.108/96.18% | val 0.290/91.02%
+epoch  46 | lr 0.0100 | train 0.102/96.32% | val 0.288/90.98%
+epoch  47 | lr 0.0100 | train 0.098/96.50% | val 0.292/91.02%
+epoch  48 | lr 0.0100 | train 0.096/96.57% | val 0.282/91.38%
+epoch  49 | lr 0.0100 | train 0.093/96.73% | val 0.291/91.18%
+epoch  50 | lr 0.0100 | train 0.089/96.85% | val 0.296/91.02%
+epoch  51 | lr 0.0100 | train 0.090/96.80% | val 0.298/90.86%
+epoch  52 | lr 0.0100 | train 0.083/96.96% | val 0.301/91.02%
+epoch  53 | lr 0.0100 | train 0.082/97.03% | val 0.301/90.98%
+epoch  54 | lr 0.0100 | train 0.082/97.09% | val 0.312/90.80%
+epoch  55 | lr 0.0100 | train 0.078/97.10% | val 0.307/91.14%
+epoch  56 | lr 0.0100 | train 0.074/97.29% | val 0.308/91.06%
+epoch  57 | lr 0.0100 | train 0.071/97.41% | val 0.316/90.96%
+epoch  58 | lr 0.0100 | train 0.068/97.68% | val 0.309/91.18%
+epoch  59 | lr 0.0100 | train 0.071/97.46% | val 0.317/91.20%
+epoch  60 | lr 0.0100 | train 0.067/97.61% | val 0.322/91.24%
+epoch  61 | lr 0.0010 | train 0.062/97.89% | val 0.318/91.28%
+epoch  62 | lr 0.0010 | train 0.060/97.87% | val 0.311/91.46%
+epoch  63 | lr 0.0010 | train 0.059/97.88% | val 0.311/91.42%
+epoch  64 | lr 0.0010 | train 0.058/97.93% | val 0.314/91.46%
+epoch  65 | lr 0.0010 | train 0.058/98.07% | val 0.310/91.52%
+epoch  66 | lr 0.0010 | train 0.057/97.94% | val 0.313/91.54%
+epoch  67 | lr 0.0010 | train 0.057/98.02% | val 0.311/91.54%
+epoch  68 | lr 0.0010 | train 0.055/98.15% | val 0.311/91.56%
+epoch  69 | lr 0.0010 | train 0.055/98.13% | val 0.313/91.50%
+epoch  70 | lr 0.0010 | train 0.054/98.15% | val 0.313/91.46%
+epoch  71 | lr 0.0010 | train 0.055/98.21% | val 0.312/91.52%
+epoch  72 | lr 0.0010 | train 0.055/98.15% | val 0.317/91.58%
+epoch  73 | lr 0.0010 | train 0.053/98.24% | val 0.311/91.48%
+epoch  74 | lr 0.0010 | train 0.053/98.15% | val 0.313/91.42%
+epoch  75 | lr 0.0010 | train 0.053/98.17% | val 0.313/91.42%
+epoch  76 | lr 0.0010 | train 0.053/98.20% | val 0.314/91.44%
+epoch  77 | lr 0.0010 | train 0.052/98.27% | val 0.312/91.54%
+epoch  78 | lr 0.0010 | train 0.053/98.17% | val 0.313/91.58%
+epoch  79 | lr 0.0010 | train 0.053/98.29% | val 0.313/91.58%
+epoch  80 | lr 0.0010 | train 0.052/98.21% | val 0.313/91.54%
+Dense done: {'val_loss': 0.3129921325683594, 'val_acc': 91.54, 'train_loss': 0.05170451927185059, 'train_acc': 98.21, 'test_loss': 0.3491545166015625, 'test_acc': 90.37}
+[0m
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\run_imp.py" --seed 1 --run_dir "C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed1" --data_dir data --rounds 10 --prune_frac 0.2 --tol 0.5 --resolution 2 --t_min 2 --bn_batches 100
+Using device: cuda (NVIDIA RTX A4000, torch 2.8.0+cu126, CUDA 12.6)
+Dense val acc 91.54% -> recovery target 91.04%
+Round 1: already done (t* = 2), skipping.
+Round 2: sparsity 36.0% | D_loss_val 0.0051 | D_acc_val 0.42 | loss-match predicts t=61
+    round 2 | t=  2 (78 epochs) -> val acc 90.44%
+Round 2: even t=2 does not recover. Stopping the chain.
+IMP done. Results in C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed1\imp
+[0m
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\train_dense.py" --seed 1 --run_dir "C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed1" --data_dir data --epochs 2
+Using device: cuda (NVIDIA RTX A4000, torch 2.8.0+cu126, CUDA 12.6)
+Resuming dense training from epoch 80
+Dense done: {'val_loss': 0.3129921325683594, 'val_acc': 91.54, 'train_loss': 0.05170451927185059, 'train_acc': 98.21, 'test_loss': 0.3491545166015625, 'test_acc': 90.37}
+
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\run_imp.py" --seed 1 --run_dir "C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed1" --data_dir data --rounds 1 --prune_frac 0.2 --tol 0.5 --resolution 2 --t_min 2 --bn_batches 100
+Using device: cuda (NVIDIA RTX A4000, torch 2.8.0+cu126, CUDA 12.6)
+Dense val acc 91.54% -> recovery target 91.04%
+Round 1: already done (t* = 2), skipping.
+IMP done. Results in C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed1\imp
+
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\train_dense.py" --seed 1 --run_dir "C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed1" --data_dir data
+Using device: cuda (NVIDIA RTX A4000, torch 2.8.0+cu126, CUDA 12.6)
+Resuming dense training from epoch 80
+Dense done: {'val_loss': 0.3129921325683594, 'val_acc': 91.54, 'train_loss': 0.05170451927185059, 'train_acc': 98.21, 'test_loss': 0.3491545166015625, 'test_acc': 90.37}
+
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\run_imp.py" --seed 1 --run_dir "C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed1" --data_dir data --rounds 10 --prune_frac 0.2 --tol 0.5 --resolution 2 --t_min 2 --bn_batches 100
+Using device: cuda (NVIDIA RTX A4000, torch 2.8.0+cu126, CUDA 12.6)
+Dense val acc 91.54% -> recovery target 91.04%
+Round 1: already done (t* = 2), skipping.
+Round 2: previously found unrecoverable; stopping.
+IMP done. Results in C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed1\imp

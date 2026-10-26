@@ -1,0 +1,184 @@
+
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\train_dense.py" --seed 9 --run_dir "C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed9" --data_dir data
+Using device: cuda (NVIDIA RTX A4000, torch 2.8.0+cu126, CUDA 12.6)
+epoch   1 | lr 0.1000 | train 1.480/49.28% | val 1.465/50.54%
+epoch   2 | lr 0.1000 | train 1.030/64.42% | val 1.023/63.98%
+epoch   3 | lr 0.1000 | train 0.995/66.06% | val 1.009/64.46%
+epoch   4 | lr 0.1000 | train 0.834/71.80% | val 0.854/71.18%
+epoch   5 | lr 0.1000 | train 0.755/75.17% | val 0.809/73.24%
+epoch   6 | lr 0.1000 | train 0.641/77.78% | val 0.679/76.56%
+epoch   7 | lr 0.1000 | train 0.650/77.59% | val 0.687/76.56%
+epoch   8 | lr 0.1000 | train 0.655/78.00% | val 0.704/76.10%
+epoch   9 | lr 0.1000 | train 0.501/82.70% | val 0.573/80.52%
+epoch  10 | lr 0.1000 | train 0.478/83.82% | val 0.557/81.52%
+epoch  11 | lr 0.1000 | train 0.522/81.65% | val 0.608/79.66%
+epoch  12 | lr 0.1000 | train 0.569/80.57% | val 0.676/77.76%
+epoch  13 | lr 0.1000 | train 0.473/83.81% | val 0.558/81.34%
+epoch  14 | lr 0.1000 | train 0.450/84.55% | val 0.521/82.84%
+epoch  15 | lr 0.1000 | train 0.486/83.61% | val 0.574/81.46%
+epoch  16 | lr 0.1000 | train 0.489/83.21% | val 0.568/81.68%
+epoch  17 | lr 0.1000 | train 0.402/85.90% | val 0.501/83.20%
+epoch  18 | lr 0.1000 | train 0.490/83.57% | val 0.576/81.48%
+epoch  19 | lr 0.1000 | train 0.370/87.27% | val 0.469/83.98%
+epoch  20 | lr 0.1000 | train 0.457/85.04% | val 0.555/81.90%
+epoch  21 | lr 0.1000 | train 0.417/85.84% | val 0.524/82.94%
+epoch  22 | lr 0.1000 | train 0.327/89.12% | val 0.438/85.38%
+epoch  23 | lr 0.1000 | train 0.446/84.77% | val 0.585/81.64%
+epoch  24 | lr 0.1000 | train 0.536/82.78% | val 0.647/80.44%
+epoch  25 | lr 0.1000 | train 0.385/86.65% | val 0.508/83.36%
+epoch  26 | lr 0.1000 | train 0.373/87.16% | val 0.485/83.98%
+epoch  27 | lr 0.1000 | train 0.371/87.01% | val 0.513/83.14%
+epoch  28 | lr 0.1000 | train 0.355/87.37% | val 0.489/84.26%
+epoch  29 | lr 0.1000 | train 0.317/88.88% | val 0.453/85.40%
+epoch  30 | lr 0.1000 | train 0.330/88.39% | val 0.472/84.14%
+epoch  31 | lr 0.1000 | train 0.289/89.75% | val 0.420/86.16%
+epoch  32 | lr 0.1000 | train 0.393/86.62% | val 0.527/82.90%
+epoch  33 | lr 0.1000 | train 0.313/89.43% | val 0.465/84.74%
+epoch  34 | lr 0.1000 | train 0.316/89.30% | val 0.453/84.80%
+epoch  35 | lr 0.1000 | train 0.361/87.93% | val 0.484/84.42%
+epoch  36 | lr 0.1000 | train 0.314/89.17% | val 0.484/85.04%
+epoch  37 | lr 0.1000 | train 0.285/90.24% | val 0.411/86.90%
+epoch  38 | lr 0.1000 | train 0.309/89.33% | val 0.467/85.60%
+epoch  39 | lr 0.1000 | train 0.326/88.92% | val 0.492/85.16%
+epoch  40 | lr 0.1000 | train 0.316/89.46% | val 0.475/85.66%
+epoch  41 | lr 0.0100 | train 0.143/95.26% | val 0.299/90.10%
+epoch  42 | lr 0.0100 | train 0.131/95.56% | val 0.297/89.78%
+epoch  43 | lr 0.0100 | train 0.122/95.84% | val 0.291/90.44%
+epoch  44 | lr 0.0100 | train 0.118/96.01% | val 0.296/90.28%
+epoch  45 | lr 0.0100 | train 0.107/96.47% | val 0.291/90.52%
+epoch  46 | lr 0.0100 | train 0.102/96.66% | val 0.288/90.74%
+epoch  47 | lr 0.0100 | train 0.101/96.79% | val 0.295/90.38%
+epoch  48 | lr 0.0100 | train 0.098/96.74% | val 0.304/90.32%
+epoch  49 | lr 0.0100 | train 0.094/96.86% | val 0.297/90.56%
+epoch  50 | lr 0.0100 | train 0.092/96.96% | val 0.309/90.44%
+epoch  51 | lr 0.0100 | train 0.086/97.19% | val 0.300/90.78%
+epoch  52 | lr 0.0100 | train 0.081/97.30% | val 0.305/90.76%
+epoch  53 | lr 0.0100 | train 0.080/97.35% | val 0.307/90.78%
+epoch  54 | lr 0.0100 | train 0.076/97.47% | val 0.306/90.70%
+epoch  55 | lr 0.0100 | train 0.078/97.29% | val 0.324/90.42%
+epoch  56 | lr 0.0100 | train 0.075/97.35% | val 0.321/90.42%
+epoch  57 | lr 0.0100 | train 0.070/97.54% | val 0.318/90.68%
+epoch  58 | lr 0.0100 | train 0.071/97.65% | val 0.327/90.50%
+epoch  59 | lr 0.0100 | train 0.068/97.76% | val 0.327/90.50%
+epoch  60 | lr 0.0100 | train 0.065/97.72% | val 0.329/90.52%
+epoch  61 | lr 0.0010 | train 0.060/98.00% | val 0.322/90.40%
+epoch  62 | lr 0.0010 | train 0.058/98.08% | val 0.320/90.66%
+epoch  63 | lr 0.0010 | train 0.058/98.05% | val 0.319/90.76%
+epoch  64 | lr 0.0010 | train 0.057/98.13% | val 0.318/90.82%
+epoch  65 | lr 0.0010 | train 0.057/98.10% | val 0.321/90.60%
+epoch  66 | lr 0.0010 | train 0.055/98.14% | val 0.320/90.62%
+epoch  67 | lr 0.0010 | train 0.055/98.20% | val 0.318/90.62%
+epoch  68 | lr 0.0010 | train 0.055/98.13% | val 0.319/90.66%
+epoch  69 | lr 0.0010 | train 0.055/98.09% | val 0.322/90.58%
+epoch  70 | lr 0.0010 | train 0.054/98.22% | val 0.321/90.82%
+epoch  71 | lr 0.0010 | train 0.054/98.20% | val 0.322/90.78%
+epoch  72 | lr 0.0010 | train 0.053/98.23% | val 0.321/90.62%
+epoch  73 | lr 0.0010 | train 0.054/98.31% | val 0.321/90.82%
+epoch  74 | lr 0.0010 | train 0.053/98.26% | val 0.321/90.78%
+epoch  75 | lr 0.0010 | train 0.053/98.24% | val 0.325/90.82%
+epoch  76 | lr 0.0010 | train 0.053/98.26% | val 0.322/90.74%
+epoch  77 | lr 0.0010 | train 0.051/98.24% | val 0.325/90.56%
+epoch  78 | lr 0.0010 | train 0.052/98.31% | val 0.323/90.62%
+epoch  79 | lr 0.0010 | train 0.051/98.32% | val 0.324/90.66%
+epoch  80 | lr 0.0010 | train 0.051/98.35% | val 0.324/90.62%
+Dense done: {'val_loss': 0.3239404968261719, 'val_acc': 90.62, 'train_loss': 0.05093633422851562, 'train_acc': 98.35, 'test_loss': 0.34709425048828124, 'test_acc': 90.76}
+[0m
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\run_imp.py" --seed 9 --run_dir "C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed9" --data_dir data --rounds 10 --prune_frac 0.2 --tol 0.5 --resolution 2 --t_min 2 --bn_batches 100
+Using device: cuda (NVIDIA RTX A4000, torch 2.8.0+cu126, CUDA 12.6)
+Dense val acc 90.62% -> recovery target 90.12%
+Round 1: sparsity 20.0% | D_loss_val -0.0005 | D_acc_val -0.20 | loss-match predicts t=80
+Round 1: t* = 80 (0 retraining epochs, 0 trials)
+Round 2: sparsity 36.0% | D_loss_val 0.0016 | D_acc_val 0.14 | loss-match predicts t=60
+Round 2: t* = 80 (0 retraining epochs, 0 trials)
+Round 3: sparsity 48.8% | D_loss_val 0.0132 | D_acc_val 0.70 | loss-match predicts t=40
+    round 3 | t=  2 (78 epochs) -> val acc 91.48%
+    round 3 | t= 41 (39 epochs) -> val acc 90.68%
+    round 3 | t= 60 (20 epochs) -> val acc 90.62%
+    round 3 | t= 70 (10 epochs) -> val acc 90.80%
+    round 3 | t= 75 ( 5 epochs) -> val acc 90.72%
+    round 3 | t= 77 ( 3 epochs) -> val acc 90.58%
+    round 3 | t= 78 ( 2 epochs) -> val acc 90.52%
+Round 3: t* = 78 (2 retraining epochs, 7 trials)
+Round 4: sparsity 59.0% | D_loss_val 0.0072 | D_acc_val 0.64 | loss-match predicts t=40
+    round 4 | t=  2 (78 epochs) -> val acc 90.82%
+    round 4 | t= 41 (39 epochs) -> val acc 90.68%
+    round 4 | t= 60 (20 epochs) -> val acc 90.42%
+    round 4 | t= 70 (10 epochs) -> val acc 90.58%
+    round 4 | t= 75 ( 5 epochs) -> val acc 90.52%
+    round 4 | t= 77 ( 3 epochs) -> val acc 90.24%
+    round 4 | t= 78 ( 2 epochs) -> val acc 90.32%
+Round 4: t* = 78 (2 retraining epochs, 7 trials)
+Round 5: sparsity 67.2% | D_loss_val 0.0329 | D_acc_val 1.52 | loss-match predicts t=40
+    round 5 | t=  2 (78 epochs) -> val acc 91.38%
+    round 5 | t= 41 (39 epochs) -> val acc 90.34%
+    round 5 | t= 60 (20 epochs) -> val acc 90.04%
+    round 5 | t= 50 (30 epochs) -> val acc 90.30%
+    round 5 | t= 55 (25 epochs) -> val acc 90.24%
+    round 5 | t= 57 (23 epochs) -> val acc 90.22%
+    round 5 | t= 58 (22 epochs) -> val acc 90.06%
+Round 5: t* = 57 (23 retraining epochs, 7 trials)
+Round 6: sparsity 73.8% | D_loss_val 0.0812 | D_acc_val 3.02 | loss-match predicts t=40
+    round 6 | t=  2 (78 epochs) -> val acc 91.10%
+    round 6 | t= 41 (39 epochs) -> val acc 89.98%
+    round 6 | t= 21 (59 epochs) -> val acc 90.86%
+    round 6 | t= 31 (49 epochs) -> val acc 90.46%
+    round 6 | t= 36 (44 epochs) -> val acc 90.62%
+    round 6 | t= 38 (42 epochs) -> val acc 90.18%
+    round 6 | t= 39 (41 epochs) -> val acc 90.12%
+Round 6: t* = 39 (41 retraining epochs, 7 trials)
+Round 7: sparsity 79.0% | D_loss_val 0.0879 | D_acc_val 2.44 | loss-match predicts t=40
+    round 7 | t=  2 (78 epochs) -> val acc 91.10%
+    round 7 | t= 41 (39 epochs) -> val acc 90.28%
+    round 7 | t= 60 (20 epochs) -> val acc 89.90%
+    round 7 | t= 50 (30 epochs) -> val acc 89.94%
+    round 7 | t= 45 (35 epochs) -> val acc 90.10%
+    round 7 | t= 43 (37 epochs) -> val acc 89.76%
+Round 7: t* = 41 (39 retraining epochs, 6 trials)
+Round 8: sparsity 83.2% | D_loss_val 0.1185 | D_acc_val 4.40 | loss-match predicts t=40
+    round 8 | t=  2 (78 epochs) -> val acc 90.40%
+    round 8 | t= 41 (39 epochs) -> val acc 89.84%
+    round 8 | t= 21 (59 epochs) -> val acc 89.90%
+    round 8 | t= 11 (69 epochs) -> val acc 90.44%
+    round 8 | t= 16 (64 epochs) -> val acc 90.38%
+    round 8 | t= 18 (62 epochs) -> val acc 90.28%
+    round 8 | t= 19 (61 epochs) -> val acc 90.18%
+Round 8: t* = 19 (61 retraining epochs, 7 trials)
+Round 9: sparsity 86.6% | D_loss_val 0.0222 | D_acc_val 0.34 | loss-match predicts t=40
+    round 9 | t=  2 (78 epochs) -> val acc 90.60%
+    round 9 | t= 41 (39 epochs) -> val acc 89.72%
+    round 9 | t= 21 (59 epochs) -> val acc 90.26%
+    round 9 | t= 31 (49 epochs) -> val acc 89.98%
+    round 9 | t= 26 (54 epochs) -> val acc 90.16%
+    round 9 | t= 28 (52 epochs) -> val acc 90.30%
+    round 9 | t= 29 (51 epochs) -> val acc 90.16%
+Round 9: t* = 29 (51 retraining epochs, 7 trials)
+Round 10: sparsity 89.3% | D_loss_val 0.0414 | D_acc_val 1.40 | loss-match predicts t=40
+    round 10 | t=  2 (78 epochs) -> val acc 90.52%
+    round 10 | t= 41 (39 epochs) -> val acc 89.74%
+    round 10 | t= 21 (59 epochs) -> val acc 90.22%
+    round 10 | t= 31 (49 epochs) -> val acc 90.10%
+    round 10 | t= 26 (54 epochs) -> val acc 89.92%
+    round 10 | t= 23 (57 epochs) -> val acc 90.52%
+    round 10 | t= 24 (56 epochs) -> val acc 90.12%
+Round 10: t* = 24 (56 retraining epochs, 7 trials)
+IMP done. Results in C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed9\imp
+[0m
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\train_dense.py" --seed 9 --run_dir "C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed9" --data_dir data
+Using device: cuda (NVIDIA RTX A4000, torch 2.8.0+cu126, CUDA 12.6)
+Resuming dense training from epoch 80
+Dense done: {'val_loss': 0.3239404968261719, 'val_acc': 90.62, 'train_loss': 0.05093633422851562, 'train_acc': 98.35, 'test_loss': 0.34709425048828124, 'test_acc': 90.76}
+
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\run_imp.py" --seed 9 --run_dir "C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed9" --data_dir data --rounds 10 --prune_frac 0.2 --tol 0.5 --resolution 2 --t_min 2 --bn_batches 100
+Using device: cuda (NVIDIA RTX A4000, torch 2.8.0+cu126, CUDA 12.6)
+Dense val acc 90.62% -> recovery target 90.12%
+Round 1: already done (t* = 80), skipping.
+Round 2: already done (t* = 80), skipping.
+Round 3: already done (t* = 78), skipping.
+Round 4: already done (t* = 78), skipping.
+Round 5: already done (t* = 57), skipping.
+Round 6: already done (t* = 39), skipping.
+Round 7: already done (t* = 41), skipping.
+Round 8: already done (t* = 19), skipping.
+Round 9: already done (t* = 29), skipping.
+Round 10: already done (t* = 24), skipping.
+IMP done. Results in C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed9\imp

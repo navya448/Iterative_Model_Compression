@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-10-26T11:03:00.697839+00:00",
+  "seeds": [
+    10
+  ],
+  "epochs": null,
+  "rounds": 10,
+  "prune_frac": 0.2,
+  "tol": 0.5,
+  "resolution": 2,
+  "t_min": 2,
+  "bn_batches": 100
+}

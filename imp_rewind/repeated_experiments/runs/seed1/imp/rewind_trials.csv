@@ -1,0 +1,2 @@
+round,t,retrain_epochs,final_val_loss,final_val_acc,final_train_loss,final_train_acc,final_test_loss,final_test_acc,target_val_acc,recovered
+2,2,78,0.30932439575195314,90.44,0.07978670349121093,97.21,0.34163768310546877,89.94,91.04,0

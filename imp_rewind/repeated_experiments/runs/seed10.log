@@ -1,0 +1,205 @@
+
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\train_dense.py" --seed 10 --run_dir "C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed10" --data_dir data
+Using device: cuda (NVIDIA RTX A4000, torch 2.8.0+cu126, CUDA 12.6)
+epoch   1 | lr 0.1000 | train 1.239/53.91% | val 1.262/52.36%
+epoch   2 | lr 0.1000 | train 1.056/64.08% | val 1.073/63.30%
+epoch   3 | lr 0.1000 | train 0.822/71.46% | val 0.826/71.08%
+epoch   4 | lr 0.1000 | train 0.803/72.24% | val 0.817/71.82%
+epoch   5 | lr 0.1000 | train 0.694/76.52% | val 0.725/75.28%
+epoch   6 | lr 0.1000 | train 0.659/77.56% | val 0.681/76.58%
+epoch   7 | lr 0.1000 | train 0.668/77.45% | val 0.705/76.28%
+epoch   8 | lr 0.1000 | train 0.801/74.53% | val 0.877/73.02%
+epoch   9 | lr 0.1000 | train 0.618/79.59% | val 0.681/77.90%
+epoch  10 | lr 0.1000 | train 0.522/82.27% | val 0.577/80.34%
+epoch  11 | lr 0.1000 | train 0.499/83.12% | val 0.555/81.00%
+epoch  12 | lr 0.1000 | train 0.531/82.17% | val 0.605/80.08%
+epoch  13 | lr 0.1000 | train 0.474/83.65% | val 0.538/80.98%
+epoch  14 | lr 0.1000 | train 0.436/85.32% | val 0.506/83.04%
+epoch  15 | lr 0.1000 | train 0.531/82.53% | val 0.589/81.20%
+epoch  16 | lr 0.1000 | train 0.384/86.43% | val 0.459/84.32%
+epoch  17 | lr 0.1000 | train 0.415/85.86% | val 0.500/82.86%
+epoch  18 | lr 0.1000 | train 0.373/87.03% | val 0.462/84.18%
+epoch  19 | lr 0.1000 | train 0.364/87.46% | val 0.453/84.46%
+epoch  20 | lr 0.1000 | train 0.406/86.22% | val 0.517/82.82%
+epoch  21 | lr 0.1000 | train 0.443/85.19% | val 0.552/81.88%
+epoch  22 | lr 0.1000 | train 0.376/87.24% | val 0.476/84.40%
+epoch  23 | lr 0.1000 | train 0.376/87.06% | val 0.468/84.46%
+epoch  24 | lr 0.1000 | train 0.435/85.24% | val 0.541/82.88%
+epoch  25 | lr 0.1000 | train 0.342/88.03% | val 0.453/84.78%
+epoch  26 | lr 0.1000 | train 0.418/86.13% | val 0.530/82.96%
+epoch  27 | lr 0.1000 | train 0.403/86.43% | val 0.552/83.00%
+epoch  28 | lr 0.1000 | train 0.461/84.87% | val 0.594/81.68%
+epoch  29 | lr 0.1000 | train 0.355/88.17% | val 0.487/84.12%
+epoch  30 | lr 0.1000 | train 0.344/87.93% | val 0.485/84.06%
+epoch  31 | lr 0.1000 | train 0.299/89.78% | val 0.445/85.62%
+epoch  32 | lr 0.1000 | train 0.371/87.40% | val 0.494/83.42%
+epoch  33 | lr 0.1000 | train 0.330/88.78% | val 0.453/84.96%
+epoch  34 | lr 0.1000 | train 0.295/89.97% | val 0.410/86.18%
+epoch  35 | lr 0.1000 | train 0.349/87.96% | val 0.493/84.18%
+epoch  36 | lr 0.1000 | train 0.288/90.30% | val 0.423/85.78%
+epoch  37 | lr 0.1000 | train 0.397/86.77% | val 0.545/83.24%
+epoch  38 | lr 0.1000 | train 0.293/89.94% | val 0.439/86.50%
+epoch  39 | lr 0.1000 | train 0.327/88.77% | val 0.478/84.98%
+epoch  40 | lr 0.1000 | train 0.237/91.80% | val 0.376/87.48%
+epoch  41 | lr 0.0100 | train 0.135/95.27% | val 0.288/89.96%
+epoch  42 | lr 0.0100 | train 0.122/95.84% | val 0.289/90.42%
+epoch  43 | lr 0.0100 | train 0.113/96.12% | val 0.284/90.84%
+epoch  44 | lr 0.0100 | train 0.106/96.47% | val 0.288/90.70%
+epoch  45 | lr 0.0100 | train 0.101/96.50% | val 0.289/90.56%
+epoch  46 | lr 0.0100 | train 0.098/96.76% | val 0.286/90.94%
+epoch  47 | lr 0.0100 | train 0.092/96.75% | val 0.292/90.72%
+epoch  48 | lr 0.0100 | train 0.090/96.96% | val 0.292/90.68%
+epoch  49 | lr 0.0100 | train 0.087/97.04% | val 0.292/90.98%
+epoch  50 | lr 0.0100 | train 0.084/97.01% | val 0.297/90.64%
+epoch  51 | lr 0.0100 | train 0.082/97.19% | val 0.294/90.92%
+epoch  52 | lr 0.0100 | train 0.080/97.07% | val 0.297/90.82%
+epoch  53 | lr 0.0100 | train 0.077/97.42% | val 0.298/90.64%
+epoch  54 | lr 0.0100 | train 0.073/97.35% | val 0.303/90.74%
+epoch  55 | lr 0.0100 | train 0.073/97.55% | val 0.309/90.74%
+epoch  56 | lr 0.0100 | train 0.069/97.53% | val 0.303/90.78%
+epoch  57 | lr 0.0100 | train 0.068/97.66% | val 0.312/90.76%
+epoch  58 | lr 0.0100 | train 0.063/97.94% | val 0.309/90.74%
+epoch  59 | lr 0.0100 | train 0.064/97.83% | val 0.323/90.78%
+epoch  60 | lr 0.0100 | train 0.064/97.81% | val 0.322/90.78%
+epoch  61 | lr 0.0010 | train 0.056/98.12% | val 0.310/90.74%
+epoch  62 | lr 0.0010 | train 0.056/98.15% | val 0.313/90.96%
+epoch  63 | lr 0.0010 | train 0.055/98.09% | val 0.312/91.10%
+epoch  64 | lr 0.0010 | train 0.054/98.19% | val 0.309/91.00%
+epoch  65 | lr 0.0010 | train 0.053/98.17% | val 0.309/90.94%
+epoch  66 | lr 0.0010 | train 0.053/98.23% | val 0.312/91.06%
+epoch  67 | lr 0.0010 | train 0.053/98.26% | val 0.312/91.04%
+epoch  68 | lr 0.0010 | train 0.052/98.24% | val 0.311/91.08%
+epoch  69 | lr 0.0010 | train 0.051/98.25% | val 0.311/90.80%
+epoch  70 | lr 0.0010 | train 0.051/98.31% | val 0.312/91.00%
+epoch  71 | lr 0.0010 | train 0.052/98.31% | val 0.317/91.14%
+epoch  72 | lr 0.0010 | train 0.050/98.39% | val 0.312/91.04%
+epoch  73 | lr 0.0010 | train 0.052/98.28% | val 0.319/91.14%
+epoch  74 | lr 0.0010 | train 0.050/98.35% | val 0.314/91.12%
+epoch  75 | lr 0.0010 | train 0.050/98.33% | val 0.320/90.96%
+epoch  76 | lr 0.0010 | train 0.050/98.35% | val 0.316/90.98%
+epoch  77 | lr 0.0010 | train 0.050/98.41% | val 0.313/90.90%
+epoch  78 | lr 0.0010 | train 0.050/98.37% | val 0.315/91.06%
+epoch  79 | lr 0.0010 | train 0.049/98.41% | val 0.314/91.16%
+epoch  80 | lr 0.0010 | train 0.050/98.30% | val 0.321/91.06%
+Dense done: {'val_loss': 0.3208872314453125, 'val_acc': 91.06, 'train_loss': 0.049728125, 'train_acc': 98.3, 'test_loss': 0.33350228881835936, 'test_acc': 90.89}
+[0m
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\run_imp.py" --seed 10 --run_dir "C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed10" --data_dir data --rounds 10 --prune_frac 0.2 --tol 0.5 --resolution 2 --t_min 2 --bn_batches 100
+Using device: cuda (NVIDIA RTX A4000, torch 2.8.0+cu126, CUDA 12.6)
+Dense val acc 91.06% -> recovery target 90.56%
+Round 1: sparsity 20.0% | D_loss_val -0.0022 | D_acc_val 0.06 | loss-match predicts t=80
+Round 1: t* = 80 (0 retraining epochs, 0 trials)
+Round 2: sparsity 36.0% | D_loss_val -0.0014 | D_acc_val 0.08 | loss-match predicts t=80
+Round 2: t* = 80 (0 retraining epochs, 0 trials)
+Round 3: sparsity 48.8% | D_loss_val 0.0231 | D_acc_val 0.46 | loss-match predicts t=40
+    round 3 | t=  2 (78 epochs) -> val acc 91.52%
+    round 3 | t= 41 (39 epochs) -> val acc 90.96%
+    round 3 | t= 60 (20 epochs) -> val acc 90.86%
+    round 3 | t= 70 (10 epochs) -> val acc 90.82%
+    round 3 | t= 75 ( 5 epochs) -> val acc 90.82%
+    round 3 | t= 77 ( 3 epochs) -> val acc 90.78%
+    round 3 | t= 78 ( 2 epochs) -> val acc 90.68%
+Round 3: t* = 78 (2 retraining epochs, 7 trials)
+Round 4: sparsity 59.0% | D_loss_val 0.0227 | D_acc_val 0.74 | loss-match predicts t=40
+    round 4 | t=  2 (78 epochs) -> val acc 91.28%
+    round 4 | t= 41 (39 epochs) -> val acc 91.06%
+    round 4 | t= 60 (20 epochs) -> val acc 90.80%
+    round 4 | t= 70 (10 epochs) -> val acc 90.70%
+    round 4 | t= 75 ( 5 epochs) -> val acc 90.44%
+    round 4 | t= 72 ( 8 epochs) -> val acc 90.52%
+Round 4: t* = 70 (10 retraining epochs, 6 trials)
+Round 5: sparsity 67.2% | D_loss_val 0.0255 | D_acc_val 1.38 | loss-match predicts t=40
+    round 5 | t=  2 (78 epochs) -> val acc 91.14%
+    round 5 | t= 41 (39 epochs) -> val acc 90.98%
+    round 5 | t= 60 (20 epochs) -> val acc 90.42%
+    round 5 | t= 50 (30 epochs) -> val acc 90.96%
+    round 5 | t= 55 (25 epochs) -> val acc 90.90%
+    round 5 | t= 57 (23 epochs) -> val acc 90.60%
+    round 5 | t= 58 (22 epochs) -> val acc 90.82%
+Round 5: t* = 58 (22 retraining epochs, 7 trials)
+Round 6: sparsity 73.8% | D_loss_val 0.0676 | D_acc_val 2.18 | loss-match predicts t=39
+    round 6 | t=  2 (78 epochs) -> val acc 91.06%
+    round 6 | t= 41 (39 epochs) -> val acc 90.60%
+    round 6 | t= 60 (20 epochs) -> val acc 90.16%
+    round 6 | t= 50 (30 epochs) -> val acc 90.40%
+    round 6 | t= 45 (35 epochs) -> val acc 90.64%
+    round 6 | t= 47 (33 epochs) -> val acc 90.52%
+Round 6: t* = 45 (35 retraining epochs, 6 trials)
+Round 7: sparsity 79.0% | D_loss_val 0.1040 | D_acc_val 3.50 | loss-match predicts t=39
+    round 7 | t=  2 (78 epochs) -> val acc 90.72%
+    round 7 | t= 41 (39 epochs) -> val acc 90.48%
+    round 7 | t= 21 (59 epochs) -> val acc 90.60%
+    round 7 | t= 31 (49 epochs) -> val acc 90.60%
+    round 7 | t= 36 (44 epochs) -> val acc 90.58%
+    round 7 | t= 38 (42 epochs) -> val acc 90.80%
+    round 7 | t= 39 (41 epochs) -> val acc 90.48%
+Round 7: t* = 38 (42 retraining epochs, 7 trials)
+Round 8: sparsity 83.2% | D_loss_val 0.0632 | D_acc_val 2.38 | loss-match predicts t=39
+    round 8 | t=  2 (78 epochs) -> val acc 90.96%
+    round 8 | t= 41 (39 epochs) -> val acc 90.54%
+    round 8 | t= 21 (59 epochs) -> val acc 90.44%
+
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\train_dense.py" --seed 10 --run_dir "C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed10" --data_dir data
+Using device: cuda (NVIDIA RTX A4000, torch 2.8.0+cu126, CUDA 12.6)
+Resuming dense training from epoch 80
+Dense done: {'val_loss': 0.3208872314453125, 'val_acc': 91.06, 'train_loss': 0.049728125, 'train_acc': 98.3, 'test_loss': 0.33350228881835936, 'test_acc': 90.89}
+
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\run_imp.py" --seed 10 --run_dir "C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed10" --data_dir data --rounds 10 --prune_frac 0.2 --tol 0.5 --resolution 2 --t_min 2 --bn_batches 100
+Using device: cuda (NVIDIA RTX A4000, torch 2.8.0+cu126, CUDA 12.6)
+Dense val acc 91.06% -> recovery target 90.56%
+Round 1: already done (t* = 80), skipping.
+Round 2: already done (t* = 80), skipping.
+Round 3: already done (t* = 78), skipping.
+Round 4: already done (t* = 70), skipping.
+Round 5: already done (t* = 58), skipping.
+Round 6: already done (t* = 45), skipping.
+Round 7: already done (t* = 38), skipping.
+Round 8: sparsity 83.2% | D_loss_val 0.0632 | D_acc_val 2.38 | loss-match predicts t=39
+Traceback (most recent call last):
+  File "C:\Users\nj255\major project\imp_rewind\run_imp.py", line 233, in <module>
+    main()
+  File "C:\Users\nj255\major project\imp_rewind\run_imp.py", line 194, in main
+    m_mid, meta = run_trial(args, cfg, data, device, new_mask, rnd, mid, rdir)
+  File "C:\Users\nj255\major project\imp_rewind\run_imp.py", line 53, in run_trial
+    model.load_state_dict(torch.load(model_file, map_location=device))
+  File "C:\Users\nj255\AppData\Roaming\Python\Python39\site-packages\torch\serialization.py", line 1546, in load
+    return _legacy_load(
+  File "C:\Users\nj255\AppData\Roaming\Python\Python39\site-packages\torch\serialization.py", line 1792, in _legacy_load
+    return legacy_load(f)
+  File "C:\Users\nj255\AppData\Roaming\Python\Python39\site-packages\torch\serialization.py", line 1659, in legacy_load
+    raise RuntimeError(
+RuntimeError: Cannot use ``weights_only=True`` with files saved in the legacy .tar format. In PyTorch 2.6, we changed the default value of the `weights_only` argument in `torch.load` from `False` to `True`. Re-running `torch.load` with `weights_only` set to `False` will likely succeed, but it can result in arbitrary code execution. Do it only if you got the file from a trusted source.
+
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\train_dense.py" --seed 10 --run_dir "C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed10" --data_dir data
+Using device: cuda (NVIDIA RTX A4000, torch 2.8.0+cu126, CUDA 12.6)
+Resuming dense training from epoch 80
+Dense done: {'val_loss': 0.3208872314453125, 'val_acc': 91.06, 'train_loss': 0.049728125, 'train_acc': 98.3, 'test_loss': 0.33350228881835936, 'test_acc': 90.89}
+
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\run_imp.py" --seed 10 --run_dir "C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed10" --data_dir data --rounds 10 --prune_frac 0.2 --tol 0.5 --resolution 2 --t_min 2 --bn_batches 100
+Using device: cuda (NVIDIA RTX A4000, torch 2.8.0+cu126, CUDA 12.6)
+Dense val acc 91.06% -> recovery target 90.56%
+Round 1: already done (t* = 80), skipping.
+Round 2: already done (t* = 80), skipping.
+Round 3: already done (t* = 78), skipping.
+Round 4: already done (t* = 70), skipping.
+Round 5: already done (t* = 58), skipping.
+Round 6: already done (t* = 45), skipping.
+Round 7: already done (t* = 38), skipping.
+Round 8: sparsity 83.2% | D_loss_val 0.0632 | D_acc_val 2.38 | loss-match predicts t=39
+Traceback (most recent call last):
+  File "C:\Users\nj255\major project\imp_rewind\run_imp.py", line 233, in <module>
+    main()
+  File "C:\Users\nj255\major project\imp_rewind\run_imp.py", line 194, in main
+    m_mid, meta = run_trial(args, cfg, data, device, new_mask, rnd, mid, rdir)
+  File "C:\Users\nj255\major project\imp_rewind\run_imp.py", line 53, in run_trial
+    model.load_state_dict(torch.load(model_file, map_location=device, weights_only=False))
+  File "C:\Users\nj255\AppData\Roaming\Python\Python39\site-packages\torch\serialization.py", line 1554, in load
+    return _legacy_load(
+  File "C:\Users\nj255\AppData\Roaming\Python\Python39\site-packages\torch\serialization.py", line 1792, in _legacy_load
+    return legacy_load(f)
+  File "C:\Users\nj255\AppData\Roaming\Python\Python39\site-packages\torch\serialization.py", line 1663, in legacy_load
+    tar.extract("storages", path=tmpdir)
+  File "C:\ProgramData\Anaconda3\lib\tarfile.py", line 2077, in extract
+    tarinfo = self.getmember(member)
+  File "C:\ProgramData\Anaconda3\lib\tarfile.py", line 1799, in getmember
+    raise KeyError("filename %r not found" % name)
+KeyError: "filename 'storages' not found"

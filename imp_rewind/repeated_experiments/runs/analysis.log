@@ -1,0 +1,84 @@
+
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\analyze.py" --runs "C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed1" "C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed2" --out "C:\Users\nj255\major project\imp_rewind\repeated_experiments\analysis"
+C:\ProgramData\Anaconda3\lib\site-packages\scipy\stats\stats.py:4484: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+C:\ProgramData\Anaconda3\lib\site-packages\scipy\stats\stats.py:4484: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+C:\ProgramData\Anaconda3\lib\site-packages\scipy\stats\stats.py:4484: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+C:\ProgramData\Anaconda3\lib\site-packages\scipy\stats\stats.py:4484: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+C:\ProgramData\Anaconda3\lib\site-packages\scipy\stats\stats.py:4484: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+C:\ProgramData\Anaconda3\lib\site-packages\scipy\stats\stats.py:4484: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+Using device: cpu (analysis is pandas/matplotlib only; no GPU needed)
+
+=== t* per round ===
+  run  round  sparsity  D_loss_val  D_acc_val  weight_perturbation  t_star  retrain_epochs  pred_loss_match_val
+seed1      1       0.2     -0.0584      -2.22               0.0578       2               0                    2
+seed2      1       0.2     -0.3156     -10.82               0.0574       2               0                    2
+
+=== How well each rule predicts t* (discovery seeds) ===
+                         rule  n  mean_abs_error_epochs  mean_signed_error  n_too_late_would_fail  mean_wasted_epochs_when_early  spearman_with_t_star
+             Loss match (val)  2                    0.0                0.0                      0                            0.0                   NaN
+           Loss match (train)  2                    0.0                0.0                      0                            0.0                   NaN
+   Loss match (val, vs dense)  2                    0.0                0.0                      0                            0.0                   NaN
+         Accuracy match (val)  2                    0.0                0.0                      0                            0.0                   NaN
+        Weight-movement match  2                    1.0               -1.0                      0                            1.0                   NaN
+            Baseline: 5% of T  2                    2.0               -2.0                      0                            2.0                   NaN
+ Baseline: before 1st LR drop  2                   37.0               37.0                      2                            0.0                   NaN
+Baseline: before last LR drop  2                   57.0               57.0                      2                            0.0                   NaN
+
+=== How strongly t* follows each feature ===
+            feature  spearman_overall  pearson_within_round_across_seeds
+         D_loss_val               NaN                                NaN
+       D_loss_train               NaN                                NaN
+          D_acc_val               NaN                                NaN
+D_loss_val_vs_dense               NaN                                NaN
+weight_perturbation               NaN                                NaN
+           sparsity               NaN                                NaN
+
+Tables in C:\Users\nj255\major project\imp_rewind\repeated_experiments\analysis/, figures in C:\Users\nj255\major project\imp_rewind\repeated_experiments\analysis\figures/
+
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\analyze.py" --runs "C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed1" "C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed2" --out "C:\Users\nj255\major project\imp_rewind\repeated_experiments\analysis"
+C:\ProgramData\Anaconda3\lib\site-packages\scipy\stats\stats.py:4484: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+C:\ProgramData\Anaconda3\lib\site-packages\scipy\stats\stats.py:4484: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+C:\ProgramData\Anaconda3\lib\site-packages\scipy\stats\stats.py:4484: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+C:\ProgramData\Anaconda3\lib\site-packages\scipy\stats\stats.py:4484: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+C:\ProgramData\Anaconda3\lib\site-packages\scipy\stats\stats.py:4484: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+C:\ProgramData\Anaconda3\lib\site-packages\scipy\stats\stats.py:4484: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  warnings.warn(SpearmanRConstantInputWarning())
+Using device: cpu (analysis is pandas/matplotlib only; no GPU needed)
+
+=== t* per round ===
+  run  round  sparsity  D_loss_val  D_acc_val  weight_perturbation  t_star  retrain_epochs  pred_loss_match_val
+seed1      1       0.2     -0.0584      -2.22               0.0578       2               0                    2
+seed2      1       0.2     -0.3156     -10.82               0.0574       2               0                    2
+
+=== How well each rule predicts t* (discovery seeds) ===
+                         rule  n  mean_abs_error_epochs  mean_signed_error  n_too_late_would_fail  mean_wasted_epochs_when_early  spearman_with_t_star
+             Loss match (val)  2                    0.0                0.0                      0                            0.0                   NaN
+           Loss match (train)  2                    0.0                0.0                      0                            0.0                   NaN
+   Loss match (val, vs dense)  2                    0.0                0.0                      0                            0.0                   NaN
+         Accuracy match (val)  2                    0.0                0.0                      0                            0.0                   NaN
+        Weight-movement match  2                    1.0               -1.0                      0                            1.0                   NaN
+            Baseline: 5% of T  2                    2.0               -2.0                      0                            2.0                   NaN
+ Baseline: before 1st LR drop  2                   37.0               37.0                      2                            0.0                   NaN
+Baseline: before last LR drop  2                   57.0               57.0                      2                            0.0                   NaN
+
+=== How strongly t* follows each feature ===
+            feature  spearman_overall  pearson_within_round_across_seeds
+         D_loss_val               NaN                                NaN
+       D_loss_train               NaN                                NaN
+          D_acc_val               NaN                                NaN
+D_loss_val_vs_dense               NaN                                NaN
+weight_perturbation               NaN                                NaN
+           sparsity               NaN                                NaN
+
+Tables in C:\Users\nj255\major project\imp_rewind\repeated_experiments\analysis/, figures in C:\Users\nj255\major project\imp_rewind\repeated_experiments\analysis\figures/
