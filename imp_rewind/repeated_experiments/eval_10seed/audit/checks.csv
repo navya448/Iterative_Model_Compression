@@ -1,0 +1,157 @@
+run,group,check,status,detail
+seed1_orig,original,config,PASS,
+seed1_orig,original,dense_log,PASS,"duplicate rows 0, missing epochs [], lr schedule ok True, final_metrics matches row 80: True"
+seed1_orig,original,target,PASS,config target 90.62 vs dense 91.12 - tol; rounds with a different target: []
+seed1_orig,original,round1_start,PASS,round 1 before_val_acc 91.12 vs dense val acc 91.12
+seed1_orig,original,rounds_seq,PASS,"rounds [1, 2, 3, 4, 5, 6, 7, 8]; max |sparsity - (1-p)^k| = 2.10e-06"
+seed1_orig,original,chain,PASS,rounds whose before_val_acc != previous final_val_acc: []
+seed1_orig,original,trials,PASS,
+seed1_orig,original,search,PASS,rounds where the replayed search disagrees: []
+seed1_orig,original,final,PASS,rounds whose final_val_acc is not the t* trial: []
+seed1_orig,original,summaries,PASS,
+seed1_orig,original,curves,PASS,
+seed1_orig,original,completeness,PASS,"last round 8, ended by unrecoverable round"
+seed1_orig,original,log,PASS,no wrapper log (original run)
+seed2_orig,original,config,PASS,
+seed2_orig,original,dense_log,PASS,"duplicate rows 0, missing epochs [], lr schedule ok True, final_metrics matches row 80: True"
+seed2_orig,original,target,PASS,config target 90.54 vs dense 91.04 - tol; rounds with a different target: []
+seed2_orig,original,round1_start,PASS,round 1 before_val_acc 91.04 vs dense val acc 91.04
+seed2_orig,original,rounds_seq,PASS,"rounds [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; max |sparsity - (1-p)^k| = 3.16e-06"
+seed2_orig,original,chain,PASS,rounds whose before_val_acc != previous final_val_acc: []
+seed2_orig,original,trials,PASS,
+seed2_orig,original,search,PASS,rounds where the replayed search disagrees: []
+seed2_orig,original,final,PASS,rounds whose final_val_acc is not the t* trial: []
+seed2_orig,original,summaries,PASS,
+seed2_orig,original,curves,PASS,
+seed2_orig,original,completeness,PASS,"last round 10, ended by round limit"
+seed2_orig,original,log,PASS,no wrapper log (original run)
+seed1,repeated,config,PASS,
+seed1,repeated,dense_log,PASS,"duplicate rows 0, missing epochs [], lr schedule ok True, final_metrics matches row 80: True"
+seed1,repeated,target,FAIL,config target 91.04 vs dense 91.54 - tol; rounds with a different target: [1]
+seed1,repeated,round1_start,FAIL,round 1 before_val_acc 63.86 vs dense val acc 91.54 -> round 1 was produced from a different dense run (smoke test reused by resume)
+seed1,repeated,rounds_seq,PASS,"rounds [1, 2]; max |sparsity - (1-p)^k| = 7.40e-07"
+seed1,repeated,chain,PASS,rounds whose before_val_acc != previous final_val_acc: []
+seed1,repeated,trials,PASS,
+seed1,repeated,search,FAIL,rounds where the replayed search disagrees: [1]
+seed1,repeated,final,FAIL,rounds whose final_val_acc is not the t* trial: [1]
+seed1,repeated,summaries,PASS,
+seed1,repeated,curves,PASS,
+seed1,repeated,completeness,PASS,"last round 2, ended by unrecoverable round"
+seed1,repeated,log,WARN,"smoke-test invocations into this run_dir: 4; tracebacks: 2; dense resumed from epochs [5, 80]"
+seed2,repeated,config,PASS,
+seed2,repeated,dense_log,PASS,"duplicate rows 0, missing epochs [], lr schedule ok True, final_metrics matches row 80: True"
+seed2,repeated,target,FAIL,config target 90.26 vs dense 90.76 - tol; rounds with a different target: [1]
+seed2,repeated,round1_start,FAIL,round 1 before_val_acc 55.16 vs dense val acc 90.76 -> round 1 was produced from a different dense run (smoke test reused by resume)
+seed2,repeated,rounds_seq,PASS,"rounds [1, 2, 3, 4, 5, 6, 7, 8, 9]; max |sparsity - (1-p)^k| = 3.16e-06"
+seed2,repeated,chain,PASS,rounds whose before_val_acc != previous final_val_acc: []
+seed2,repeated,trials,PASS,
+seed2,repeated,search,FAIL,rounds where the replayed search disagrees: [1]
+seed2,repeated,final,FAIL,rounds whose final_val_acc is not the t* trial: [1]
+seed2,repeated,summaries,PASS,
+seed2,repeated,curves,PASS,
+seed2,repeated,completeness,PASS,"last round 9, ended by unrecoverable round"
+seed2,repeated,log,WARN,"smoke-test invocations into this run_dir: 4; tracebacks: 0; dense resumed from epochs [2, 80]"
+seed3,repeated,config,PASS,
+seed3,repeated,dense_log,PASS,"duplicate rows 0, missing epochs [], lr schedule ok True, final_metrics matches row 80: True"
+seed3,repeated,target,PASS,config target 90.62 vs dense 91.12 - tol; rounds with a different target: []
+seed3,repeated,round1_start,PASS,round 1 before_val_acc 91.12 vs dense val acc 91.12
+seed3,repeated,rounds_seq,PASS,"rounds [1, 2, 3, 4, 5, 6, 7, 8]; max |sparsity - (1-p)^k| = 2.10e-06"
+seed3,repeated,chain,PASS,rounds whose before_val_acc != previous final_val_acc: []
+seed3,repeated,trials,PASS,
+seed3,repeated,search,PASS,rounds where the replayed search disagrees: []
+seed3,repeated,final,PASS,rounds whose final_val_acc is not the t* trial: []
+seed3,repeated,summaries,PASS,
+seed3,repeated,curves,PASS,
+seed3,repeated,completeness,PASS,"last round 8, ended by unrecoverable round"
+seed3,repeated,log,PASS,smoke-test invocations into this run_dir: 0; tracebacks: 0; dense resumed from epochs [80]
+seed4,repeated,config,PASS,
+seed4,repeated,dense_log,PASS,"duplicate rows 0, missing epochs [], lr schedule ok True, final_metrics matches row 80: True"
+seed4,repeated,target,PASS,config target 90.58 vs dense 91.08 - tol; rounds with a different target: []
+seed4,repeated,round1_start,PASS,round 1 before_val_acc 91.08 vs dense val acc 91.08
+seed4,repeated,rounds_seq,PASS,"rounds [1, 2, 3, 4, 5, 6, 7, 8, 9]; max |sparsity - (1-p)^k| = 3.16e-06"
+seed4,repeated,chain,PASS,rounds whose before_val_acc != previous final_val_acc: []
+seed4,repeated,trials,PASS,
+seed4,repeated,search,PASS,rounds where the replayed search disagrees: []
+seed4,repeated,final,PASS,rounds whose final_val_acc is not the t* trial: []
+seed4,repeated,summaries,PASS,
+seed4,repeated,curves,PASS,
+seed4,repeated,completeness,PASS,"last round 9, ended by unrecoverable round"
+seed4,repeated,log,PASS,smoke-test invocations into this run_dir: 0; tracebacks: 0; dense resumed from epochs [80]
+seed5,repeated,config,PASS,
+seed5,repeated,dense_log,PASS,"duplicate rows 0, missing epochs [], lr schedule ok True, final_metrics matches row 80: True"
+seed5,repeated,target,PASS,config target 90.54 vs dense 91.04 - tol; rounds with a different target: []
+seed5,repeated,round1_start,PASS,round 1 before_val_acc 91.04 vs dense val acc 91.04
+seed5,repeated,rounds_seq,PASS,"rounds [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; max |sparsity - (1-p)^k| = 3.16e-06"
+seed5,repeated,chain,PASS,rounds whose before_val_acc != previous final_val_acc: []
+seed5,repeated,trials,PASS,
+seed5,repeated,search,PASS,rounds where the replayed search disagrees: []
+seed5,repeated,final,PASS,rounds whose final_val_acc is not the t* trial: []
+seed5,repeated,summaries,PASS,
+seed5,repeated,curves,PASS,
+seed5,repeated,completeness,PASS,"last round 10, ended by unrecoverable round"
+seed5,repeated,log,PASS,smoke-test invocations into this run_dir: 0; tracebacks: 0; dense resumed from epochs [80]
+seed6,repeated,config,PASS,
+seed6,repeated,dense_log,PASS,"duplicate rows 0, missing epochs [], lr schedule ok True, final_metrics matches row 80: True"
+seed6,repeated,target,PASS,config target 90.5 vs dense 91.0 - tol; rounds with a different target: []
+seed6,repeated,round1_start,PASS,round 1 before_val_acc 91.0 vs dense val acc 91.0
+seed6,repeated,rounds_seq,PASS,"rounds [1, 2, 3, 4, 5, 6, 7, 8]; max |sparsity - (1-p)^k| = 2.10e-06"
+seed6,repeated,chain,PASS,rounds whose before_val_acc != previous final_val_acc: []
+seed6,repeated,trials,PASS,
+seed6,repeated,search,PASS,rounds where the replayed search disagrees: []
+seed6,repeated,final,PASS,rounds whose final_val_acc is not the t* trial: []
+seed6,repeated,summaries,PASS,
+seed6,repeated,curves,PASS,
+seed6,repeated,completeness,PASS,"last round 8, ended by unrecoverable round"
+seed6,repeated,log,PASS,smoke-test invocations into this run_dir: 0; tracebacks: 0; dense resumed from epochs [80]
+seed7,repeated,config,PASS,
+seed7,repeated,dense_log,PASS,"duplicate rows 0, missing epochs [], lr schedule ok True, final_metrics matches row 80: True"
+seed7,repeated,target,PASS,config target 90.36 vs dense 90.86 - tol; rounds with a different target: []
+seed7,repeated,round1_start,PASS,round 1 before_val_acc 90.86 vs dense val acc 90.86
+seed7,repeated,rounds_seq,PASS,"rounds [1, 2, 3, 4, 5, 6, 7, 8, 9]; max |sparsity - (1-p)^k| = 3.16e-06"
+seed7,repeated,chain,PASS,rounds whose before_val_acc != previous final_val_acc: []
+seed7,repeated,trials,PASS,
+seed7,repeated,search,PASS,rounds where the replayed search disagrees: []
+seed7,repeated,final,PASS,rounds whose final_val_acc is not the t* trial: []
+seed7,repeated,summaries,PASS,
+seed7,repeated,curves,PASS,
+seed7,repeated,completeness,PASS,"last round 9, ended by unrecoverable round"
+seed7,repeated,log,PASS,smoke-test invocations into this run_dir: 0; tracebacks: 0; dense resumed from epochs [80]
+seed8,repeated,config,PASS,
+seed8,repeated,dense_log,PASS,"duplicate rows 0, missing epochs [], lr schedule ok True, final_metrics matches row 80: True"
+seed8,repeated,target,PASS,config target 90.6 vs dense 91.1 - tol; rounds with a different target: []
+seed8,repeated,round1_start,PASS,round 1 before_val_acc 91.1 vs dense val acc 91.1
+seed8,repeated,rounds_seq,PASS,"rounds [1, 2, 3]; max |sparsity - (1-p)^k| = 7.40e-07"
+seed8,repeated,chain,PASS,rounds whose before_val_acc != previous final_val_acc: []
+seed8,repeated,trials,PASS,
+seed8,repeated,search,PASS,rounds where the replayed search disagrees: []
+seed8,repeated,final,PASS,rounds whose final_val_acc is not the t* trial: []
+seed8,repeated,summaries,PASS,
+seed8,repeated,curves,PASS,
+seed8,repeated,completeness,PASS,"last round 3, ended by unrecoverable round"
+seed8,repeated,log,PASS,smoke-test invocations into this run_dir: 0; tracebacks: 0; dense resumed from epochs [80]
+seed9,repeated,config,PASS,
+seed9,repeated,dense_log,PASS,"duplicate rows 0, missing epochs [], lr schedule ok True, final_metrics matches row 80: True"
+seed9,repeated,target,PASS,config target 90.12 vs dense 90.62 - tol; rounds with a different target: []
+seed9,repeated,round1_start,PASS,round 1 before_val_acc 90.62 vs dense val acc 90.62
+seed9,repeated,rounds_seq,PASS,"rounds [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; max |sparsity - (1-p)^k| = 3.16e-06"
+seed9,repeated,chain,PASS,rounds whose before_val_acc != previous final_val_acc: []
+seed9,repeated,trials,PASS,
+seed9,repeated,search,PASS,rounds where the replayed search disagrees: []
+seed9,repeated,final,PASS,rounds whose final_val_acc is not the t* trial: []
+seed9,repeated,summaries,PASS,
+seed9,repeated,curves,PASS,
+seed9,repeated,completeness,PASS,"last round 10, ended by round limit"
+seed9,repeated,log,PASS,smoke-test invocations into this run_dir: 0; tracebacks: 0; dense resumed from epochs [80]
+seed10,repeated,config,PASS,
+seed10,repeated,dense_log,PASS,"duplicate rows 0, missing epochs [], lr schedule ok True, final_metrics matches row 80: True"
+seed10,repeated,target,PASS,config target 90.56 vs dense 91.06 - tol; rounds with a different target: []
+seed10,repeated,round1_start,PASS,round 1 before_val_acc 91.06 vs dense val acc 91.06
+seed10,repeated,rounds_seq,PASS,"rounds [1, 2, 3, 4, 5, 6, 7]; max |sparsity - (1-p)^k| = 1.90e-06"
+seed10,repeated,chain,PASS,rounds whose before_val_acc != previous final_val_acc: []
+seed10,repeated,trials,PASS,trial JSONs of rounds without a result row: [8]
+seed10,repeated,search,PASS,rounds where the replayed search disagrees: []
+seed10,repeated,final,PASS,rounds whose final_val_acc is not the t* trial: []
+seed10,repeated,summaries,PASS,
+seed10,repeated,curves,WARN,r8 t11: partial curve without trial result (66 of 69 epochs)
+seed10,repeated,completeness,FAIL,"last round 7, ended by nothing (run interrupted); round dirs without summary (incomplete): [8]"
+seed10,repeated,log,WARN,smoke-test invocations into this run_dir: 0; tracebacks: 2; dense resumed from epochs [80]

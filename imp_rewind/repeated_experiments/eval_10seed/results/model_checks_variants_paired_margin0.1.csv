@@ -1,0 +1,19 @@
+reference,baseline,metric,n_seeds,mean_diff_ref_minus_baseline,ci95_lo,ci95_hi,seeds_ref_lower,seeds_ref_higher,wilcoxon_p
+"F: ln(1/d), const kappa @ margin 0.1","F: ln(1/d), kappa(rho) @ margin 0.1",mae,8,-0.1855952380952381,-0.5465348639455778,0.14359268707482975,4,3,0.578125
+"F: ln(1/d), const kappa @ margin 0.1","F: ln(1/d), kappa(rho) @ margin 0.1",too_late_rate,8,-0.006532029478458044,-0.04390678146258502,0.02346924603174601,2,5,0.9375
+"F: ln(1/d), const kappa @ margin 0.1","F: ln(1/d), kappa(rho) @ margin 0.1",saving_vs_tmin_check,8,0.009478294522937372,-0.024161576890371513,0.04939691261119813,5,3,0.9453125
+"F: ln(1/d), const kappa @ margin 0.1","F: quadratic ln(1/d), const kappa @ margin 0.1",mae,8,-0.13002976190476212,-0.4982568027210884,0.22517006802721073,4,3,0.6875
+"F: ln(1/d), const kappa @ margin 0.1","F: quadratic ln(1/d), const kappa @ margin 0.1",too_late_rate,8,0.01690051020408164,-0.005612244897959173,0.036862244897959195,1,6,0.15625
+"F: ln(1/d), const kappa @ margin 0.1","F: quadratic ln(1/d), const kappa @ margin 0.1",saving_vs_tmin_check,8,-0.007075647566718982,-0.03040456567242278,0.019441825287807423,6,2,0.640625
+"F: ln(1/d), const kappa @ margin 0.1","F: 1/d, const kappa @ margin 0.1",mae,8,-0.5953897392290248,-1.4455952380952377,0.28363520408163284,5,2,0.21875
+"F: ln(1/d), const kappa @ margin 0.1","F: 1/d, const kappa @ margin 0.1",too_late_rate,8,-0.0803642290249433,-0.12024234693877553,-0.04113360969387757,7,0,0.015625
+"F: ln(1/d), const kappa @ margin 0.1","F: 1/d, const kappa @ margin 0.1",saving_vs_tmin_check,8,0.08673300409907553,0.04345864948543521,0.13923996217076573,1,7,0.015625
+"F: ln(1/d), const kappa @ margin 0.1","F: per-round capacity, const kappa @ margin 0.1",mae,8,-0.6449163832199549,-1.351997696995465,-0.005972186791383592,5,2,0.15625
+"F: ln(1/d), const kappa @ margin 0.1","F: per-round capacity, const kappa @ margin 0.1",too_late_rate,8,0.008915816326530632,-0.007908801020408151,0.027284438775510227,3,3,0.5625
+"F: ln(1/d), const kappa @ margin 0.1","F: per-round capacity, const kappa @ margin 0.1",saving_vs_tmin_check,8,0.009277810483167628,-0.030850776207919067,0.05492129311660559,4,4,0.9453125
+"F: ln(1/d), const kappa @ margin 0.1","F: quadratic ln(1/d), kappa(rho) @ margin 0.1",mae,8,-0.14351757369614482,-0.5210898526077095,0.21390873015873035,3,4,0.8125
+"F: ln(1/d), const kappa @ margin 0.1","F: quadratic ln(1/d), kappa(rho) @ margin 0.1",too_late_rate,8,-0.005966553287981855,-0.044168083900226744,0.024710175736961437,2,5,0.9375
+"F: ln(1/d), const kappa @ margin 0.1","F: quadratic ln(1/d), kappa(rho) @ margin 0.1",saving_vs_tmin_check,8,0.01126673425780568,-0.02193087170765738,0.05099664906026495,5,3,1.0
+"F: ln(1/d), const kappa @ margin 0.1","F: ln(1/d), const kappa, absolute acc @ margin 0.1",mae,8,-1.3725736961451247,-3.286220698696146,0.9266227324263039,6,1,0.21875
+"F: ln(1/d), const kappa @ margin 0.1","F: ln(1/d), const kappa, absolute acc @ margin 0.1",too_late_rate,8,-0.03413690476190476,-0.2549665178571428,0.1480017006802721,3,4,0.9375
+"F: ln(1/d), const kappa @ margin 0.1","F: ln(1/d), const kappa, absolute acc @ margin 0.1",saving_vs_tmin_check,8,0.03591902145473577,-0.12788548207744635,0.2097419490231991,5,3,0.9453125

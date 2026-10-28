@@ -1,0 +1,9 @@
+reference,baseline,frac_splits_ref_lower_mae,frac_ties
+Formula (margin 0.1 pp),Formula (margin 0),0.6785714285714286,0.017857142857142856
+Formula (margin 0.1 pp),Sparsity line,0.6607142857142857,0.017857142857142856
+Formula (margin 0.1 pp),Sparsity line + check,0.125,0.0
+Formula (margin 0.1 pp),Round median + check,0.125,0.0
+Formula (margin 0.1 pp),t_min + check,1.0,0.0
+Formula (margin 0.1 pp),Loss match (train),1.0,0.0
+Formula (margin 0.1 pp),Loss match (train) + check,0.9642857142857143,0.0
+Formula (margin 0.1 pp),Fixed: before last LR drop + check,1.0,0.0

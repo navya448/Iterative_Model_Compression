@@ -1,0 +1,4 @@
+reference,baseline,n_seeds,mean_brier_diff,ci95_lo,ci95_hi,seeds_ref_lower,wilcoxon_p
+"Formula, 90% safe (probability)",Constant rate,8,-0.06433214946660812,-0.09134060026736894,-0.03487763265211872,7,0.015625
+"Formula, 90% safe (probability)",Logistic: sparsity + budget clock,8,0.007465779371273312,0.0012737564083067148,0.013410329777095994,2,0.0546875
+"Formula, 90% safe (probability)",Logistic: sparsity + t,8,0.004263045560688841,-0.002981781662478438,0.013911048714393729,5,0.9453125

@@ -1,0 +1,7 @@
+reference,variant,mean_test_rmse_diff,frac_splits_variant_lower
+"F: ln(1/d), const kappa @ margin 0.0","F: ln(1/d), kappa(rho) @ margin 0.0",0.003010587508910462,0.5357142857142857
+"F: ln(1/d), const kappa @ margin 0.0","F: quadratic ln(1/d), const kappa @ margin 0.0",0.00253811866964753,0.5714285714285714
+"F: ln(1/d), const kappa @ margin 0.0","F: 1/d, const kappa @ margin 0.0",0.01025748363164709,0.125
+"F: ln(1/d), const kappa @ margin 0.0","F: per-round capacity, const kappa @ margin 0.0",0.008594381876833706,0.16071428571428573
+"F: ln(1/d), const kappa @ margin 0.0","F: quadratic ln(1/d), kappa(rho) @ margin 0.0",0.004410837495057855,0.42857142857142855
+"F: ln(1/d), const kappa @ margin 0.0","F: ln(1/d), const kappa, absolute acc @ margin 0.0",0.003623552201682121,0.4107142857142857

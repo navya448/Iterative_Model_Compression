@@ -1,0 +1,57 @@
+Using device: cpu (analysis is pandas/matplotlib only; no GPU needed)
+
+=== t* per round ===
+  run  round  sparsity  D_loss_val  D_acc_val  weight_perturbation  t_star  retrain_epochs  pred_loss_match_val
+seed1      1    0.2000     -0.0015      -0.04               0.0540    80.0             0.0                   80
+seed1      2    0.3600      0.0019       0.20               0.1224    80.0             0.0                   61
+seed1      3    0.4880      0.0120       0.80               0.1729    78.0             2.0                   40
+seed1      4    0.5904      0.0258       0.90               0.2097    62.0            18.0                   40
+seed1      5    0.6723      0.0289       1.10               0.2369    34.0            46.0                   40
+seed1      6    0.7379      0.0219       0.50               0.1508    80.0             0.0                   40
+seed1      7    0.7903      0.0544       2.22               0.2389    38.0            42.0                   40
+seed1      8    0.8322      0.0537       1.82               0.2022     NaN             NaN                   40
+seed2      1    0.2000     -0.0019      -0.02               0.0549    80.0             0.0                   80
+seed2      2    0.3600      0.0049       0.10               0.1245    80.0             0.0                   40
+seed2      3    0.4880      0.0086       0.80               0.1754    78.0             2.0                   40
+seed2      4    0.5904      0.0278       1.12               0.2128    70.0            10.0                   40
+seed2      5    0.6723      0.0362       1.34               0.2407    55.0            25.0                   40
+seed2      6    0.7379      0.0637       2.06               0.2551    53.0            27.0                   40
+seed2      7    0.7903      0.1327       5.16               0.2666    43.0            37.0                   40
+seed2      8    0.8322      0.1630       6.00               0.2616     2.0            78.0                   40
+seed2      9    0.8658      0.0179       0.32               0.1174    26.0            54.0                   40
+seed2     10    0.8926      0.0368       1.48               0.1712    13.0            67.0                   40
+
+=== How well each rule predicts t* (discovery seeds) ===
+                         rule  n  mean_abs_error_epochs  mean_signed_error  n_too_late_would_fail  mean_wasted_epochs_when_early  spearman_with_t_star
+           Loss match (train) 17                  16.65              -2.65                      5                          13.67                  0.79
+         Accuracy match (val) 17                  18.71              -6.00                      5                          17.50                  0.72
+             Loss match (val) 17                  20.29             -10.06                      5                          21.50                  0.57
+   Loss match (val, vs dense) 17                  20.29             -10.06                      5                          21.50                  0.57
+        Weight-movement match 17                  21.12              -1.59                      6                          17.55                  0.52
+Baseline: before last LR drop 17                  21.47               3.00                      8                          17.44                   NaN
+         Specialization point 17                  23.00              -6.76                      6                          23.00                  0.28
+ Baseline: before 1st LR drop 17                  26.65             -17.00                      5                          30.92                   NaN
+            Baseline: 5% of T 17                  52.24             -52.00                      1                          55.38                   NaN
+
+=== How strongly t* follows each feature ===
+            feature  spearman_overall  pearson_within_round_across_seeds
+         D_loss_val            -0.806                             -0.180
+       D_loss_train            -0.770                             -0.360
+          D_acc_val            -0.771                             -0.174
+D_loss_val_vs_dense            -0.741                             -0.216
+weight_perturbation            -0.597                             -0.671
+           sparsity            -0.862                                NaN
+
+=== Held-out test: how well each rule predicts t* ===
+                         rule  n  mean_abs_error_epochs  mean_signed_error  n_too_late_would_fail  mean_wasted_epochs_when_early  spearman_with_t_star
+           Loss match (train) 58                  12.16              -5.91                     16                          12.48                  0.84
+         Accuracy match (val) 58                  12.59              -8.17                     16                          14.33                  0.83
+             Loss match (val) 58                  15.43             -11.47                     14                          17.73                  0.72
+   Loss match (val, vs dense) 58                  15.64             -11.95                     14                          18.18                  0.71
+        Weight-movement match 58                  17.50              -4.67                     24                          18.91                  0.64
+Baseline: before last LR drop 58                  18.31               0.21                     28                          17.50                   NaN
+         Specialization point 48                  19.19              -8.48                     20                          23.71                 -0.03
+ Baseline: before 1st LR drop 58                  23.38             -19.79                     11                          26.64                   NaN
+            Baseline: 5% of T 58                  54.79             -54.79                      0                          54.79                   NaN
+
+Tables in /sessions/rcw-01nocyohp5cgm6skmnukkitc/mnt/Iterative_Model_Compression/imp_rewind/repeated_experiments/eval_10seed/results/original_method_heldout/, figures in /sessions/rcw-01nocyohp5cgm6skmnukkitc/mnt/Iterative_Model_Compression/imp_rewind/repeated_experiments/eval_10seed/results/original_method_heldout/figures/

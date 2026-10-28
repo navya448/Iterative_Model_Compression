@@ -1,0 +1,17 @@
+{
+  "a_pop": 91.00399999999999,
+  "target_pop": 90.50399999999999,
+  "dense_val_acc": {
+    "seed1_orig": 91.12,
+    "seed2_orig": 91.04,
+    "seed3": 91.12,
+    "seed4": 91.08,
+    "seed5": 91.04,
+    "seed6": 91.0,
+    "seed7": 90.86,
+    "seed8": 91.1,
+    "seed9": 90.62,
+    "seed10": 91.06
+  },
+  "note": "mean dense val acc of the included runs"
+}
