@@ -78,7 +78,7 @@ def lr_at_epoch(epoch, cfg=DEFAULTS):
 # --------------------------------------------------------------------------
 
 class CIFARData:
-    def __init__(self, root, device, cfg=DEFAULTS):
+    def __init__(self, root, device, cfg=DEFAULTS, aug_seed=None):
         import torchvision
 
         tr = torchvision.datasets.CIFAR10(root, train=True, download=True)
@@ -105,30 +105,64 @@ class CIFARData:
         self.y_train_eval = self.y_train[:n]
         self.device = device
         self.batch_size = cfg["batch_size"]
+        # None: `generator` in train_batches draws both the order and the
+        # augmentation (original behaviour). An int: augmentation is fixed per
+        # (image, epoch) by this seed and `generator` only draws the order.
+        self.aug_seed = aug_seed
 
-    def train_batches(self, generator):
-        """One epoch of shuffled, augmented batches (random crop + flip)."""
+    def train_batches(self, generator, epoch=None):
+        """One epoch of shuffled, augmented batches (random crop + flip).
+
+        With aug_seed set, image i gets the same crop/flip in epoch `epoch`
+        whatever the order, so two runs that differ only in `generator` see
+        identical augmented images, just in a different order. `epoch=None`
+        (BN recalibration) uses its own fixed augmentation draw.
+        """
         n = len(self.y_train)
         perm = torch.randperm(n, generator=generator).to(self.device)
+        if self.aug_seed is None:
+            for i in range(0, n, self.batch_size):
+                idx = perm[i: i + self.batch_size]
+                yield augment(self.x_train[idx], generator), self.y_train[idx]
+            return
+        ix, iy, flip = self.fixed_aug_params(epoch)
         for i in range(0, n, self.batch_size):
             idx = perm[i: i + self.batch_size]
-            yield augment(self.x_train[idx], generator), self.y_train[idx]
+            yield crop_flip(self.x_train[idx], ix[idx], iy[idx], flip[idx]), self.y_train[idx]
+
+    def fixed_aug_params(self, epoch):
+        """Crop offsets and flips for every training image in one epoch."""
+        key = 0 if epoch is None else int(epoch) + 1
+        g = torch.Generator().manual_seed(self.aug_seed * 10_000 + key)
+        n = len(self.y_train)
+        ix = torch.randint(0, 9, (n,), generator=g)
+        iy = torch.randint(0, 9, (n,), generator=g)
+        flip = torch.rand(n, generator=g) < 0.5
+        return ix.to(self.device), iy.to(self.device), flip.to(self.device)
 
 
 def augment(x, generator):
     """Random 32x32 crop from a 4-pixel zero-padded image + horizontal flip."""
     b = x.shape[0]
+    # Same draw order as before (ix, iy, flip), so results are unchanged.
+    ix = torch.randint(0, 9, (b,), generator=generator)
+    iy = torch.randint(0, 9, (b,), generator=generator)
+    flip = torch.rand(b, generator=generator) < 0.5
+    return crop_flip(x, ix, iy, flip)
+
+
+def crop_flip(x, ix, iy, flip):
+    """Crop at offsets (ix, iy) from the 4-pixel padded image, flip where `flip`."""
+    b = x.shape[0]
     dev = x.device
+    ix, iy, flip = ix.to(dev), iy.to(dev), flip.to(dev)
     padded = F.pad(x, (4, 4, 4, 4))
-    ix = torch.randint(0, 9, (b,), generator=generator).to(dev)
-    iy = torch.randint(0, 9, (b,), generator=generator).to(dev)
     base = torch.arange(32, device=dev)
     rows = (iy[:, None] + base)[:, None, :, None]          # b,1,32,1
     cols = (ix[:, None] + base)[:, None, None, :]          # b,1,1,32
     bi = torch.arange(b, device=dev)[:, None, None, None]
     ci = torch.arange(3, device=dev)[None, :, None, None]
     out = padded[bi, ci, rows, cols]
-    flip = (torch.rand(b, generator=generator) < 0.5).to(dev)
     out[flip] = out[flip].flip(3)
     return out
 
@@ -247,7 +281,7 @@ def train_one_epoch(model, data, opt, epoch, generator, mask=None, cfg=DEFAULTS)
     params = prunable_params(model) if mask is not None else None
     tot_loss = tot_correct = tot_n = 0
     grad_norms = []
-    for x, y in data.train_batches(generator):
+    for x, y in data.train_batches(generator, epoch):
         out = model(x)
         loss = F.cross_entropy(out, y)
         opt.zero_grad(set_to_none=True)

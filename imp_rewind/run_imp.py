@@ -85,9 +85,6 @@ def run_trial(args, cfg, data, device, mask, rnd, t, rdir):
             if "final_val_acc" not in meta:
                 raise ValueError("Cached trial metadata lacks final_val_acc")
 
-            print(f"    Reusing cached trial {tag}")
-            return model, meta
-
         except Exception as exc:
             print(f"    Invalid cached trial {tag}: {exc}")
             print("    Regenerating this trial.")
@@ -96,6 +93,23 @@ def run_trial(args, cfg, data, device, mask, rnd, t, rdir):
             for path in (model_file, meta_file, curve_path):
                 if os.path.exists(path):
                     os.remove(path)
+        else:
+            # A readable cache from a different config (e.g. a short smoke
+            # run in the same run_dir) must not be reused silently.
+            T = cfg["epochs"]
+            stale = []
+            if meta.get("retrain_epochs") != T - t:
+                stale.append(f"retrain_epochs={meta.get('retrain_epochs')}, expected {T - t}")
+            for k in ("order_seed", "aug_seed"):
+                if k in meta and meta[k] != getattr(args, k):
+                    stale.append(f"{k}={meta[k]}, expected {getattr(args, k)}")
+            if stale:
+                raise RuntimeError(
+                    f"Cached trial {meta_file} is from a different config "
+                    f"({'; '.join(stale)}). Use a fresh --run_dir."
+                )
+            print(f"    Reusing cached trial {tag}")
+            return model, meta
 
     T = cfg["epochs"]
 
@@ -104,7 +118,7 @@ def run_trial(args, cfg, data, device, mask, rnd, t, rdir):
 
     opt = make_optimizer(model, cfg)
     gen = torch.Generator().manual_seed(
-        args.seed * 100_000 + rnd * 1000 + t
+        args.order_seed * 100_000 + rnd * 1000 + t
     )
 
     for epoch in range(t, T):
@@ -131,6 +145,8 @@ def run_trial(args, cfg, data, device, mask, rnd, t, rdir):
         round=rnd,
         t=t,
         retrain_epochs=T - t,
+        order_seed=args.order_seed,
+        aug_seed=args.aug_seed,
         **{f"final_{k}": v for k, v in final.items()},
     )
 
@@ -190,6 +206,10 @@ def main():
         help="Earliest rewind point tried",
     )
     p.add_argument("--bn_batches", type=int, default=100)
+    p.add_argument("--order_seed", type=int, default=None,
+                   help="seed for the data order (default: the dense run's)")
+    p.add_argument("--aug_seed", type=int, default=None,
+                   help="fixed-augmentation seed (default: the dense run's)")
     args = p.parse_args()
 
     if args.rounds < 1:
@@ -212,12 +232,20 @@ def main():
     if args.t_min >= T:
         p.error(f"--t_min must be less than dense training epochs ({T})")
 
+    # Follow the dense run's data RNG settings unless overridden.
+    if args.order_seed is None:
+        args.order_seed = dense_final.get("order_seed", args.seed)
+    if args.aug_seed is None:
+        args.aug_seed = dense_final.get("aug_seed")
+
     dense = load_dense_log(os.path.join(dense_dir, "dense_log.csv"))
+    # Fixed for the whole run: final dense val acc minus tol. Every round of
+    # this run is judged against this same number.
     target = dense_final["val_acc"] - args.tol
 
     device = get_device()
     set_seed(args.seed)
-    data = CIFARData(args.data_dir, device, cfg)
+    data = CIFARData(args.data_dir, device, cfg, aug_seed=args.aug_seed)
 
     imp_dir = os.path.join(args.run_dir, "imp")
     os.makedirs(os.path.join(imp_dir, "masks"), exist_ok=True)
@@ -254,6 +282,22 @@ def main():
             and os.path.exists(mask_file)
         ):
             s = load_json(summary_file)
+
+            # A summary from a different config (e.g. the 2-epoch smoke run
+            # left in the same run_dir) must not be reused.
+            stale = []
+            if abs(s.get("target_val_acc", target) - target) > 1e-9:
+                stale.append(f"target_val_acc={s['target_val_acc']}, expected {target}")
+            for k, want in (("T", T), ("tol", args.tol),
+                            ("order_seed", args.order_seed),
+                            ("aug_seed", args.aug_seed)):
+                if k in s and s[k] != want:
+                    stale.append(f"{k}={s[k]}, expected {want}")
+            if stale:
+                raise RuntimeError(
+                    f"{summary_file} is from a different config "
+                    f"({'; '.join(stale)}). Use a fresh --run_dir."
+                )
 
             if s["t_star"] is None:
                 summaries.append(s)
@@ -310,7 +354,7 @@ def main():
         recalibrate_bn(
             pruned,
             data,
-            torch.Generator().manual_seed(args.seed * 7 + rnd),
+            torch.Generator().manual_seed(args.order_seed * 7 + rnd),
             args.bn_batches,
         )
         after = evaluate_all(pruned, data)
@@ -400,6 +444,10 @@ def main():
             ),
             n_trials=n_trials,
             target_val_acc=target,
+            T=T,
+            tol=args.tol,
+            order_seed=args.order_seed,
+            aug_seed=args.aug_seed,
         )
 
         if t_star is not None:
