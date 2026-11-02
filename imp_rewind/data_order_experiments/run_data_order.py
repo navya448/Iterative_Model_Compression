@@ -13,11 +13,18 @@ Recovery condition: each run trains its own dense model, and every IMP round
 of that run must reach  dense_val_acc(T) - tol . With tol = 2.5 and a dense
 val acc of 91.0, the target is 88.5 for all rounds of that run.
 
+Every launch trains everything from scratch (dense model included) in a new
+folder runs/<date_time>/. Nothing from earlier runs is loaded. To continue an
+interrupted experiment, pass its folder with --runs_dir and --resume.
+
+GPU share: --gpu_fraction 0.5 (default) keeps this experiment at about half
+of the GPU's compute time and memory, for a shared machine. 1 = no limit.
+
 Run from imp_rewind/:
     python data_order_experiments/run_data_order.py
 
 Small validation run first:
-    python data_order_experiments/run_data_order.py --orders 1 2 --epochs 2 --rounds 1 --runs_dir data_order_experiments/runs_smoke
+    python data_order_experiments/run_data_order.py --orders 1 2 --epochs 2 --rounds 1
 """
 
 import argparse
@@ -31,7 +38,7 @@ import pandas as pd
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PROJECT_DIR = os.path.dirname(HERE)
-DEFAULT_RUNS_DIR = os.path.join(HERE, "runs")
+RUNS_ROOT = os.path.join(HERE, "runs")
 
 
 def parse_args():
@@ -42,7 +49,14 @@ def parse_args():
     parser.add_argument("--orders", nargs="+", type=int, default=list(range(1, 11)),
                         help="data-order seeds, one run each (default: 1 2 ... 10)")
     parser.add_argument("--data_dir", default="data")
-    parser.add_argument("--runs_dir", default=DEFAULT_RUNS_DIR)
+    parser.add_argument("--runs_dir", default=None,
+                        help="default: a new folder runs/<date_time>/")
+    parser.add_argument("--resume", action="store_true",
+                        help="continue an interrupted experiment in --runs_dir "
+                             "instead of starting from scratch")
+    parser.add_argument("--gpu_fraction", type=float, default=0.5,
+                        help="share of GPU compute time and memory to use "
+                             "(default: 0.5; 1 = no limit)")
     parser.add_argument("--epochs", type=int, default=None)
     parser.add_argument("--rounds", type=int, default=10)
     parser.add_argument("--prune_frac", type=float, default=0.2)
@@ -57,7 +71,7 @@ def parse_args():
     return parser.parse_args()
 
 
-def run_command(command, log_path, dry_run):
+def run_command(command, log_path, dry_run, env=None):
     print("  " + subprocess.list2cmdline(command))
     if dry_run:
         return
@@ -65,7 +79,7 @@ def run_command(command, log_path, dry_run):
         log.write("\n$ " + subprocess.list2cmdline(command) + "\n")
         log.flush()
         result = subprocess.run(command, cwd=PROJECT_DIR, stdout=log,
-                                stderr=subprocess.STDOUT, check=False)
+                                stderr=subprocess.STDOUT, check=False, env=env)
     if result.returncode:
         raise RuntimeError(f"command failed with exit code {result.returncode}; see {log_path}")
 
@@ -117,6 +131,24 @@ def main():
     if not orders or any(o < 0 for o in orders):
         raise SystemExit("--orders must contain at least one non-negative integer")
 
+    if not 0 < args.gpu_fraction <= 1:
+        raise SystemExit("--gpu_fraction must be in (0, 1]")
+    if args.resume:
+        if args.runs_dir is None or not os.path.isdir(args.runs_dir):
+            raise SystemExit("--resume needs --runs_dir pointing at an existing experiment")
+    else:
+        if args.runs_dir is None:
+            stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            args.runs_dir = os.path.join(RUNS_ROOT, stamp)
+        if os.path.isdir(args.runs_dir) and os.listdir(args.runs_dir):
+            raise SystemExit(f"{args.runs_dir} is not empty. This experiment starts "
+                             "from scratch; use a new --runs_dir, or add --resume to "
+                             "continue the run that is there.")
+    args.runs_dir = os.path.abspath(args.runs_dir)
+    print(f"Runs folder: {args.runs_dir}"
+          + (" (resuming)" if args.resume else " (from scratch)"))
+    env = dict(os.environ, IMP_GPU_FRACTION=str(args.gpu_fraction))
+
     os.makedirs(args.runs_dir, exist_ok=True)
     manifest_path = os.path.join(args.runs_dir, "experiment_manifest.json")
     manifest = dict(
@@ -133,8 +165,10 @@ def main():
         resolution=args.resolution,
         t_min=args.t_min,
         bn_batches=args.bn_batches,
+        gpu_fraction=args.gpu_fraction,
+        resumed=args.resume,
     )
-    if not args.dry_run:
+    if not args.dry_run and not (args.resume and os.path.exists(manifest_path)):
         with open(manifest_path, "w", encoding="utf-8") as f:
             json.dump(manifest, f, indent=2)
 
@@ -146,6 +180,8 @@ def main():
         log_path = os.path.join(args.runs_dir, f"{name}.log")
         common = seed_args + ["--order_seed", str(order), "--run_dir", run_dir,
                               "--data_dir", args.data_dir]
+        if not args.resume:
+            common.append("--fresh")
 
         dense_cmd = [sys.executable, os.path.join(PROJECT_DIR, "train_dense.py"), *common]
         if args.epochs is not None:
@@ -160,8 +196,8 @@ def main():
 
         print(f"\nRun {name} ({i}/{len(orders)})")
         try:
-            run_command(dense_cmd, log_path, args.dry_run)
-            run_command(imp_cmd, log_path, args.dry_run)
+            run_command(dense_cmd, log_path, args.dry_run, env)
+            run_command(imp_cmd, log_path, args.dry_run, env)
             completed.append(run_dir)
         except RuntimeError as error:
             failed.append(dict(order=order, error=str(error)))
@@ -169,8 +205,7 @@ def main():
             if not args.continue_on_error:
                 raise
 
-    analysis_dir = os.path.join(HERE, "analysis") if args.runs_dir == DEFAULT_RUNS_DIR \
-        else os.path.join(args.runs_dir, "analysis")
+    analysis_dir = os.path.join(args.runs_dir, "analysis")
     if not args.dry_run and completed:
         summarize_t_star(completed, analysis_dir)
         if not args.skip_analysis:

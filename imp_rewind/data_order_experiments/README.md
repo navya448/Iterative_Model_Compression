@@ -21,27 +21,58 @@ dense val acc 91.0 means every round of that run needs 88.5.
 From `imp_rewind\`:
 
 ```powershell
-# quick check first (2 epochs, 1 round, separate folder)
-python data_order_experiments\run_data_order.py --orders 1 2 --epochs 2 --rounds 1 --runs_dir data_order_experiments\runs_smoke
+# quick check first (2 epochs, 1 round)
+python data_order_experiments\run_data_order.py --orders 1 2 --epochs 2 --rounds 1
 
 # full experiment
 python data_order_experiments\run_data_order.py
 ```
 
-Do not point the full run at the smoke folder. `run_imp.py` now refuses to
-reuse a round or trial whose target / T / tol / seeds don't match, instead of
-silently continuing from it.
+Every launch starts from scratch: a new folder `runs\<date_time>\` is made,
+each run trains its own dense model from epoch 0, then runs IMP. Nothing from
+earlier runs (including `repeated_experiments`) is loaded; `train_dense.py`
+and `run_imp.py` get `--fresh` and refuse to start if their folder already
+has files.
+
+If the experiment is interrupted, continue it in the same folder:
+
+```powershell
+python data_order_experiments\run_data_order.py --runs_dir data_order_experiments\runs\20261102_153000 --resume
+```
+
+## Sharing the GPU
+
+`--gpu_fraction 0.5` (the default) keeps this experiment at about half the
+GPU:
+
+- compute: after every batch the process sleeps as long as the batch took, so
+  the GPU is busy with it about 50% of the time and free for the other
+  project the rest
+- memory: PyTorch's allocator is capped at 50% of GPU memory
+
+The cost is that the experiment takes about 2x as long as at full speed. Use
+`--gpu_fraction 1` when the machine is free. The same limit works for the
+other scripts through an environment variable:
+
+```powershell
+set IMP_GPU_FRACTION=0.5
+python train_dense.py ...
+```
 
 ## Output
 
-- `runs\orderNN\` per-run dense + IMP results (same layout as before)
-- `runs\experiment_manifest.json` parameters
+All inside `runs\<date_time>\`:
+
+- `orderNN\` per-run dense + IMP results (same layout as before)
+- `orderNN.log` training log per run
+- `experiment_manifest.json` parameters
 - `analysis\t_star_by_round.csv` t* mean / std / min / max across the 10 orders per round
 - `analysis\t_star_by_round_wide.csv` round x run table of t*
 - `analysis\` the usual `analyze.py` outputs
 
 Options: `--seed`, `--orders`, `--tol`, `--rounds`, `--epochs`,
-`--continue_on_error`, `--skip_analysis`, `--dry_run`.
+`--gpu_fraction`, `--runs_dir`, `--resume`, `--continue_on_error`,
+`--skip_analysis`, `--dry_run`.
 
 ## Note on the old runs
 

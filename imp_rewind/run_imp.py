@@ -210,6 +210,9 @@ def main():
                    help="seed for the data order (default: the dense run's)")
     p.add_argument("--aug_seed", type=int, default=None,
                    help="fixed-augmentation seed (default: the dense run's)")
+    p.add_argument("--fresh", action="store_true",
+                   help="run IMP from scratch: refuse to start if run_dir/imp "
+                        "already holds results (no reusing rounds or trials)")
     args = p.parse_args()
 
     if args.rounds < 1:
@@ -248,6 +251,10 @@ def main():
     data = CIFARData(args.data_dir, device, cfg, aug_seed=args.aug_seed)
 
     imp_dir = os.path.join(args.run_dir, "imp")
+    if args.fresh and os.path.isdir(imp_dir) and any(
+            files for _, _, files in os.walk(imp_dir)):
+        raise SystemExit(f"--fresh: {imp_dir} already has results from an earlier "
+                         "run. Use a new --run_dir.")
     os.makedirs(os.path.join(imp_dir, "masks"), exist_ok=True)
 
     save_json(
