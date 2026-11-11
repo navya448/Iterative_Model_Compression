@@ -1,0 +1,10 @@
+rule,n,mean_abs_error_epochs,mean_signed_error,n_too_late_would_fail,mean_wasted_epochs_when_early,spearman_with_t_star
+Baseline: before last LR drop,100,14.9,-11.38,25,17.52,
+Weight-movement match,100,18.82,-17.38,9,19.89010989010989,0.7659602023962032
+Loss match (train),100,25.88,-25.88,0,25.88,0.9499031198907885
+Specialization point,80,27.025,-26.65,3,27.883116883116884,-0.03166457467452497
+Accuracy match (val),100,27.9,-27.9,0,27.9,0.8668879516058501
+Loss match (val),100,28.94,-28.94,0,28.94,0.8658143974886399
+"Loss match (val, vs dense)",100,29.37,-29.37,0,29.37,0.8775680336258264
+Baseline: before 1st LR drop,100,31.44,-31.38,1,31.727272727272727,
+Baseline: 5% of T,100,66.38,-66.38,0,66.38,

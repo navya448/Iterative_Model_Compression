@@ -141,3 +141,20 @@ Dense val acc 91.54% -> recovery target 91.04%
 Round 1: already done (t* = 2), skipping.
 Round 2: previously found unrecoverable; stopping.
 IMP done. Results in C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed1\imp
+
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\train_dense.py" --seed 1 --run_dir "C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed1" --data_dir data
+Using device: cuda (NVIDIA RTX A4000, torch 2.8.0+cu126, CUDA 12.6)
+Resuming dense training from epoch 80
+Dense done: {'val_loss': 0.3129921325683594, 'val_acc': 91.54, 'train_loss': 0.05170451927185059, 'train_acc': 98.21, 'test_loss': 0.3491545166015625, 'test_acc': 90.37}
+[0m
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\run_imp.py" --seed 1 --run_dir "C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed1" --data_dir data --rounds 10 --prune_frac 0.2 --tol 0.5 --resolution 2 --t_min 2 --bn_batches 100
+Using device: cuda (NVIDIA RTX A4000, torch 2.8.0+cu126, CUDA 12.6)
+Using device: cuda
+Dense val acc 91.54% -> recovery target 91.04%
+Traceback (most recent call last):
+  File "C:\Users\nj255\major project\imp_rewind\run_imp.py", line 486, in <module>
+    main()
+  File "C:\Users\nj255\major project\imp_rewind\run_imp.py", line 297, in main
+    raise RuntimeError(
+RuntimeError: C:\Users\nj255\major project\imp_rewind\repeated_experiments\runs\seed1\imp\round_01\summary.json is from a different config (target_val_acc=63.36, expected 91.04). Use a fresh --run_dir.
+[0m

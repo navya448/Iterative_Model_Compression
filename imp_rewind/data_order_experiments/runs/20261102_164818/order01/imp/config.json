@@ -1,0 +1,28 @@
+{
+  "seed": 1,
+  "run_dir": "C:\\Users\\nj255\\major project\\imp_rewind\\data_order_experiments\\runs\\20261102_164818\\order01",
+  "data_dir": "data",
+  "rounds": 1,
+  "prune_frac": 0.2,
+  "tol": 2.5,
+  "resolution": 2,
+  "t_min": 1,
+  "bn_batches": 100,
+  "order_seed": 1,
+  "aug_seed": 1,
+  "fresh": true,
+  "epochs": 2,
+  "batch_size": 128,
+  "lr": 0.1,
+  "momentum": 0.9,
+  "weight_decay": 0.0001,
+  "milestones": [
+    40,
+    60
+  ],
+  "gamma": 0.1,
+  "val_size": 5000,
+  "train_eval_size": 10000,
+  "split_seed": 0,
+  "target_val_acc": 55.04
+}

@@ -1,0 +1,14 @@
+
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\train_dense.py" --seed 1 --aug_seed 1 --order_seed 2 --run_dir "C:\Users\nj255\major project\imp_rewind\data_order_experiments\runs\20261102_164818\order02" --data_dir data --fresh --epochs 2
+Using device: cuda (NVIDIA RTX A4000, torch 2.8.0+cu126, CUDA 12.6)
+epoch   1 | lr 0.1000 | train 1.975/40.57% | val 1.946/41.40%
+epoch   2 | lr 0.1000 | train 1.652/51.26% | val 1.632/52.76%
+Dense done: {'val_loss': 1.631826220703125, 'val_acc': 52.76, 'train_loss': 1.6520927368164062, 'train_acc': 51.26, 'test_loss': 1.6563762329101563, 'test_acc': 50.95}
+
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\run_imp.py" --seed 1 --aug_seed 1 --order_seed 2 --run_dir "C:\Users\nj255\major project\imp_rewind\data_order_experiments\runs\20261102_164818\order02" --data_dir data --fresh --rounds 1 --prune_frac 0.2 --tol 2.5 --resolution 2 --t_min 1 --bn_batches 100
+Using device: cuda (NVIDIA RTX A4000, torch 2.8.0+cu126, CUDA 12.6)
+Using device: cuda
+Dense val acc 52.76% -> recovery target 50.26%
+Round 1: sparsity 20.0% | D_loss_val -0.7011 | D_acc_val -14.16 | loss-match predicts t=2
+Round 1: t* = 2 (0 retraining epochs, 0 trials)
+IMP done. Results in C:\Users\nj255\major project\imp_rewind\data_order_experiments\runs\20261102_164818\order02\imp
