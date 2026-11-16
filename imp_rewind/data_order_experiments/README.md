@@ -4,19 +4,18 @@ Goal: measure how much of the t* noise comes from data order alone.
 
 ## Changes from `repeated_experiments`
 
-| | repeated_experiments | data_order_experiments |
-|---|---|---|
-| Runs | 10 seeds | 1 seed, 10 data orders |
-| Model init | different per seed | same for all runs (`--seed`) |
-| Augmentation (crop/flip) | different per seed | same for all runs: image i gets the same crop/flip in epoch e in every run |
-| Data order | different per seed | different per run (`--order_seed`), in dense training, every retraining trial and BN recalibration |
-| alpha (`--tol`) | 0.5 | 2.5 |
-| Recovery target | dense val acc(T) - alpha | same, fixed for every round of a run |
+|                   | repeated_experiments     | data_order_experiments                                                                               |
+| ----------------- | ------------------------ | ---------------------------------------------------------------------------------------------------- |
+| Runs              | 10 seeds                 | 1 seed, 10 data orders                                                                               |
+| Model init        | different per seed       | same for all runs (`--seed`)                                                                       |
+| Data order        | different per seed       | different per run (`--order_seed`), in dense training, every retraining trial and BN recalibration |
+| alpha (`--tol`) | 0.5                      | 2.5                                                                                                  |
+| Recovery target   | dense val acc(T) - alpha | same, fixed for every round of a run                                                                 |
 
 Each run trains its own dense model, so each run has its own target, e.g.
-dense val acc 91.0 means every round of that run needs 88.5.
+dense val acc 91.0 means every round of that run needs 88.5 or above.
 
-## Run
+## Run  
 
 From `imp_rewind\`:
 
