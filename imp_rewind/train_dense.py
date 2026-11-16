@@ -33,6 +33,9 @@ def main():
                    help="if set, augmentation is fixed by this seed and only the "
                         "order changes with --order_seed (default: order and "
                         "augmentation share one generator, as before)")
+    p.add_argument("--fresh", action="store_true",
+                   help="train from scratch: refuse to start if run_dir/dense "
+                        "already holds checkpoints or logs (no resuming)")
     args = p.parse_args()
     order_seed = args.seed if args.order_seed is None else args.order_seed
     data_rng = dict(order_seed=order_seed, aug_seed=args.aug_seed)
@@ -40,6 +43,10 @@ def main():
     cfg = dict(DEFAULTS, epochs=args.epochs)
     device = get_device()
     out = os.path.join(args.run_dir, "dense")
+    if args.fresh and os.path.isdir(out) and any(
+            files for _, _, files in os.walk(out)):
+        raise SystemExit(f"--fresh: {out} already has files from an earlier run. "
+                         "Use a new --run_dir.")
     os.makedirs(os.path.join(out, "checkpoints"), exist_ok=True)
     log_path = os.path.join(out, "dense_log.csv")
     resume_path = os.path.join(out, "resume.pt")

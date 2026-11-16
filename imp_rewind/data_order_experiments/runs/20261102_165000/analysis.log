@@ -1,0 +1,129 @@
+
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\analyze.py" --runs "C:\Users\nj255\major project\imp_rewind\data_order_experiments\runs\20261102_165000\order01" "C:\Users\nj255\major project\imp_rewind\data_order_experiments\runs\20261102_165000\order02" "C:\Users\nj255\major project\imp_rewind\data_order_experiments\runs\20261102_165000\order03" "C:\Users\nj255\major project\imp_rewind\data_order_experiments\runs\20261102_165000\order04" "C:\Users\nj255\major project\imp_rewind\data_order_experiments\runs\20261102_165000\order05" "C:\Users\nj255\major project\imp_rewind\data_order_experiments\runs\20261102_165000\order06" "C:\Users\nj255\major project\imp_rewind\data_order_experiments\runs\20261102_165000\order07" "C:\Users\nj255\major project\imp_rewind\data_order_experiments\runs\20261102_165000\order08" "C:\Users\nj255\major project\imp_rewind\data_order_experiments\runs\20261102_165000\order09" "C:\Users\nj255\major project\imp_rewind\data_order_experiments\runs\20261102_165000\order10" --out "C:\Users\nj255\major project\imp_rewind\data_order_experiments\runs\20261102_165000\analysis"
+Using device: cpu (analysis is pandas/matplotlib only; no GPU needed)
+
+=== t* per round ===
+    run  round  sparsity  D_loss_val  D_acc_val  weight_perturbation  t_star  retrain_epochs  pred_loss_match_val
+order01      1    0.2000     -0.0007       0.16               0.0542      80               0                   80
+order01      2    0.3600     -0.0012       0.12               0.1225      80               0                   80
+order01      3    0.4880      0.0082       0.28               0.1732      80               0                   59
+order01      4    0.5904      0.0317       1.58               0.2108      80               0                   40
+order01      5    0.6723      0.0402       1.82               0.2393      78               2                   40
+order01      6    0.7379      0.0540       2.46               0.2612      77               3                   40
+order01      7    0.7903      0.1141       3.86               0.2786      70              10                   39
+order01      8    0.8322      0.2042       7.10               0.2904      58              22                   33
+order01      9    0.8658      0.3818      11.48               0.2912      58              22                   29
+order01     10    0.8926      0.5078      14.90               0.2940      39              41                    2
+order02      1    0.2000     -0.0041      -0.08               0.0554      80               0                   80
+order02      2    0.3600      0.0033       0.02               0.1248      80               0                   40
+order02      3    0.4880      0.0024       0.58               0.1758      80               0                   60
+order02      4    0.5904      0.0239       1.16               0.2127      80               0                   40
+order02      5    0.6723      0.0437       1.70               0.2405      78               2                   40
+order02      6    0.7379      0.0271       1.36               0.2620      78               2                   40
+order02      7    0.7903      0.1423       5.64               0.2789      65              15                   39
+order02      8    0.8322      0.1920       5.56               0.2879      67              13                   38
+order02      9    0.8658      0.4765      14.24               0.2968      58              22                    6
+order02     10    0.8926      0.4521      13.88               0.2886      57              23                    6
+order03      1    0.2000     -0.0030       0.04               0.0537      80               0                   80
+order03      2    0.3600      0.0081       0.34               0.1216      80               0                   58
+order03      3    0.4880      0.0124       0.70               0.1721      80               0                   40
+order03      4    0.5904      0.0345       1.40               0.2095      80               0                   40
+order03      5    0.6723      0.0572       2.08               0.2380      78               2                   40
+order03      6    0.7379      0.0515       2.58               0.2595      75               5                   40
+order03      7    0.7903      0.0899       3.38               0.2763      65              15                   40
+order03      8    0.8322      0.2129       6.86               0.2880      58              22                   37
+order03      9    0.8658      0.6951      20.26               0.2890      55              25                    2
+order03     10    0.8926      0.4534      14.38               0.2832      45              35                   35
+order04      1    0.2000     -0.0027       0.10               0.0546      80               0                   80
+order04      2    0.3600      0.0026       0.06               0.1232      80               0                   60
+order04      3    0.4880      0.0040       0.10               0.1739      80               0                   59
+order04      4    0.5904      0.0276       1.58               0.2116      80               0                   40
+order04      5    0.6723      0.0513       2.06               0.2394      78               2                   40
+order04      6    0.7379      0.0679       1.84               0.2607      77               3                   40
+order04      7    0.7903      0.1834       6.20               0.2773      72               8                   40
+order04      8    0.8322      0.2038       5.86               0.2895      62              18                   40
+order04      9    0.8658      0.5651      16.40               0.2960      55              25                    4
+order04     10    0.8926      0.4826      13.88               0.2805      45              35                    4
+order05      1    0.2000      0.0005       0.14               0.0530      80               0                   60
+order05      2    0.3600      0.0021      -0.16               0.1206      80               0                   60
+order05      3    0.4880      0.0044       0.12               0.1705      80               0                   60
+order05      4    0.5904      0.0222       1.02               0.2076      80               0                   40
+order05      5    0.6723      0.0447       1.66               0.2356      78               2                   40
+order05      6    0.7379      0.0555       2.04               0.2576      78               2                   40
+order05      7    0.7903      0.1466       4.80               0.2748      65              15                   35
+order05      8    0.8322      0.1674       4.60               0.2846      65              15                   35
+order05      9    0.8658      0.5079      16.68               0.2942      55              25                    3
+order05     10    0.8926      0.3300       9.88               0.2748      50              30                   35
+order06      1    0.2000      0.0005       0.04               0.0524      80               0                   79
+order06      2    0.3600     -0.0014       0.06               0.1191      80               0                   80
+order06      3    0.4880     -0.0063      -0.18               0.1685      80               0                   80
+order06      4    0.5904      0.0218       1.08               0.2054      80               0                   40
+order06      5    0.6723      0.0400       1.78               0.2337      78               2                   40
+order06      6    0.7379      0.0524       1.54               0.2554      78               2                   40
+order06      7    0.7903      0.1502       5.52               0.2730      70              10                   40
+order06      8    0.8322      0.1545       5.18               0.2847      72               8                   40
+order06      9    0.8658      0.4876      15.86               0.2945      55              25                    4
+order06     10    0.8926      0.4482      12.66               0.2727      55              25                   12
+order07      1    0.2000      0.0033       0.16               0.0548      80               0                   60
+order07      2    0.3600      0.0037       0.08               0.1236      80               0                   60
+order07      3    0.4880      0.0107       0.62               0.1741      80               0                   58
+order07      4    0.5904      0.0453       1.94               0.2116      78               2                   40
+order07      5    0.6723      0.0294       1.16               0.2399      78               2                   40
+order07      6    0.7379      0.0675       2.80               0.2614      73               7                   40
+order07      7    0.7903      0.0900       3.34               0.2773      67              13                   40
+order07      8    0.8322      0.2422       7.44               0.2891      57              23                   40
+order07      9    0.8658      0.3576      10.16               0.2868      55              25                   10
+order07     10    0.8926      0.4412      14.60               0.2859      41              39                    9
+order08      1    0.2000     -0.0019      -0.02               0.0551      80               0                   80
+order08      2    0.3600      0.0037       0.04               0.1244      80               0                   60
+order08      3    0.4880      0.0038       0.52               0.1753      80               0                   60
+order08      4    0.5904      0.0230       1.42               0.2126      80               0                   40
+order08      5    0.6723      0.0465       1.42               0.2410      78               2                   40
+order08      6    0.7379      0.0521       2.12               0.2627      75               5                   40
+order08      7    0.7903      0.1050       3.10               0.2795      70              10                   40
+order08      8    0.8322      0.1944       6.24               0.2920      58              22                   36
+order08      9    0.8658      0.4600      14.52               0.2916      57              23                    6
+order08     10    0.8926      0.5834      14.78               0.2922      36              44                    5
+order09      1    0.2000     -0.0049      -0.16               0.0553      80               0                   80
+order09      2    0.3600     -0.0032       0.34               0.1244      80               0                   80
+order09      3    0.4880      0.0201       0.62               0.1754      80               0                   40
+order09      4    0.5904      0.0347       1.04               0.2136      80               0                   40
+order09      5    0.6723      0.0498       2.02               0.2415      78               2                   40
+order09      6    0.7379      0.0511       1.78               0.2628      75               5                   40
+order09      7    0.7903      0.0969       3.30               0.2797      63              17                   40
+order09      8    0.8322      0.1563       4.54               0.2908      58              22                   38
+order09      9    0.8658      0.4652      13.66               0.2929      50              30                   20
+order09     10    0.8926      0.3777      10.20               0.2726      39              41                   20
+order10      1    0.2000     -0.0020      -0.06               0.0543      80               0                   80
+order10      2    0.3600      0.0045       0.44               0.1226      80               0                   60
+order10      3    0.4880      0.0146       0.22               0.1730      80               0                   40
+order10      4    0.5904      0.0396       1.56               0.2101      80               0                   40
+order10      5    0.6723      0.0469       1.70               0.2380      78               2                   40
+order10      6    0.7379      0.0702       2.74               0.2595      75               5                   40
+order10      7    0.7903      0.0893       2.56               0.2764      67              13                   40
+order10      8    0.8322      0.1717       5.32               0.2883      60              20                   40
+order10      9    0.8658      0.6470      18.90               0.2947      55              25                    3
+order10     10    0.8926      0.4336      13.44               0.2783      50              30                    6
+
+=== How well each rule predicts t* (discovery seeds) ===
+                         rule   n  mean_abs_error_epochs  mean_signed_error  n_too_late_would_fail  mean_wasted_epochs_when_early  spearman_with_t_star
+Baseline: before last LR drop 100                  14.90             -11.38                     25                          17.52                   NaN
+        Weight-movement match 100                  18.82             -17.38                      9                          19.89                  0.77
+           Loss match (train) 100                  25.88             -25.88                      0                          25.88                  0.95
+         Specialization point  80                  27.02             -26.65                      3                          27.88                 -0.03
+         Accuracy match (val) 100                  27.90             -27.90                      0                          27.90                  0.87
+             Loss match (val) 100                  28.94             -28.94                      0                          28.94                  0.87
+   Loss match (val, vs dense) 100                  29.37             -29.37                      0                          29.37                  0.88
+ Baseline: before 1st LR drop 100                  31.44             -31.38                      1                          31.73                   NaN
+            Baseline: 5% of T 100                  66.38             -66.38                      0                          66.38                   NaN
+
+=== How strongly t* follows each feature ===
+            feature  spearman_overall  pearson_within_round_across_seeds
+         D_loss_val            -0.951                             -0.213
+       D_loss_train            -0.953                             -0.189
+          D_acc_val            -0.948                             -0.151
+D_loss_val_vs_dense            -0.949                             -0.258
+weight_perturbation            -0.923                             -0.331
+           sparsity            -0.962                              0.103
+
+Tables in C:\Users\nj255\major project\imp_rewind\data_order_experiments\runs\20261102_165000\analysis/, figures in C:\Users\nj255\major project\imp_rewind\data_order_experiments\runs\20261102_165000\analysis\figures/

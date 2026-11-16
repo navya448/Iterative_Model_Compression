@@ -8,6 +8,8 @@
   "resolution": 2,
   "t_min": 2,
   "bn_batches": 100,
+  "order_seed": 1,
+  "aug_seed": null,
   "epochs": 80,
   "batch_size": 128,
   "lr": 0.1,

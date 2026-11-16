@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-11-02T11:19:21.584044+00:00",
+  "design": "fixed init + fixed augmentation (seed), data order varies per run",
+  "seed": 1,
+  "aug_seed": 1,
+  "orders": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "epochs": null,
+  "rounds": 10,
+  "prune_frac": 0.2,
+  "tol": 2.5,
+  "recovery_rule": "final val acc >= this run's dense val acc at T - tol, same for every round",
+  "resolution": 2,
+  "t_min": 2,
+  "bn_batches": 100,
+  "gpu_fraction": 0.5,
+  "resumed": false
+}

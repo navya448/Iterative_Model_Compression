@@ -1,0 +1,1409 @@
+method,ds,run,round,t_star,t_hat
+Original formula,10s,seed1_orig,1,80.0,80
+Original formula (margin 0.1),10s,seed1_orig,1,80.0,80
+Revised formula,10s,seed1_orig,1,80.0,80
+Revised formula (margin 0.1),10s,seed1_orig,1,80.0,80
+Sparsity line + check (both datasets),10s,seed1_orig,1,80.0,80
+Round median + check (both datasets),10s,seed1_orig,1,80.0,80
+Sparsity line + check (same alpha only),10s,seed1_orig,1,80.0,80
+Round median + check (same alpha only),10s,seed1_orig,1,80.0,80
+Original formula,10s,seed1_orig,2,80.0,80
+Original formula (margin 0.1),10s,seed1_orig,2,80.0,80
+Revised formula,10s,seed1_orig,2,80.0,80
+Revised formula (margin 0.1),10s,seed1_orig,2,80.0,80
+Sparsity line + check (both datasets),10s,seed1_orig,2,80.0,80
+Round median + check (both datasets),10s,seed1_orig,2,80.0,80
+Sparsity line + check (same alpha only),10s,seed1_orig,2,80.0,80
+Round median + check (same alpha only),10s,seed1_orig,2,80.0,80
+Original formula,10s,seed1_orig,3,78.0,70
+Original formula (margin 0.1),10s,seed1_orig,3,78.0,66
+Revised formula,10s,seed1_orig,3,78.0,77
+Revised formula (margin 0.1),10s,seed1_orig,3,78.0,75
+Sparsity line + check (both datasets),10s,seed1_orig,3,78.0,79
+Round median + check (both datasets),10s,seed1_orig,3,78.0,77
+Sparsity line + check (same alpha only),10s,seed1_orig,3,78.0,77
+Round median + check (same alpha only),10s,seed1_orig,3,78.0,77
+Original formula,10s,seed1_orig,4,62.0,58
+Original formula (margin 0.1),10s,seed1_orig,4,62.0,57
+Revised formula,10s,seed1_orig,4,62.0,64
+Revised formula (margin 0.1),10s,seed1_orig,4,62.0,59
+Sparsity line + check (both datasets),10s,seed1_orig,4,62.0,70
+Round median + check (both datasets),10s,seed1_orig,4,62.0,70
+Sparsity line + check (same alpha only),10s,seed1_orig,4,62.0,63
+Round median + check (same alpha only),10s,seed1_orig,4,62.0,66
+Original formula,10s,seed1_orig,5,34.0,50
+Original formula (margin 0.1),10s,seed1_orig,5,34.0,46
+Revised formula,10s,seed1_orig,5,34.0,57
+Revised formula (margin 0.1),10s,seed1_orig,5,34.0,54
+Sparsity line + check (both datasets),10s,seed1_orig,5,34.0,64
+Round median + check (both datasets),10s,seed1_orig,5,34.0,78
+Sparsity line + check (same alpha only),10s,seed1_orig,5,34.0,52
+Round median + check (same alpha only),10s,seed1_orig,5,34.0,57
+Original formula,10s,seed1_orig,6,80.0,80
+Original formula (margin 0.1),10s,seed1_orig,6,80.0,80
+Revised formula,10s,seed1_orig,6,80.0,80
+Revised formula (margin 0.1),10s,seed1_orig,6,80.0,80
+Sparsity line + check (both datasets),10s,seed1_orig,6,80.0,80
+Round median + check (both datasets),10s,seed1_orig,6,80.0,80
+Sparsity line + check (same alpha only),10s,seed1_orig,6,80.0,80
+Round median + check (same alpha only),10s,seed1_orig,6,80.0,80
+Original formula,10s,seed1_orig,7,38.0,29
+Original formula (margin 0.1),10s,seed1_orig,7,38.0,24
+Revised formula,10s,seed1_orig,7,38.0,38
+Revised formula (margin 0.1),10s,seed1_orig,7,38.0,36
+Sparsity line + check (both datasets),10s,seed1_orig,7,38.0,54
+Round median + check (both datasets),10s,seed1_orig,7,38.0,64
+Sparsity line + check (same alpha only),10s,seed1_orig,7,38.0,36
+Round median + check (same alpha only),10s,seed1_orig,7,38.0,39
+Original formula,10s,seed2_orig,1,80.0,80
+Original formula (margin 0.1),10s,seed2_orig,1,80.0,80
+Revised formula,10s,seed2_orig,1,80.0,80
+Revised formula (margin 0.1),10s,seed2_orig,1,80.0,80
+Sparsity line + check (both datasets),10s,seed2_orig,1,80.0,80
+Round median + check (both datasets),10s,seed2_orig,1,80.0,80
+Sparsity line + check (same alpha only),10s,seed2_orig,1,80.0,80
+Round median + check (same alpha only),10s,seed2_orig,1,80.0,80
+Original formula,10s,seed2_orig,2,80.0,80
+Original formula (margin 0.1),10s,seed2_orig,2,80.0,80
+Revised formula,10s,seed2_orig,2,80.0,80
+Revised formula (margin 0.1),10s,seed2_orig,2,80.0,80
+Sparsity line + check (both datasets),10s,seed2_orig,2,80.0,80
+Round median + check (both datasets),10s,seed2_orig,2,80.0,80
+Sparsity line + check (same alpha only),10s,seed2_orig,2,80.0,80
+Round median + check (same alpha only),10s,seed2_orig,2,80.0,80
+Original formula,10s,seed2_orig,3,78.0,70
+Original formula (margin 0.1),10s,seed2_orig,3,78.0,66
+Revised formula,10s,seed2_orig,3,78.0,77
+Revised formula (margin 0.1),10s,seed2_orig,3,78.0,75
+Sparsity line + check (both datasets),10s,seed2_orig,3,78.0,77
+Round median + check (both datasets),10s,seed2_orig,3,78.0,77
+Sparsity line + check (same alpha only),10s,seed2_orig,3,78.0,75
+Round median + check (same alpha only),10s,seed2_orig,3,78.0,77
+Original formula,10s,seed2_orig,4,70.0,58
+Original formula (margin 0.1),10s,seed2_orig,4,70.0,57
+Revised formula,10s,seed2_orig,4,70.0,59
+Revised formula (margin 0.1),10s,seed2_orig,4,70.0,58
+Sparsity line + check (both datasets),10s,seed2_orig,4,70.0,70
+Round median + check (both datasets),10s,seed2_orig,4,70.0,63
+Sparsity line + check (same alpha only),10s,seed2_orig,4,70.0,62
+Round median + check (same alpha only),10s,seed2_orig,4,70.0,62
+Original formula,10s,seed2_orig,5,55.0,50
+Original formula (margin 0.1),10s,seed2_orig,5,55.0,45
+Revised formula,10s,seed2_orig,5,55.0,54
+Revised formula (margin 0.1),10s,seed2_orig,5,55.0,49
+Sparsity line + check (both datasets),10s,seed2_orig,5,55.0,64
+Round median + check (both datasets),10s,seed2_orig,5,55.0,78
+Sparsity line + check (same alpha only),10s,seed2_orig,5,55.0,52
+Round median + check (same alpha only),10s,seed2_orig,5,55.0,57
+Original formula,10s,seed2_orig,6,53.0,38
+Original formula (margin 0.1),10s,seed2_orig,6,53.0,36
+Revised formula,10s,seed2_orig,6,53.0,39
+Revised formula (margin 0.1),10s,seed2_orig,6,53.0,38
+Sparsity line + check (both datasets),10s,seed2_orig,6,53.0,59
+Round median + check (both datasets),10s,seed2_orig,6,53.0,75
+Sparsity line + check (same alpha only),10s,seed2_orig,6,53.0,43
+Round median + check (same alpha only),10s,seed2_orig,6,53.0,43
+Original formula,10s,seed2_orig,7,43.0,27
+Original formula (margin 0.1),10s,seed2_orig,7,43.0,21
+Revised formula,10s,seed2_orig,7,43.0,34
+Revised formula (margin 0.1),10s,seed2_orig,7,43.0,31
+Sparsity line + check (both datasets),10s,seed2_orig,7,43.0,55
+Round median + check (both datasets),10s,seed2_orig,7,43.0,64
+Sparsity line + check (same alpha only),10s,seed2_orig,7,43.0,37
+Round median + check (same alpha only),10s,seed2_orig,7,43.0,38
+Original formula,10s,seed2_orig,8,2.0,2
+Original formula (margin 0.1),10s,seed2_orig,8,2.0,2
+Revised formula,10s,seed2_orig,8,2.0,29
+Revised formula (margin 0.1),10s,seed2_orig,8,2.0,24
+Sparsity line + check (both datasets),10s,seed2_orig,8,2.0,52
+Round median + check (both datasets),10s,seed2_orig,8,2.0,58
+Sparsity line + check (same alpha only),10s,seed2_orig,8,2.0,31
+Round median + check (same alpha only),10s,seed2_orig,8,2.0,19
+Original formula,10s,seed2_orig,9,26.0,2
+Original formula (margin 0.1),10s,seed2_orig,9,26.0,2
+Revised formula,10s,seed2_orig,9,26.0,29
+Revised formula (margin 0.1),10s,seed2_orig,9,26.0,13
+Sparsity line + check (both datasets),10s,seed2_orig,9,26.0,49
+Round median + check (both datasets),10s,seed2_orig,9,26.0,55
+Sparsity line + check (same alpha only),10s,seed2_orig,9,26.0,27
+Round median + check (same alpha only),10s,seed2_orig,9,26.0,34
+Original formula,10s,seed2_orig,10,13.0,2
+Original formula (margin 0.1),10s,seed2_orig,10,13.0,2
+Revised formula,10s,seed2_orig,10,13.0,6
+Revised formula (margin 0.1),10s,seed2_orig,10,13.0,2
+Sparsity line + check (both datasets),10s,seed2_orig,10,13.0,47
+Round median + check (both datasets),10s,seed2_orig,10,13.0,45
+Sparsity line + check (same alpha only),10s,seed2_orig,10,13.0,24
+Round median + check (same alpha only),10s,seed2_orig,10,13.0,24
+Original formula,10s,seed3,1,80.0,80
+Original formula (margin 0.1),10s,seed3,1,80.0,80
+Revised formula,10s,seed3,1,80.0,80
+Revised formula (margin 0.1),10s,seed3,1,80.0,80
+Sparsity line + check (both datasets),10s,seed3,1,80.0,80
+Round median + check (both datasets),10s,seed3,1,80.0,80
+Sparsity line + check (same alpha only),10s,seed3,1,80.0,80
+Round median + check (same alpha only),10s,seed3,1,80.0,80
+Original formula,10s,seed3,2,78.0,77
+Original formula (margin 0.1),10s,seed3,2,78.0,76
+Revised formula,10s,seed3,2,78.0,79
+Revised formula (margin 0.1),10s,seed3,2,78.0,79
+Sparsity line + check (both datasets),10s,seed3,2,78.0,80
+Round median + check (both datasets),10s,seed3,2,78.0,78
+Sparsity line + check (same alpha only),10s,seed3,2,78.0,80
+Round median + check (same alpha only),10s,seed3,2,78.0,78
+Original formula,10s,seed3,3,77.0,70
+Original formula (margin 0.1),10s,seed3,3,77.0,67
+Revised formula,10s,seed3,3,77.0,79
+Revised formula (margin 0.1),10s,seed3,3,77.0,79
+Sparsity line + check (both datasets),10s,seed3,3,77.0,79
+Round median + check (both datasets),10s,seed3,3,77.0,78
+Sparsity line + check (same alpha only),10s,seed3,3,77.0,78
+Round median + check (same alpha only),10s,seed3,3,77.0,78
+Original formula,10s,seed3,4,63.0,58
+Original formula (margin 0.1),10s,seed3,4,63.0,57
+Revised formula,10s,seed3,4,63.0,66
+Revised formula (margin 0.1),10s,seed3,4,63.0,59
+Sparsity line + check (both datasets),10s,seed3,4,63.0,71
+Round median + check (both datasets),10s,seed3,4,63.0,70
+Sparsity line + check (same alpha only),10s,seed3,4,63.0,63
+Round median + check (same alpha only),10s,seed3,4,63.0,66
+Original formula,10s,seed3,5,65.0,51
+Original formula (margin 0.1),10s,seed3,5,65.0,46
+Revised formula,10s,seed3,5,65.0,57
+Revised formula (margin 0.1),10s,seed3,5,65.0,54
+Sparsity line + check (both datasets),10s,seed3,5,65.0,64
+Round median + check (both datasets),10s,seed3,5,65.0,78
+Sparsity line + check (same alpha only),10s,seed3,5,65.0,52
+Round median + check (same alpha only),10s,seed3,5,65.0,56
+Original formula,10s,seed3,6,41.0,38
+Original formula (margin 0.1),10s,seed3,6,41.0,37
+Revised formula,10s,seed3,6,41.0,39
+Revised formula (margin 0.1),10s,seed3,6,41.0,37
+Sparsity line + check (both datasets),10s,seed3,6,41.0,58
+Round median + check (both datasets),10s,seed3,6,41.0,75
+Sparsity line + check (same alpha only),10s,seed3,6,41.0,43
+Round median + check (same alpha only),10s,seed3,6,41.0,43
+Original formula,10s,seed3,7,31.0,29
+Original formula (margin 0.1),10s,seed3,7,31.0,24
+Revised formula,10s,seed3,7,31.0,35
+Revised formula (margin 0.1),10s,seed3,7,31.0,32
+Sparsity line + check (both datasets),10s,seed3,7,31.0,54
+Round median + check (both datasets),10s,seed3,7,31.0,64
+Sparsity line + check (same alpha only),10s,seed3,7,31.0,35
+Round median + check (same alpha only),10s,seed3,7,31.0,39
+Original formula,10s,seed4,1,80.0,80
+Original formula (margin 0.1),10s,seed4,1,80.0,80
+Revised formula,10s,seed4,1,80.0,80
+Revised formula (margin 0.1),10s,seed4,1,80.0,80
+Sparsity line + check (both datasets),10s,seed4,1,80.0,80
+Round median + check (both datasets),10s,seed4,1,80.0,80
+Sparsity line + check (same alpha only),10s,seed4,1,80.0,80
+Round median + check (same alpha only),10s,seed4,1,80.0,80
+Original formula,10s,seed4,2,80.0,80
+Original formula (margin 0.1),10s,seed4,2,80.0,80
+Revised formula,10s,seed4,2,80.0,80
+Revised formula (margin 0.1),10s,seed4,2,80.0,80
+Sparsity line + check (both datasets),10s,seed4,2,80.0,80
+Round median + check (both datasets),10s,seed4,2,80.0,80
+Sparsity line + check (same alpha only),10s,seed4,2,80.0,80
+Round median + check (same alpha only),10s,seed4,2,80.0,80
+Original formula,10s,seed4,3,68.0,70
+Original formula (margin 0.1),10s,seed4,3,68.0,66
+Revised formula,10s,seed4,3,68.0,77
+Revised formula (margin 0.1),10s,seed4,3,68.0,74
+Sparsity line + check (both datasets),10s,seed4,3,68.0,79
+Round median + check (both datasets),10s,seed4,3,68.0,78
+Sparsity line + check (same alpha only),10s,seed4,3,68.0,77
+Round median + check (same alpha only),10s,seed4,3,68.0,78
+Original formula,10s,seed4,4,48.0,58
+Original formula (margin 0.1),10s,seed4,4,48.0,57
+Revised formula,10s,seed4,4,48.0,70
+Revised formula (margin 0.1),10s,seed4,4,48.0,61
+Sparsity line + check (both datasets),10s,seed4,4,48.0,71
+Round median + check (both datasets),10s,seed4,4,48.0,70
+Sparsity line + check (same alpha only),10s,seed4,4,48.0,63
+Round median + check (same alpha only),10s,seed4,4,48.0,66
+Original formula,10s,seed4,5,65.0,50
+Original formula (margin 0.1),10s,seed4,5,65.0,45
+Revised formula,10s,seed4,5,65.0,56
+Revised formula (margin 0.1),10s,seed4,5,65.0,53
+Sparsity line + check (both datasets),10s,seed4,5,65.0,64
+Round median + check (both datasets),10s,seed4,5,65.0,78
+Sparsity line + check (same alpha only),10s,seed4,5,65.0,52
+Round median + check (same alpha only),10s,seed4,5,65.0,56
+Original formula,10s,seed4,6,43.0,38
+Original formula (margin 0.1),10s,seed4,6,43.0,36
+Revised formula,10s,seed4,6,43.0,39
+Revised formula (margin 0.1),10s,seed4,6,43.0,37
+Sparsity line + check (both datasets),10s,seed4,6,43.0,58
+Round median + check (both datasets),10s,seed4,6,43.0,75
+Sparsity line + check (same alpha only),10s,seed4,6,43.0,43
+Round median + check (same alpha only),10s,seed4,6,43.0,43
+Original formula,10s,seed4,7,45.0,28
+Original formula (margin 0.1),10s,seed4,7,45.0,22
+Revised formula,10s,seed4,7,45.0,35
+Revised formula (margin 0.1),10s,seed4,7,45.0,32
+Sparsity line + check (both datasets),10s,seed4,7,45.0,54
+Round median + check (both datasets),10s,seed4,7,45.0,64
+Sparsity line + check (same alpha only),10s,seed4,7,45.0,36
+Round median + check (same alpha only),10s,seed4,7,45.0,38
+Original formula,10s,seed4,8,19.0,2
+Original formula (margin 0.1),10s,seed4,8,19.0,2
+Revised formula,10s,seed4,8,19.0,28
+Revised formula (margin 0.1),10s,seed4,8,19.0,22
+Sparsity line + check (both datasets),10s,seed4,8,19.0,51
+Round median + check (both datasets),10s,seed4,8,19.0,58
+Sparsity line + check (same alpha only),10s,seed4,8,19.0,30
+Round median + check (same alpha only),10s,seed4,8,19.0,19
+Original formula,10s,seed5,1,80.0,80
+Original formula (margin 0.1),10s,seed5,1,80.0,80
+Revised formula,10s,seed5,1,80.0,80
+Revised formula (margin 0.1),10s,seed5,1,80.0,80
+Sparsity line + check (both datasets),10s,seed5,1,80.0,80
+Round median + check (both datasets),10s,seed5,1,80.0,80
+Sparsity line + check (same alpha only),10s,seed5,1,80.0,80
+Round median + check (same alpha only),10s,seed5,1,80.0,80
+Original formula,10s,seed5,2,80.0,80
+Original formula (margin 0.1),10s,seed5,2,80.0,80
+Revised formula,10s,seed5,2,80.0,80
+Revised formula (margin 0.1),10s,seed5,2,80.0,80
+Sparsity line + check (both datasets),10s,seed5,2,80.0,80
+Round median + check (both datasets),10s,seed5,2,80.0,80
+Sparsity line + check (same alpha only),10s,seed5,2,80.0,80
+Round median + check (same alpha only),10s,seed5,2,80.0,80
+Original formula,10s,seed5,3,77.0,71
+Original formula (margin 0.1),10s,seed5,3,77.0,67
+Revised formula,10s,seed5,3,77.0,78
+Revised formula (margin 0.1),10s,seed5,3,77.0,77
+Sparsity line + check (both datasets),10s,seed5,3,77.0,79
+Round median + check (both datasets),10s,seed5,3,77.0,78
+Sparsity line + check (same alpha only),10s,seed5,3,77.0,77
+Round median + check (same alpha only),10s,seed5,3,77.0,78
+Original formula,10s,seed5,4,53.0,58
+Original formula (margin 0.1),10s,seed5,4,53.0,57
+Revised formula,10s,seed5,4,53.0,59
+Revised formula (margin 0.1),10s,seed5,4,53.0,58
+Sparsity line + check (both datasets),10s,seed5,4,53.0,70
+Round median + check (both datasets),10s,seed5,4,53.0,70
+Sparsity line + check (same alpha only),10s,seed5,4,53.0,63
+Round median + check (same alpha only),10s,seed5,4,53.0,66
+Original formula,10s,seed5,5,55.0,50
+Original formula (margin 0.1),10s,seed5,5,55.0,46
+Revised formula,10s,seed5,5,55.0,53
+Revised formula (margin 0.1),10s,seed5,5,55.0,48
+Sparsity line + check (both datasets),10s,seed5,5,55.0,64
+Round median + check (both datasets),10s,seed5,5,55.0,78
+Sparsity line + check (same alpha only),10s,seed5,5,55.0,52
+Round median + check (same alpha only),10s,seed5,5,55.0,57
+Original formula,10s,seed5,6,43.0,38
+Original formula (margin 0.1),10s,seed5,6,43.0,36
+Revised formula,10s,seed5,6,43.0,38
+Revised formula (margin 0.1),10s,seed5,6,43.0,37
+Sparsity line + check (both datasets),10s,seed5,6,43.0,59
+Round median + check (both datasets),10s,seed5,6,43.0,75
+Sparsity line + check (same alpha only),10s,seed5,6,43.0,43
+Round median + check (same alpha only),10s,seed5,6,43.0,43
+Original formula,10s,seed5,7,31.0,28
+Original formula (margin 0.1),10s,seed5,7,31.0,22
+Revised formula,10s,seed5,7,31.0,34
+Revised formula (margin 0.1),10s,seed5,7,31.0,31
+Sparsity line + check (both datasets),10s,seed5,7,31.0,54
+Round median + check (both datasets),10s,seed5,7,31.0,64
+Sparsity line + check (same alpha only),10s,seed5,7,31.0,36
+Round median + check (same alpha only),10s,seed5,7,31.0,39
+Original formula,10s,seed5,8,24.0,2
+Original formula (margin 0.1),10s,seed5,8,24.0,2
+Revised formula,10s,seed5,8,24.0,36
+Revised formula (margin 0.1),10s,seed5,8,24.0,31
+Sparsity line + check (both datasets),10s,seed5,8,24.0,51
+Round median + check (both datasets),10s,seed5,8,24.0,58
+Sparsity line + check (same alpha only),10s,seed5,8,24.0,30
+Round median + check (same alpha only),10s,seed5,8,24.0,19
+Original formula,10s,seed5,9,39.0,2
+Original formula (margin 0.1),10s,seed5,9,39.0,2
+Revised formula,10s,seed5,9,39.0,28
+Revised formula (margin 0.1),10s,seed5,9,39.0,16
+Sparsity line + check (both datasets),10s,seed5,9,39.0,48
+Round median + check (both datasets),10s,seed5,9,39.0,55
+Sparsity line + check (same alpha only),10s,seed5,9,39.0,25
+Round median + check (same alpha only),10s,seed5,9,39.0,27
+Original formula,10s,seed6,1,80.0,80
+Original formula (margin 0.1),10s,seed6,1,80.0,80
+Revised formula,10s,seed6,1,80.0,80
+Revised formula (margin 0.1),10s,seed6,1,80.0,80
+Sparsity line + check (both datasets),10s,seed6,1,80.0,80
+Round median + check (both datasets),10s,seed6,1,80.0,80
+Sparsity line + check (same alpha only),10s,seed6,1,80.0,80
+Round median + check (same alpha only),10s,seed6,1,80.0,80
+Original formula,10s,seed6,2,80.0,80
+Original formula (margin 0.1),10s,seed6,2,80.0,80
+Revised formula,10s,seed6,2,80.0,80
+Revised formula (margin 0.1),10s,seed6,2,80.0,80
+Sparsity line + check (both datasets),10s,seed6,2,80.0,80
+Round median + check (both datasets),10s,seed6,2,80.0,80
+Sparsity line + check (same alpha only),10s,seed6,2,80.0,80
+Round median + check (same alpha only),10s,seed6,2,80.0,80
+Original formula,10s,seed6,3,77.0,71
+Original formula (margin 0.1),10s,seed6,3,77.0,67
+Revised formula,10s,seed6,3,77.0,77
+Revised formula (margin 0.1),10s,seed6,3,77.0,76
+Sparsity line + check (both datasets),10s,seed6,3,77.0,80
+Round median + check (both datasets),10s,seed6,3,77.0,78
+Sparsity line + check (same alpha only),10s,seed6,3,77.0,77
+Round median + check (same alpha only),10s,seed6,3,77.0,78
+Original formula,10s,seed6,4,48.0,58
+Original formula (margin 0.1),10s,seed6,4,48.0,57
+Revised formula,10s,seed6,4,48.0,73
+Revised formula (margin 0.1),10s,seed6,4,48.0,67
+Sparsity line + check (both datasets),10s,seed6,4,48.0,71
+Round median + check (both datasets),10s,seed6,4,48.0,70
+Sparsity line + check (same alpha only),10s,seed6,4,48.0,63
+Round median + check (same alpha only),10s,seed6,4,48.0,66
+Original formula,10s,seed6,5,39.0,51
+Original formula (margin 0.1),10s,seed6,5,39.0,47
+Revised formula,10s,seed6,5,39.0,55
+Revised formula (margin 0.1),10s,seed6,5,39.0,51
+Sparsity line + check (both datasets),10s,seed6,5,39.0,64
+Round median + check (both datasets),10s,seed6,5,39.0,78
+Sparsity line + check (same alpha only),10s,seed6,5,39.0,52
+Round median + check (same alpha only),10s,seed6,5,39.0,57
+Original formula,10s,seed6,6,36.0,38
+Original formula (margin 0.1),10s,seed6,6,36.0,37
+Revised formula,10s,seed6,6,36.0,43
+Revised formula (margin 0.1),10s,seed6,6,36.0,39
+Sparsity line + check (both datasets),10s,seed6,6,36.0,59
+Round median + check (both datasets),10s,seed6,6,36.0,75
+Sparsity line + check (same alpha only),10s,seed6,6,36.0,43
+Round median + check (same alpha only),10s,seed6,6,36.0,43
+Original formula,10s,seed6,7,36.0,29
+Original formula (margin 0.1),10s,seed6,7,36.0,24
+Revised formula,10s,seed6,7,36.0,40
+Revised formula (margin 0.1),10s,seed6,7,36.0,38
+Sparsity line + check (both datasets),10s,seed6,7,36.0,54
+Round median + check (both datasets),10s,seed6,7,36.0,64
+Sparsity line + check (same alpha only),10s,seed6,7,36.0,36
+Round median + check (same alpha only),10s,seed6,7,36.0,39
+Original formula,10s,seed7,1,80.0,80
+Original formula (margin 0.1),10s,seed7,1,80.0,80
+Revised formula,10s,seed7,1,80.0,80
+Revised formula (margin 0.1),10s,seed7,1,80.0,80
+Sparsity line + check (both datasets),10s,seed7,1,80.0,80
+Round median + check (both datasets),10s,seed7,1,80.0,80
+Sparsity line + check (same alpha only),10s,seed7,1,80.0,80
+Round median + check (same alpha only),10s,seed7,1,80.0,80
+Original formula,10s,seed7,2,80.0,80
+Original formula (margin 0.1),10s,seed7,2,80.0,80
+Revised formula,10s,seed7,2,80.0,80
+Revised formula (margin 0.1),10s,seed7,2,80.0,80
+Sparsity line + check (both datasets),10s,seed7,2,80.0,80
+Round median + check (both datasets),10s,seed7,2,80.0,80
+Sparsity line + check (same alpha only),10s,seed7,2,80.0,80
+Round median + check (same alpha only),10s,seed7,2,80.0,80
+Original formula,10s,seed7,3,80.0,80
+Original formula (margin 0.1),10s,seed7,3,80.0,80
+Revised formula,10s,seed7,3,80.0,80
+Revised formula (margin 0.1),10s,seed7,3,80.0,80
+Sparsity line + check (both datasets),10s,seed7,3,80.0,80
+Round median + check (both datasets),10s,seed7,3,80.0,80
+Sparsity line + check (same alpha only),10s,seed7,3,80.0,80
+Round median + check (same alpha only),10s,seed7,3,80.0,80
+Original formula,10s,seed7,4,78.0,58
+Original formula (margin 0.1),10s,seed7,4,78.0,56
+Revised formula,10s,seed7,4,78.0,63
+Revised formula (margin 0.1),10s,seed7,4,78.0,59
+Sparsity line + check (both datasets),10s,seed7,4,78.0,70
+Round median + check (both datasets),10s,seed7,4,78.0,63
+Sparsity line + check (same alpha only),10s,seed7,4,78.0,62
+Round median + check (same alpha only),10s,seed7,4,78.0,62
+Original formula,10s,seed7,5,63.0,49
+Original formula (margin 0.1),10s,seed7,5,63.0,44
+Revised formula,10s,seed7,5,63.0,53
+Revised formula (margin 0.1),10s,seed7,5,63.0,48
+Sparsity line + check (both datasets),10s,seed7,5,63.0,63
+Round median + check (both datasets),10s,seed7,5,63.0,78
+Sparsity line + check (same alpha only),10s,seed7,5,63.0,51
+Round median + check (same alpha only),10s,seed7,5,63.0,56
+Original formula,10s,seed7,6,48.0,37
+Original formula (margin 0.1),10s,seed7,6,48.0,36
+Revised formula,10s,seed7,6,48.0,39
+Revised formula (margin 0.1),10s,seed7,6,48.0,38
+Sparsity line + check (both datasets),10s,seed7,6,48.0,58
+Round median + check (both datasets),10s,seed7,6,48.0,75
+Sparsity line + check (same alpha only),10s,seed7,6,48.0,42
+Round median + check (same alpha only),10s,seed7,6,48.0,43
+Original formula,10s,seed7,7,48.0,27
+Original formula (margin 0.1),10s,seed7,7,48.0,22
+Revised formula,10s,seed7,7,48.0,35
+Revised formula (margin 0.1),10s,seed7,7,48.0,32
+Sparsity line + check (both datasets),10s,seed7,7,48.0,54
+Round median + check (both datasets),10s,seed7,7,48.0,64
+Sparsity line + check (same alpha only),10s,seed7,7,48.0,35
+Round median + check (same alpha only),10s,seed7,7,48.0,38
+Original formula,10s,seed7,8,38.0,2
+Original formula (margin 0.1),10s,seed7,8,38.0,2
+Revised formula,10s,seed7,8,38.0,30
+Revised formula (margin 0.1),10s,seed7,8,38.0,25
+Sparsity line + check (both datasets),10s,seed7,8,38.0,50
+Round median + check (both datasets),10s,seed7,8,38.0,58
+Sparsity line + check (same alpha only),10s,seed7,8,38.0,29
+Round median + check (same alpha only),10s,seed7,8,38.0,19
+Original formula,10s,seed8,1,80.0,80
+Original formula (margin 0.1),10s,seed8,1,80.0,80
+Revised formula,10s,seed8,1,80.0,80
+Revised formula (margin 0.1),10s,seed8,1,80.0,80
+Sparsity line + check (both datasets),10s,seed8,1,80.0,80
+Round median + check (both datasets),10s,seed8,1,80.0,80
+Sparsity line + check (same alpha only),10s,seed8,1,80.0,80
+Round median + check (same alpha only),10s,seed8,1,80.0,80
+Original formula,10s,seed8,2,80.0,80
+Original formula (margin 0.1),10s,seed8,2,80.0,80
+Revised formula,10s,seed8,2,80.0,80
+Revised formula (margin 0.1),10s,seed8,2,80.0,80
+Sparsity line + check (both datasets),10s,seed8,2,80.0,80
+Round median + check (both datasets),10s,seed8,2,80.0,80
+Sparsity line + check (same alpha only),10s,seed8,2,80.0,80
+Round median + check (same alpha only),10s,seed8,2,80.0,80
+Original formula,10s,seed9,1,80.0,80
+Original formula (margin 0.1),10s,seed9,1,80.0,80
+Revised formula,10s,seed9,1,80.0,80
+Revised formula (margin 0.1),10s,seed9,1,80.0,80
+Sparsity line + check (both datasets),10s,seed9,1,80.0,80
+Round median + check (both datasets),10s,seed9,1,80.0,80
+Sparsity line + check (same alpha only),10s,seed9,1,80.0,80
+Round median + check (same alpha only),10s,seed9,1,80.0,80
+Original formula,10s,seed9,2,80.0,80
+Original formula (margin 0.1),10s,seed9,2,80.0,80
+Revised formula,10s,seed9,2,80.0,80
+Revised formula (margin 0.1),10s,seed9,2,80.0,80
+Sparsity line + check (both datasets),10s,seed9,2,80.0,80
+Round median + check (both datasets),10s,seed9,2,80.0,80
+Sparsity line + check (same alpha only),10s,seed9,2,80.0,80
+Round median + check (same alpha only),10s,seed9,2,80.0,80
+Original formula,10s,seed9,3,78.0,70
+Original formula (margin 0.1),10s,seed9,3,78.0,66
+Revised formula,10s,seed9,3,78.0,78
+Revised formula (margin 0.1),10s,seed9,3,78.0,77
+Sparsity line + check (both datasets),10s,seed9,3,78.0,77
+Round median + check (both datasets),10s,seed9,3,78.0,77
+Sparsity line + check (same alpha only),10s,seed9,3,78.0,75
+Round median + check (same alpha only),10s,seed9,3,78.0,77
+Original formula,10s,seed9,4,78.0,58
+Original formula (margin 0.1),10s,seed9,4,78.0,57
+Revised formula,10s,seed9,4,78.0,74
+Revised formula (margin 0.1),10s,seed9,4,78.0,70
+Sparsity line + check (both datasets),10s,seed9,4,78.0,70
+Round median + check (both datasets),10s,seed9,4,78.0,63
+Sparsity line + check (same alpha only),10s,seed9,4,78.0,62
+Round median + check (same alpha only),10s,seed9,4,78.0,62
+Original formula,10s,seed9,5,57.0,49
+Original formula (margin 0.1),10s,seed9,5,57.0,44
+Revised formula,10s,seed9,5,57.0,55
+Revised formula (margin 0.1),10s,seed9,5,57.0,50
+Sparsity line + check (both datasets),10s,seed9,5,57.0,63
+Round median + check (both datasets),10s,seed9,5,57.0,78
+Sparsity line + check (same alpha only),10s,seed9,5,57.0,51
+Round median + check (same alpha only),10s,seed9,5,57.0,56
+Original formula,10s,seed9,6,39.0,37
+Original formula (margin 0.1),10s,seed9,6,39.0,35
+Revised formula,10s,seed9,6,39.0,38
+Revised formula (margin 0.1),10s,seed9,6,39.0,37
+Sparsity line + check (both datasets),10s,seed9,6,39.0,59
+Round median + check (both datasets),10s,seed9,6,39.0,75
+Sparsity line + check (same alpha only),10s,seed9,6,39.0,43
+Round median + check (same alpha only),10s,seed9,6,39.0,43
+Original formula,10s,seed9,7,41.0,26
+Original formula (margin 0.1),10s,seed9,7,41.0,19
+Revised formula,10s,seed9,7,41.0,35
+Revised formula (margin 0.1),10s,seed9,7,41.0,32
+Sparsity line + check (both datasets),10s,seed9,7,41.0,55
+Round median + check (both datasets),10s,seed9,7,41.0,64
+Sparsity line + check (same alpha only),10s,seed9,7,41.0,36
+Round median + check (same alpha only),10s,seed9,7,41.0,38
+Original formula,10s,seed9,8,19.0,2
+Original formula (margin 0.1),10s,seed9,8,19.0,2
+Revised formula,10s,seed9,8,19.0,28
+Revised formula (margin 0.1),10s,seed9,8,19.0,23
+Sparsity line + check (both datasets),10s,seed9,8,19.0,52
+Round median + check (both datasets),10s,seed9,8,19.0,58
+Sparsity line + check (same alpha only),10s,seed9,8,19.0,30
+Round median + check (same alpha only),10s,seed9,8,19.0,19
+Original formula,10s,seed9,9,29.0,2
+Original formula (margin 0.1),10s,seed9,9,29.0,2
+Revised formula,10s,seed9,9,29.0,25
+Revised formula (margin 0.1),10s,seed9,9,29.0,5
+Sparsity line + check (both datasets),10s,seed9,9,29.0,49
+Round median + check (both datasets),10s,seed9,9,29.0,55
+Sparsity line + check (same alpha only),10s,seed9,9,29.0,26
+Round median + check (same alpha only),10s,seed9,9,29.0,32
+Original formula,10s,seed9,10,24.0,2
+Original formula (margin 0.1),10s,seed9,10,24.0,2
+Revised formula,10s,seed9,10,24.0,2
+Revised formula (margin 0.1),10s,seed9,10,24.0,2
+Sparsity line + check (both datasets),10s,seed9,10,24.0,47
+Round median + check (both datasets),10s,seed9,10,24.0,45
+Sparsity line + check (same alpha only),10s,seed9,10,24.0,22
+Round median + check (same alpha only),10s,seed9,10,24.0,13
+Original formula,10s,seed10,1,80.0,80
+Original formula (margin 0.1),10s,seed10,1,80.0,80
+Revised formula,10s,seed10,1,80.0,80
+Revised formula (margin 0.1),10s,seed10,1,80.0,80
+Sparsity line + check (both datasets),10s,seed10,1,80.0,80
+Round median + check (both datasets),10s,seed10,1,80.0,80
+Sparsity line + check (same alpha only),10s,seed10,1,80.0,80
+Round median + check (same alpha only),10s,seed10,1,80.0,80
+Original formula,10s,seed10,2,80.0,80
+Original formula (margin 0.1),10s,seed10,2,80.0,80
+Revised formula,10s,seed10,2,80.0,80
+Revised formula (margin 0.1),10s,seed10,2,80.0,80
+Sparsity line + check (both datasets),10s,seed10,2,80.0,80
+Round median + check (both datasets),10s,seed10,2,80.0,80
+Sparsity line + check (same alpha only),10s,seed10,2,80.0,80
+Round median + check (same alpha only),10s,seed10,2,80.0,80
+Original formula,10s,seed10,3,78.0,69
+Original formula (margin 0.1),10s,seed10,3,78.0,65
+Revised formula,10s,seed10,3,78.0,79
+Revised formula (margin 0.1),10s,seed10,3,78.0,78
+Sparsity line + check (both datasets),10s,seed10,3,78.0,78
+Round median + check (both datasets),10s,seed10,3,78.0,77
+Sparsity line + check (same alpha only),10s,seed10,3,78.0,76
+Round median + check (same alpha only),10s,seed10,3,78.0,77
+Original formula,10s,seed10,4,70.0,58
+Original formula (margin 0.1),10s,seed10,4,70.0,57
+Revised formula,10s,seed10,4,70.0,70
+Revised formula (margin 0.1),10s,seed10,4,70.0,62
+Sparsity line + check (both datasets),10s,seed10,4,70.0,70
+Round median + check (both datasets),10s,seed10,4,70.0,63
+Sparsity line + check (same alpha only),10s,seed10,4,70.0,62
+Round median + check (same alpha only),10s,seed10,4,70.0,62
+Original formula,10s,seed10,5,58.0,50
+Original formula (margin 0.1),10s,seed10,5,58.0,45
+Revised formula,10s,seed10,5,58.0,56
+Revised formula (margin 0.1),10s,seed10,5,58.0,52
+Sparsity line + check (both datasets),10s,seed10,5,58.0,63
+Round median + check (both datasets),10s,seed10,5,58.0,78
+Sparsity line + check (same alpha only),10s,seed10,5,58.0,51
+Round median + check (same alpha only),10s,seed10,5,58.0,56
+Original formula,10s,seed10,6,45.0,38
+Original formula (margin 0.1),10s,seed10,6,45.0,36
+Revised formula,10s,seed10,6,45.0,43
+Revised formula (margin 0.1),10s,seed10,6,45.0,39
+Sparsity line + check (both datasets),10s,seed10,6,45.0,58
+Round median + check (both datasets),10s,seed10,6,45.0,75
+Sparsity line + check (same alpha only),10s,seed10,6,45.0,43
+Round median + check (same alpha only),10s,seed10,6,45.0,43
+Original formula,10s,seed10,7,38.0,28
+Original formula (margin 0.1),10s,seed10,7,38.0,23
+Revised formula,10s,seed10,7,38.0,35
+Revised formula (margin 0.1),10s,seed10,7,38.0,32
+Sparsity line + check (both datasets),10s,seed10,7,38.0,54
+Round median + check (both datasets),10s,seed10,7,38.0,64
+Sparsity line + check (same alpha only),10s,seed10,7,38.0,36
+Round median + check (same alpha only),10s,seed10,7,38.0,39
+Original formula,10s,seed10,8,18.0,2
+Original formula (margin 0.1),10s,seed10,8,18.0,2
+Revised formula,10s,seed10,8,18.0,34
+Revised formula (margin 0.1),10s,seed10,8,18.0,29
+Sparsity line + check (both datasets),10s,seed10,8,18.0,51
+Round median + check (both datasets),10s,seed10,8,18.0,58
+Sparsity line + check (same alpha only),10s,seed10,8,18.0,30
+Round median + check (same alpha only),10s,seed10,8,18.0,19
+Original formula,do,order01,1,80.0,80
+Original formula (margin 0.1),do,order01,1,80.0,80
+Revised formula,do,order01,1,80.0,80
+Revised formula (margin 0.1),do,order01,1,80.0,80
+Sparsity line + check (both datasets),do,order01,1,80.0,80
+Round median + check (both datasets),do,order01,1,80.0,80
+Sparsity line + check (same alpha only),do,order01,1,80.0,80
+Round median + check (same alpha only),do,order01,1,80.0,80
+Original formula,do,order01,2,80.0,80
+Original formula (margin 0.1),do,order01,2,80.0,80
+Revised formula,do,order01,2,80.0,80
+Revised formula (margin 0.1),do,order01,2,80.0,80
+Sparsity line + check (both datasets),do,order01,2,80.0,80
+Round median + check (both datasets),do,order01,2,80.0,80
+Sparsity line + check (same alpha only),do,order01,2,80.0,80
+Round median + check (same alpha only),do,order01,2,80.0,80
+Original formula,do,order01,3,80.0,80
+Original formula (margin 0.1),do,order01,3,80.0,80
+Revised formula,do,order01,3,80.0,80
+Revised formula (margin 0.1),do,order01,3,80.0,80
+Sparsity line + check (both datasets),do,order01,3,80.0,80
+Round median + check (both datasets),do,order01,3,80.0,80
+Sparsity line + check (same alpha only),do,order01,3,80.0,80
+Round median + check (same alpha only),do,order01,3,80.0,80
+Original formula,do,order01,4,80.0,80
+Original formula (margin 0.1),do,order01,4,80.0,80
+Revised formula,do,order01,4,80.0,80
+Revised formula (margin 0.1),do,order01,4,80.0,80
+Sparsity line + check (both datasets),do,order01,4,80.0,80
+Round median + check (both datasets),do,order01,4,80.0,80
+Sparsity line + check (same alpha only),do,order01,4,80.0,80
+Round median + check (same alpha only),do,order01,4,80.0,80
+Original formula,do,order01,5,78.0,79
+Original formula (margin 0.1),do,order01,5,78.0,79
+Revised formula,do,order01,5,78.0,79
+Revised formula (margin 0.1),do,order01,5,78.0,79
+Sparsity line + check (both datasets),do,order01,5,78.0,62
+Round median + check (both datasets),do,order01,5,78.0,71
+Sparsity line + check (same alpha only),do,order01,5,78.0,80
+Round median + check (same alpha only),do,order01,5,78.0,78
+Original formula,do,order01,6,77.0,79
+Original formula (margin 0.1),do,order01,6,77.0,79
+Revised formula,do,order01,6,77.0,79
+Revised formula (margin 0.1),do,order01,6,77.0,79
+Sparsity line + check (both datasets),do,order01,6,77.0,57
+Round median + check (both datasets),do,order01,6,77.0,73
+Sparsity line + check (same alpha only),do,order01,6,77.0,72
+Round median + check (same alpha only),do,order01,6,77.0,75
+Original formula,do,order01,7,70.0,78
+Original formula (margin 0.1),do,order01,7,70.0,78
+Revised formula,do,order01,7,70.0,76
+Revised formula (margin 0.1),do,order01,7,70.0,74
+Sparsity line + check (both datasets),do,order01,7,70.0,53
+Round median + check (both datasets),do,order01,7,70.0,55
+Sparsity line + check (same alpha only),do,order01,7,70.0,65
+Round median + check (same alpha only),do,order01,7,70.0,67
+Original formula,do,order01,8,58.0,75
+Original formula (margin 0.1),do,order01,8,58.0,73
+Revised formula,do,order01,8,58.0,61
+Revised formula (margin 0.1),do,order01,8,58.0,59
+Sparsity line + check (both datasets),do,order01,8,58.0,49
+Round median + check (both datasets),do,order01,8,58.0,58
+Sparsity line + check (same alpha only),do,order01,8,58.0,59
+Round median + check (same alpha only),do,order01,8,58.0,60
+Original formula,do,order01,9,58.0,64
+Original formula (margin 0.1),do,order01,9,58.0,59
+Revised formula,do,order01,9,58.0,56
+Revised formula (margin 0.1),do,order01,9,58.0,55
+Sparsity line + check (both datasets),do,order01,9,58.0,47
+Round median + check (both datasets),do,order01,9,58.0,55
+Sparsity line + check (same alpha only),do,order01,9,58.0,55
+Round median + check (same alpha only),do,order01,9,58.0,55
+Original formula,do,order01,10,39.0,56
+Original formula (margin 0.1),do,order01,10,39.0,54
+Revised formula,do,order01,10,39.0,52
+Revised formula (margin 0.1),do,order01,10,39.0,49
+Sparsity line + check (both datasets),do,order01,10,39.0,45
+Round median + check (both datasets),do,order01,10,39.0,45
+Sparsity line + check (same alpha only),do,order01,10,39.0,51
+Round median + check (same alpha only),do,order01,10,39.0,45
+Original formula,do,order02,1,80.0,80
+Original formula (margin 0.1),do,order02,1,80.0,80
+Revised formula,do,order02,1,80.0,80
+Revised formula (margin 0.1),do,order02,1,80.0,80
+Sparsity line + check (both datasets),do,order02,1,80.0,80
+Round median + check (both datasets),do,order02,1,80.0,80
+Sparsity line + check (same alpha only),do,order02,1,80.0,80
+Round median + check (same alpha only),do,order02,1,80.0,80
+Original formula,do,order02,2,80.0,80
+Original formula (margin 0.1),do,order02,2,80.0,80
+Revised formula,do,order02,2,80.0,80
+Revised formula (margin 0.1),do,order02,2,80.0,80
+Sparsity line + check (both datasets),do,order02,2,80.0,80
+Round median + check (both datasets),do,order02,2,80.0,80
+Sparsity line + check (same alpha only),do,order02,2,80.0,80
+Round median + check (same alpha only),do,order02,2,80.0,80
+Original formula,do,order02,3,80.0,80
+Original formula (margin 0.1),do,order02,3,80.0,80
+Revised formula,do,order02,3,80.0,80
+Revised formula (margin 0.1),do,order02,3,80.0,80
+Sparsity line + check (both datasets),do,order02,3,80.0,80
+Round median + check (both datasets),do,order02,3,80.0,80
+Sparsity line + check (same alpha only),do,order02,3,80.0,80
+Round median + check (same alpha only),do,order02,3,80.0,80
+Original formula,do,order02,4,80.0,80
+Original formula (margin 0.1),do,order02,4,80.0,80
+Revised formula,do,order02,4,80.0,80
+Revised formula (margin 0.1),do,order02,4,80.0,80
+Sparsity line + check (both datasets),do,order02,4,80.0,80
+Round median + check (both datasets),do,order02,4,80.0,80
+Sparsity line + check (same alpha only),do,order02,4,80.0,80
+Round median + check (same alpha only),do,order02,4,80.0,80
+Original formula,do,order02,5,78.0,79
+Original formula (margin 0.1),do,order02,5,78.0,79
+Revised formula,do,order02,5,78.0,79
+Revised formula (margin 0.1),do,order02,5,78.0,79
+Sparsity line + check (both datasets),do,order02,5,78.0,62
+Round median + check (both datasets),do,order02,5,78.0,71
+Sparsity line + check (same alpha only),do,order02,5,78.0,80
+Round median + check (same alpha only),do,order02,5,78.0,78
+Original formula,do,order02,6,78.0,79
+Original formula (margin 0.1),do,order02,6,78.0,79
+Revised formula,do,order02,6,78.0,79
+Revised formula (margin 0.1),do,order02,6,78.0,79
+Sparsity line + check (both datasets),do,order02,6,78.0,57
+Round median + check (both datasets),do,order02,6,78.0,73
+Sparsity line + check (same alpha only),do,order02,6,78.0,72
+Round median + check (same alpha only),do,order02,6,78.0,75
+Original formula,do,order02,7,65.0,78
+Original formula (margin 0.1),do,order02,7,65.0,77
+Revised formula,do,order02,7,65.0,76
+Revised formula (margin 0.1),do,order02,7,65.0,74
+Sparsity line + check (both datasets),do,order02,7,65.0,53
+Round median + check (both datasets),do,order02,7,65.0,55
+Sparsity line + check (same alpha only),do,order02,7,65.0,65
+Round median + check (same alpha only),do,order02,7,65.0,67
+Original formula,do,order02,8,67.0,75
+Original formula (margin 0.1),do,order02,8,67.0,73
+Revised formula,do,order02,8,67.0,65
+Revised formula (margin 0.1),do,order02,8,67.0,59
+Sparsity line + check (both datasets),do,order02,8,67.0,49
+Round median + check (both datasets),do,order02,8,67.0,58
+Sparsity line + check (same alpha only),do,order02,8,67.0,59
+Round median + check (same alpha only),do,order02,8,67.0,58
+Original formula,do,order02,9,58.0,63
+Original formula (margin 0.1),do,order02,9,58.0,59
+Revised formula,do,order02,9,58.0,54
+Revised formula (margin 0.1),do,order02,9,58.0,52
+Sparsity line + check (both datasets),do,order02,9,58.0,46
+Round median + check (both datasets),do,order02,9,58.0,55
+Sparsity line + check (same alpha only),do,order02,9,58.0,54
+Round median + check (same alpha only),do,order02,9,58.0,55
+Original formula,do,order02,10,57.0,56
+Original formula (margin 0.1),do,order02,10,57.0,54
+Revised formula,do,order02,10,57.0,50
+Revised formula (margin 0.1),do,order02,10,57.0,47
+Sparsity line + check (both datasets),do,order02,10,57.0,44
+Round median + check (both datasets),do,order02,10,57.0,41
+Sparsity line + check (same alpha only),do,order02,10,57.0,50
+Round median + check (same alpha only),do,order02,10,57.0,45
+Original formula,do,order03,1,80.0,80
+Original formula (margin 0.1),do,order03,1,80.0,80
+Revised formula,do,order03,1,80.0,80
+Revised formula (margin 0.1),do,order03,1,80.0,80
+Sparsity line + check (both datasets),do,order03,1,80.0,80
+Round median + check (both datasets),do,order03,1,80.0,80
+Sparsity line + check (same alpha only),do,order03,1,80.0,80
+Round median + check (same alpha only),do,order03,1,80.0,80
+Original formula,do,order03,2,80.0,80
+Original formula (margin 0.1),do,order03,2,80.0,80
+Revised formula,do,order03,2,80.0,80
+Revised formula (margin 0.1),do,order03,2,80.0,80
+Sparsity line + check (both datasets),do,order03,2,80.0,80
+Round median + check (both datasets),do,order03,2,80.0,80
+Sparsity line + check (same alpha only),do,order03,2,80.0,80
+Round median + check (same alpha only),do,order03,2,80.0,80
+Original formula,do,order03,3,80.0,80
+Original formula (margin 0.1),do,order03,3,80.0,80
+Revised formula,do,order03,3,80.0,80
+Revised formula (margin 0.1),do,order03,3,80.0,80
+Sparsity line + check (both datasets),do,order03,3,80.0,80
+Round median + check (both datasets),do,order03,3,80.0,80
+Sparsity line + check (same alpha only),do,order03,3,80.0,80
+Round median + check (same alpha only),do,order03,3,80.0,80
+Original formula,do,order03,4,80.0,80
+Original formula (margin 0.1),do,order03,4,80.0,80
+Revised formula,do,order03,4,80.0,80
+Revised formula (margin 0.1),do,order03,4,80.0,80
+Sparsity line + check (both datasets),do,order03,4,80.0,80
+Round median + check (both datasets),do,order03,4,80.0,80
+Sparsity line + check (same alpha only),do,order03,4,80.0,80
+Round median + check (same alpha only),do,order03,4,80.0,80
+Original formula,do,order03,5,78.0,79
+Original formula (margin 0.1),do,order03,5,78.0,79
+Revised formula,do,order03,5,78.0,79
+Revised formula (margin 0.1),do,order03,5,78.0,79
+Sparsity line + check (both datasets),do,order03,5,78.0,63
+Round median + check (both datasets),do,order03,5,78.0,71
+Sparsity line + check (same alpha only),do,order03,5,78.0,80
+Round median + check (same alpha only),do,order03,5,78.0,78
+Original formula,do,order03,6,75.0,79
+Original formula (margin 0.1),do,order03,6,75.0,79
+Revised formula,do,order03,6,75.0,79
+Revised formula (margin 0.1),do,order03,6,75.0,79
+Sparsity line + check (both datasets),do,order03,6,75.0,57
+Round median + check (both datasets),do,order03,6,75.0,73
+Sparsity line + check (same alpha only),do,order03,6,75.0,72
+Round median + check (same alpha only),do,order03,6,75.0,77
+Original formula,do,order03,7,65.0,78
+Original formula (margin 0.1),do,order03,7,65.0,78
+Revised formula,do,order03,7,65.0,77
+Revised formula (margin 0.1),do,order03,7,65.0,76
+Sparsity line + check (both datasets),do,order03,7,65.0,53
+Round median + check (both datasets),do,order03,7,65.0,55
+Sparsity line + check (same alpha only),do,order03,7,65.0,65
+Round median + check (same alpha only),do,order03,7,65.0,67
+Original formula,do,order03,8,58.0,75
+Original formula (margin 0.1),do,order03,8,58.0,74
+Revised formula,do,order03,8,58.0,61
+Revised formula (margin 0.1),do,order03,8,58.0,59
+Sparsity line + check (both datasets),do,order03,8,58.0,49
+Round median + check (both datasets),do,order03,8,58.0,58
+Sparsity line + check (same alpha only),do,order03,8,58.0,59
+Round median + check (same alpha only),do,order03,8,58.0,60
+Original formula,do,order03,9,55.0,65
+Original formula (margin 0.1),do,order03,9,55.0,59
+Revised formula,do,order03,9,55.0,53
+Revised formula (margin 0.1),do,order03,9,55.0,50
+Sparsity line + check (both datasets),do,order03,9,55.0,47
+Round median + check (both datasets),do,order03,9,55.0,55
+Sparsity line + check (same alpha only),do,order03,9,55.0,55
+Round median + check (same alpha only),do,order03,9,55.0,55
+Original formula,do,order03,10,45.0,56
+Original formula (margin 0.1),do,order03,10,45.0,54
+Revised formula,do,order03,10,45.0,52
+Revised formula (margin 0.1),do,order03,10,45.0,49
+Sparsity line + check (both datasets),do,order03,10,45.0,45
+Round median + check (both datasets),do,order03,10,45.0,41
+Sparsity line + check (same alpha only),do,order03,10,45.0,51
+Round median + check (same alpha only),do,order03,10,45.0,45
+Original formula,do,order04,1,80.0,80
+Original formula (margin 0.1),do,order04,1,80.0,80
+Revised formula,do,order04,1,80.0,80
+Revised formula (margin 0.1),do,order04,1,80.0,80
+Sparsity line + check (both datasets),do,order04,1,80.0,80
+Round median + check (both datasets),do,order04,1,80.0,80
+Sparsity line + check (same alpha only),do,order04,1,80.0,80
+Round median + check (same alpha only),do,order04,1,80.0,80
+Original formula,do,order04,2,80.0,80
+Original formula (margin 0.1),do,order04,2,80.0,80
+Revised formula,do,order04,2,80.0,80
+Revised formula (margin 0.1),do,order04,2,80.0,80
+Sparsity line + check (both datasets),do,order04,2,80.0,80
+Round median + check (both datasets),do,order04,2,80.0,80
+Sparsity line + check (same alpha only),do,order04,2,80.0,80
+Round median + check (same alpha only),do,order04,2,80.0,80
+Original formula,do,order04,3,80.0,80
+Original formula (margin 0.1),do,order04,3,80.0,80
+Revised formula,do,order04,3,80.0,80
+Revised formula (margin 0.1),do,order04,3,80.0,80
+Sparsity line + check (both datasets),do,order04,3,80.0,80
+Round median + check (both datasets),do,order04,3,80.0,80
+Sparsity line + check (same alpha only),do,order04,3,80.0,80
+Round median + check (same alpha only),do,order04,3,80.0,80
+Original formula,do,order04,4,80.0,80
+Original formula (margin 0.1),do,order04,4,80.0,80
+Revised formula,do,order04,4,80.0,80
+Revised formula (margin 0.1),do,order04,4,80.0,80
+Sparsity line + check (both datasets),do,order04,4,80.0,80
+Round median + check (both datasets),do,order04,4,80.0,80
+Sparsity line + check (same alpha only),do,order04,4,80.0,80
+Round median + check (same alpha only),do,order04,4,80.0,80
+Original formula,do,order04,5,78.0,79
+Original formula (margin 0.1),do,order04,5,78.0,79
+Revised formula,do,order04,5,78.0,79
+Revised formula (margin 0.1),do,order04,5,78.0,79
+Sparsity line + check (both datasets),do,order04,5,78.0,62
+Round median + check (both datasets),do,order04,5,78.0,71
+Sparsity line + check (same alpha only),do,order04,5,78.0,80
+Round median + check (same alpha only),do,order04,5,78.0,78
+Original formula,do,order04,6,77.0,79
+Original formula (margin 0.1),do,order04,6,77.0,79
+Revised formula,do,order04,6,77.0,79
+Revised formula (margin 0.1),do,order04,6,77.0,79
+Sparsity line + check (both datasets),do,order04,6,77.0,57
+Round median + check (both datasets),do,order04,6,77.0,73
+Sparsity line + check (same alpha only),do,order04,6,77.0,72
+Round median + check (same alpha only),do,order04,6,77.0,75
+Original formula,do,order04,7,72.0,78
+Original formula (margin 0.1),do,order04,7,72.0,78
+Revised formula,do,order04,7,72.0,70
+Revised formula (margin 0.1),do,order04,7,72.0,67
+Sparsity line + check (both datasets),do,order04,7,72.0,53
+Round median + check (both datasets),do,order04,7,72.0,55
+Sparsity line + check (same alpha only),do,order04,7,72.0,65
+Round median + check (same alpha only),do,order04,7,72.0,67
+Original formula,do,order04,8,62.0,75
+Original formula (margin 0.1),do,order04,8,62.0,73
+Revised formula,do,order04,8,62.0,64
+Revised formula (margin 0.1),do,order04,8,62.0,59
+Sparsity line + check (both datasets),do,order04,8,62.0,49
+Round median + check (both datasets),do,order04,8,62.0,58
+Sparsity line + check (same alpha only),do,order04,8,62.0,59
+Round median + check (same alpha only),do,order04,8,62.0,58
+Original formula,do,order04,9,55.0,64
+Original formula (margin 0.1),do,order04,9,55.0,59
+Revised formula,do,order04,9,55.0,53
+Revised formula (margin 0.1),do,order04,9,55.0,51
+Sparsity line + check (both datasets),do,order04,9,55.0,47
+Round median + check (both datasets),do,order04,9,55.0,55
+Sparsity line + check (same alpha only),do,order04,9,55.0,55
+Round median + check (same alpha only),do,order04,9,55.0,55
+Original formula,do,order04,10,45.0,56
+Original formula (margin 0.1),do,order04,10,45.0,54
+Revised formula,do,order04,10,45.0,54
+Revised formula (margin 0.1),do,order04,10,45.0,52
+Sparsity line + check (both datasets),do,order04,10,45.0,44
+Round median + check (both datasets),do,order04,10,45.0,41
+Sparsity line + check (same alpha only),do,order04,10,45.0,51
+Round median + check (same alpha only),do,order04,10,45.0,45
+Original formula,do,order05,1,80.0,80
+Original formula (margin 0.1),do,order05,1,80.0,80
+Revised formula,do,order05,1,80.0,80
+Revised formula (margin 0.1),do,order05,1,80.0,80
+Sparsity line + check (both datasets),do,order05,1,80.0,80
+Round median + check (both datasets),do,order05,1,80.0,80
+Sparsity line + check (same alpha only),do,order05,1,80.0,80
+Round median + check (same alpha only),do,order05,1,80.0,80
+Original formula,do,order05,2,80.0,80
+Original formula (margin 0.1),do,order05,2,80.0,80
+Revised formula,do,order05,2,80.0,80
+Revised formula (margin 0.1),do,order05,2,80.0,80
+Sparsity line + check (both datasets),do,order05,2,80.0,80
+Round median + check (both datasets),do,order05,2,80.0,80
+Sparsity line + check (same alpha only),do,order05,2,80.0,80
+Round median + check (same alpha only),do,order05,2,80.0,80
+Original formula,do,order05,3,80.0,80
+Original formula (margin 0.1),do,order05,3,80.0,80
+Revised formula,do,order05,3,80.0,80
+Revised formula (margin 0.1),do,order05,3,80.0,80
+Sparsity line + check (both datasets),do,order05,3,80.0,80
+Round median + check (both datasets),do,order05,3,80.0,80
+Sparsity line + check (same alpha only),do,order05,3,80.0,80
+Round median + check (same alpha only),do,order05,3,80.0,80
+Original formula,do,order05,4,80.0,80
+Original formula (margin 0.1),do,order05,4,80.0,80
+Revised formula,do,order05,4,80.0,80
+Revised formula (margin 0.1),do,order05,4,80.0,80
+Sparsity line + check (both datasets),do,order05,4,80.0,80
+Round median + check (both datasets),do,order05,4,80.0,80
+Sparsity line + check (same alpha only),do,order05,4,80.0,80
+Round median + check (same alpha only),do,order05,4,80.0,80
+Original formula,do,order05,5,78.0,79
+Original formula (margin 0.1),do,order05,5,78.0,79
+Revised formula,do,order05,5,78.0,79
+Revised formula (margin 0.1),do,order05,5,78.0,79
+Sparsity line + check (both datasets),do,order05,5,78.0,62
+Round median + check (both datasets),do,order05,5,78.0,71
+Sparsity line + check (same alpha only),do,order05,5,78.0,80
+Round median + check (same alpha only),do,order05,5,78.0,78
+Original formula,do,order05,6,78.0,79
+Original formula (margin 0.1),do,order05,6,78.0,79
+Revised formula,do,order05,6,78.0,79
+Revised formula (margin 0.1),do,order05,6,78.0,79
+Sparsity line + check (both datasets),do,order05,6,78.0,57
+Round median + check (both datasets),do,order05,6,78.0,73
+Sparsity line + check (same alpha only),do,order05,6,78.0,72
+Round median + check (same alpha only),do,order05,6,78.0,75
+Original formula,do,order05,7,65.0,78
+Original formula (margin 0.1),do,order05,7,65.0,78
+Revised formula,do,order05,7,65.0,75
+Revised formula (margin 0.1),do,order05,7,65.0,73
+Sparsity line + check (both datasets),do,order05,7,65.0,53
+Round median + check (both datasets),do,order05,7,65.0,55
+Sparsity line + check (same alpha only),do,order05,7,65.0,65
+Round median + check (same alpha only),do,order05,7,65.0,67
+Original formula,do,order05,8,65.0,75
+Original formula (margin 0.1),do,order05,8,65.0,73
+Revised formula,do,order05,8,65.0,71
+Revised formula (margin 0.1),do,order05,8,65.0,67
+Sparsity line + check (both datasets),do,order05,8,65.0,49
+Round median + check (both datasets),do,order05,8,65.0,58
+Sparsity line + check (same alpha only),do,order05,8,65.0,59
+Round median + check (same alpha only),do,order05,8,65.0,58
+Original formula,do,order05,9,55.0,64
+Original formula (margin 0.1),do,order05,9,55.0,59
+Revised formula,do,order05,9,55.0,53
+Revised formula (margin 0.1),do,order05,9,55.0,50
+Sparsity line + check (both datasets),do,order05,9,55.0,46
+Round median + check (both datasets),do,order05,9,55.0,55
+Sparsity line + check (same alpha only),do,order05,9,55.0,54
+Round median + check (same alpha only),do,order05,9,55.0,55
+Original formula,do,order05,10,50.0,56
+Original formula (margin 0.1),do,order05,10,50.0,54
+Revised formula,do,order05,10,50.0,54
+Revised formula (margin 0.1),do,order05,10,50.0,51
+Sparsity line + check (both datasets),do,order05,10,50.0,44
+Round median + check (both datasets),do,order05,10,50.0,41
+Sparsity line + check (same alpha only),do,order05,10,50.0,51
+Round median + check (same alpha only),do,order05,10,50.0,45
+Original formula,do,order06,1,80.0,80
+Original formula (margin 0.1),do,order06,1,80.0,80
+Revised formula,do,order06,1,80.0,80
+Revised formula (margin 0.1),do,order06,1,80.0,80
+Sparsity line + check (both datasets),do,order06,1,80.0,80
+Round median + check (both datasets),do,order06,1,80.0,80
+Sparsity line + check (same alpha only),do,order06,1,80.0,80
+Round median + check (same alpha only),do,order06,1,80.0,80
+Original formula,do,order06,2,80.0,80
+Original formula (margin 0.1),do,order06,2,80.0,80
+Revised formula,do,order06,2,80.0,80
+Revised formula (margin 0.1),do,order06,2,80.0,80
+Sparsity line + check (both datasets),do,order06,2,80.0,80
+Round median + check (both datasets),do,order06,2,80.0,80
+Sparsity line + check (same alpha only),do,order06,2,80.0,80
+Round median + check (same alpha only),do,order06,2,80.0,80
+Original formula,do,order06,3,80.0,80
+Original formula (margin 0.1),do,order06,3,80.0,80
+Revised formula,do,order06,3,80.0,80
+Revised formula (margin 0.1),do,order06,3,80.0,80
+Sparsity line + check (both datasets),do,order06,3,80.0,80
+Round median + check (both datasets),do,order06,3,80.0,80
+Sparsity line + check (same alpha only),do,order06,3,80.0,80
+Round median + check (same alpha only),do,order06,3,80.0,80
+Original formula,do,order06,4,80.0,80
+Original formula (margin 0.1),do,order06,4,80.0,80
+Revised formula,do,order06,4,80.0,80
+Revised formula (margin 0.1),do,order06,4,80.0,80
+Sparsity line + check (both datasets),do,order06,4,80.0,80
+Round median + check (both datasets),do,order06,4,80.0,80
+Sparsity line + check (same alpha only),do,order06,4,80.0,80
+Round median + check (same alpha only),do,order06,4,80.0,80
+Original formula,do,order06,5,78.0,79
+Original formula (margin 0.1),do,order06,5,78.0,79
+Revised formula,do,order06,5,78.0,79
+Revised formula (margin 0.1),do,order06,5,78.0,79
+Sparsity line + check (both datasets),do,order06,5,78.0,62
+Round median + check (both datasets),do,order06,5,78.0,71
+Sparsity line + check (same alpha only),do,order06,5,78.0,80
+Round median + check (same alpha only),do,order06,5,78.0,78
+Original formula,do,order06,6,78.0,79
+Original formula (margin 0.1),do,order06,6,78.0,79
+Revised formula,do,order06,6,78.0,79
+Revised formula (margin 0.1),do,order06,6,78.0,79
+Sparsity line + check (both datasets),do,order06,6,78.0,57
+Round median + check (both datasets),do,order06,6,78.0,73
+Sparsity line + check (same alpha only),do,order06,6,78.0,72
+Round median + check (same alpha only),do,order06,6,78.0,75
+Original formula,do,order06,7,70.0,78
+Original formula (margin 0.1),do,order06,7,70.0,77
+Revised formula,do,order06,7,70.0,75
+Revised formula (margin 0.1),do,order06,7,70.0,73
+Sparsity line + check (both datasets),do,order06,7,70.0,53
+Round median + check (both datasets),do,order06,7,70.0,55
+Sparsity line + check (same alpha only),do,order06,7,70.0,64
+Round median + check (same alpha only),do,order06,7,70.0,67
+Original formula,do,order06,8,72.0,75
+Original formula (margin 0.1),do,order06,8,72.0,73
+Revised formula,do,order06,8,72.0,71
+Revised formula (margin 0.1),do,order06,8,72.0,67
+Sparsity line + check (both datasets),do,order06,8,72.0,49
+Round median + check (both datasets),do,order06,8,72.0,58
+Sparsity line + check (same alpha only),do,order06,8,72.0,59
+Round median + check (same alpha only),do,order06,8,72.0,58
+Original formula,do,order06,9,55.0,62
+Original formula (margin 0.1),do,order06,9,55.0,59
+Revised formula,do,order06,9,55.0,52
+Revised formula (margin 0.1),do,order06,9,55.0,49
+Sparsity line + check (both datasets),do,order06,9,55.0,46
+Round median + check (both datasets),do,order06,9,55.0,55
+Sparsity line + check (same alpha only),do,order06,9,55.0,54
+Round median + check (same alpha only),do,order06,9,55.0,55
+Original formula,do,order06,10,55.0,56
+Original formula (margin 0.1),do,order06,10,55.0,53
+Revised formula,do,order06,10,55.0,52
+Revised formula (margin 0.1),do,order06,10,55.0,49
+Sparsity line + check (both datasets),do,order06,10,55.0,44
+Round median + check (both datasets),do,order06,10,55.0,41
+Sparsity line + check (same alpha only),do,order06,10,55.0,50
+Round median + check (same alpha only),do,order06,10,55.0,45
+Original formula,do,order07,1,80.0,80
+Original formula (margin 0.1),do,order07,1,80.0,80
+Revised formula,do,order07,1,80.0,80
+Revised formula (margin 0.1),do,order07,1,80.0,80
+Sparsity line + check (both datasets),do,order07,1,80.0,80
+Round median + check (both datasets),do,order07,1,80.0,80
+Sparsity line + check (same alpha only),do,order07,1,80.0,80
+Round median + check (same alpha only),do,order07,1,80.0,80
+Original formula,do,order07,2,80.0,80
+Original formula (margin 0.1),do,order07,2,80.0,80
+Revised formula,do,order07,2,80.0,80
+Revised formula (margin 0.1),do,order07,2,80.0,80
+Sparsity line + check (both datasets),do,order07,2,80.0,80
+Round median + check (both datasets),do,order07,2,80.0,80
+Sparsity line + check (same alpha only),do,order07,2,80.0,80
+Round median + check (same alpha only),do,order07,2,80.0,80
+Original formula,do,order07,3,80.0,80
+Original formula (margin 0.1),do,order07,3,80.0,80
+Revised formula,do,order07,3,80.0,80
+Revised formula (margin 0.1),do,order07,3,80.0,80
+Sparsity line + check (both datasets),do,order07,3,80.0,80
+Round median + check (both datasets),do,order07,3,80.0,80
+Sparsity line + check (same alpha only),do,order07,3,80.0,80
+Round median + check (same alpha only),do,order07,3,80.0,80
+Original formula,do,order07,4,78.0,79
+Original formula (margin 0.1),do,order07,4,78.0,79
+Revised formula,do,order07,4,78.0,79
+Revised formula (margin 0.1),do,order07,4,78.0,79
+Sparsity line + check (both datasets),do,order07,4,78.0,69
+Round median + check (both datasets),do,order07,4,78.0,63
+Sparsity line + check (same alpha only),do,order07,4,78.0,80
+Round median + check (same alpha only),do,order07,4,78.0,78
+Original formula,do,order07,5,78.0,79
+Original formula (margin 0.1),do,order07,5,78.0,79
+Revised formula,do,order07,5,78.0,79
+Revised formula (margin 0.1),do,order07,5,78.0,79
+Sparsity line + check (both datasets),do,order07,5,78.0,62
+Round median + check (both datasets),do,order07,5,78.0,71
+Sparsity line + check (same alpha only),do,order07,5,78.0,80
+Round median + check (same alpha only),do,order07,5,78.0,78
+Original formula,do,order07,6,73.0,79
+Original formula (margin 0.1),do,order07,6,73.0,79
+Revised formula,do,order07,6,73.0,79
+Revised formula (margin 0.1),do,order07,6,73.0,79
+Sparsity line + check (both datasets),do,order07,6,73.0,57
+Round median + check (both datasets),do,order07,6,73.0,75
+Sparsity line + check (same alpha only),do,order07,6,73.0,73
+Round median + check (same alpha only),do,order07,6,73.0,77
+Original formula,do,order07,7,67.0,78
+Original formula (margin 0.1),do,order07,7,67.0,78
+Revised formula,do,order07,7,67.0,78
+Revised formula (margin 0.1),do,order07,7,67.0,77
+Sparsity line + check (both datasets),do,order07,7,67.0,53
+Round median + check (both datasets),do,order07,7,67.0,55
+Sparsity line + check (same alpha only),do,order07,7,67.0,65
+Round median + check (same alpha only),do,order07,7,67.0,67
+Original formula,do,order07,8,57.0,75
+Original formula (margin 0.1),do,order07,8,57.0,74
+Revised formula,do,order07,8,57.0,59
+Revised formula (margin 0.1),do,order07,8,57.0,59
+Sparsity line + check (both datasets),do,order07,8,57.0,50
+Round median + check (both datasets),do,order07,8,57.0,58
+Sparsity line + check (same alpha only),do,order07,8,57.0,59
+Round median + check (same alpha only),do,order07,8,57.0,60
+Original formula,do,order07,9,55.0,65
+Original formula (margin 0.1),do,order07,9,55.0,60
+Revised formula,do,order07,9,55.0,57
+Revised formula (margin 0.1),do,order07,9,55.0,56
+Sparsity line + check (both datasets),do,order07,9,55.0,47
+Round median + check (both datasets),do,order07,9,55.0,55
+Sparsity line + check (same alpha only),do,order07,9,55.0,55
+Round median + check (same alpha only),do,order07,9,55.0,55
+Original formula,do,order07,10,41.0,57
+Original formula (margin 0.1),do,order07,10,41.0,55
+Revised formula,do,order07,10,41.0,51
+Revised formula (margin 0.1),do,order07,10,41.0,49
+Sparsity line + check (both datasets),do,order07,10,41.0,45
+Round median + check (both datasets),do,order07,10,41.0,45
+Sparsity line + check (same alpha only),do,order07,10,41.0,51
+Round median + check (same alpha only),do,order07,10,41.0,45
+Original formula,do,order08,1,80.0,80
+Original formula (margin 0.1),do,order08,1,80.0,80
+Revised formula,do,order08,1,80.0,80
+Revised formula (margin 0.1),do,order08,1,80.0,80
+Sparsity line + check (both datasets),do,order08,1,80.0,80
+Round median + check (both datasets),do,order08,1,80.0,80
+Sparsity line + check (same alpha only),do,order08,1,80.0,80
+Round median + check (same alpha only),do,order08,1,80.0,80
+Original formula,do,order08,2,80.0,80
+Original formula (margin 0.1),do,order08,2,80.0,80
+Revised formula,do,order08,2,80.0,80
+Revised formula (margin 0.1),do,order08,2,80.0,80
+Sparsity line + check (both datasets),do,order08,2,80.0,80
+Round median + check (both datasets),do,order08,2,80.0,80
+Sparsity line + check (same alpha only),do,order08,2,80.0,80
+Round median + check (same alpha only),do,order08,2,80.0,80
+Original formula,do,order08,3,80.0,80
+Original formula (margin 0.1),do,order08,3,80.0,80
+Revised formula,do,order08,3,80.0,80
+Revised formula (margin 0.1),do,order08,3,80.0,80
+Sparsity line + check (both datasets),do,order08,3,80.0,80
+Round median + check (both datasets),do,order08,3,80.0,80
+Sparsity line + check (same alpha only),do,order08,3,80.0,80
+Round median + check (same alpha only),do,order08,3,80.0,80
+Original formula,do,order08,4,80.0,80
+Original formula (margin 0.1),do,order08,4,80.0,80
+Revised formula,do,order08,4,80.0,80
+Revised formula (margin 0.1),do,order08,4,80.0,80
+Sparsity line + check (both datasets),do,order08,4,80.0,80
+Round median + check (both datasets),do,order08,4,80.0,80
+Sparsity line + check (same alpha only),do,order08,4,80.0,80
+Round median + check (same alpha only),do,order08,4,80.0,80
+Original formula,do,order08,5,78.0,79
+Original formula (margin 0.1),do,order08,5,78.0,79
+Revised formula,do,order08,5,78.0,79
+Revised formula (margin 0.1),do,order08,5,78.0,79
+Sparsity line + check (both datasets),do,order08,5,78.0,62
+Round median + check (both datasets),do,order08,5,78.0,71
+Sparsity line + check (same alpha only),do,order08,5,78.0,80
+Round median + check (same alpha only),do,order08,5,78.0,78
+Original formula,do,order08,6,75.0,79
+Original formula (margin 0.1),do,order08,6,75.0,79
+Revised formula,do,order08,6,75.0,79
+Revised formula (margin 0.1),do,order08,6,75.0,79
+Sparsity line + check (both datasets),do,order08,6,75.0,57
+Round median + check (both datasets),do,order08,6,75.0,73
+Sparsity line + check (same alpha only),do,order08,6,75.0,72
+Round median + check (same alpha only),do,order08,6,75.0,77
+Original formula,do,order08,7,70.0,78
+Original formula (margin 0.1),do,order08,7,70.0,78
+Revised formula,do,order08,7,70.0,77
+Revised formula (margin 0.1),do,order08,7,70.0,76
+Sparsity line + check (both datasets),do,order08,7,70.0,53
+Round median + check (both datasets),do,order08,7,70.0,55
+Sparsity line + check (same alpha only),do,order08,7,70.0,65
+Round median + check (same alpha only),do,order08,7,70.0,67
+Original formula,do,order08,8,58.0,75
+Original formula (margin 0.1),do,order08,8,58.0,73
+Revised formula,do,order08,8,58.0,65
+Revised formula (margin 0.1),do,order08,8,58.0,59
+Sparsity line + check (both datasets),do,order08,8,58.0,50
+Round median + check (both datasets),do,order08,8,58.0,58
+Sparsity line + check (same alpha only),do,order08,8,58.0,59
+Round median + check (same alpha only),do,order08,8,58.0,60
+Original formula,do,order08,9,57.0,64
+Original formula (margin 0.1),do,order08,9,57.0,59
+Revised formula,do,order08,9,57.0,54
+Revised formula (margin 0.1),do,order08,9,57.0,52
+Sparsity line + check (both datasets),do,order08,9,57.0,47
+Round median + check (both datasets),do,order08,9,57.0,55
+Sparsity line + check (same alpha only),do,order08,9,57.0,55
+Round median + check (same alpha only),do,order08,9,57.0,55
+Original formula,do,order08,10,36.0,56
+Original formula (margin 0.1),do,order08,10,36.0,54
+Revised formula,do,order08,10,36.0,49
+Revised formula (margin 0.1),do,order08,10,36.0,46
+Sparsity line + check (both datasets),do,order08,10,36.0,45
+Round median + check (both datasets),do,order08,10,36.0,45
+Sparsity line + check (same alpha only),do,order08,10,36.0,52
+Round median + check (same alpha only),do,order08,10,36.0,45
+Original formula,do,order09,1,80.0,80
+Original formula (margin 0.1),do,order09,1,80.0,80
+Revised formula,do,order09,1,80.0,80
+Revised formula (margin 0.1),do,order09,1,80.0,80
+Sparsity line + check (both datasets),do,order09,1,80.0,80
+Round median + check (both datasets),do,order09,1,80.0,80
+Sparsity line + check (same alpha only),do,order09,1,80.0,80
+Round median + check (same alpha only),do,order09,1,80.0,80
+Original formula,do,order09,2,80.0,80
+Original formula (margin 0.1),do,order09,2,80.0,80
+Revised formula,do,order09,2,80.0,80
+Revised formula (margin 0.1),do,order09,2,80.0,80
+Sparsity line + check (both datasets),do,order09,2,80.0,80
+Round median + check (both datasets),do,order09,2,80.0,80
+Sparsity line + check (same alpha only),do,order09,2,80.0,80
+Round median + check (same alpha only),do,order09,2,80.0,80
+Original formula,do,order09,3,80.0,80
+Original formula (margin 0.1),do,order09,3,80.0,80
+Revised formula,do,order09,3,80.0,80
+Revised formula (margin 0.1),do,order09,3,80.0,80
+Sparsity line + check (both datasets),do,order09,3,80.0,80
+Round median + check (both datasets),do,order09,3,80.0,80
+Sparsity line + check (same alpha only),do,order09,3,80.0,80
+Round median + check (same alpha only),do,order09,3,80.0,80
+Original formula,do,order09,4,80.0,80
+Original formula (margin 0.1),do,order09,4,80.0,80
+Revised formula,do,order09,4,80.0,80
+Revised formula (margin 0.1),do,order09,4,80.0,80
+Sparsity line + check (both datasets),do,order09,4,80.0,80
+Round median + check (both datasets),do,order09,4,80.0,80
+Sparsity line + check (same alpha only),do,order09,4,80.0,80
+Round median + check (same alpha only),do,order09,4,80.0,80
+Original formula,do,order09,5,78.0,79
+Original formula (margin 0.1),do,order09,5,78.0,79
+Revised formula,do,order09,5,78.0,79
+Revised formula (margin 0.1),do,order09,5,78.0,79
+Sparsity line + check (both datasets),do,order09,5,78.0,63
+Round median + check (both datasets),do,order09,5,78.0,71
+Sparsity line + check (same alpha only),do,order09,5,78.0,80
+Round median + check (same alpha only),do,order09,5,78.0,78
+Original formula,do,order09,6,75.0,79
+Original formula (margin 0.1),do,order09,6,75.0,79
+Revised formula,do,order09,6,75.0,79
+Revised formula (margin 0.1),do,order09,6,75.0,79
+Sparsity line + check (both datasets),do,order09,6,75.0,57
+Round median + check (both datasets),do,order09,6,75.0,73
+Sparsity line + check (same alpha only),do,order09,6,75.0,72
+Round median + check (same alpha only),do,order09,6,75.0,77
+Original formula,do,order09,7,63.0,78
+Original formula (margin 0.1),do,order09,7,63.0,78
+Revised formula,do,order09,7,63.0,77
+Revised formula (margin 0.1),do,order09,7,63.0,76
+Sparsity line + check (both datasets),do,order09,7,63.0,53
+Round median + check (both datasets),do,order09,7,63.0,56
+Sparsity line + check (same alpha only),do,order09,7,63.0,65
+Round median + check (same alpha only),do,order09,7,63.0,67
+Original formula,do,order09,8,58.0,75
+Original formula (margin 0.1),do,order09,8,58.0,74
+Revised formula,do,order09,8,58.0,71
+Revised formula (margin 0.1),do,order09,8,58.0,67
+Sparsity line + check (both datasets),do,order09,8,58.0,50
+Round median + check (both datasets),do,order09,8,58.0,58
+Sparsity line + check (same alpha only),do,order09,8,58.0,60
+Round median + check (same alpha only),do,order09,8,58.0,60
+Original formula,do,order09,9,50.0,65
+Original formula (margin 0.1),do,order09,9,50.0,59
+Revised formula,do,order09,9,50.0,57
+Revised formula (margin 0.1),do,order09,9,50.0,56
+Sparsity line + check (both datasets),do,order09,9,50.0,47
+Round median + check (both datasets),do,order09,9,50.0,55
+Sparsity line + check (same alpha only),do,order09,9,50.0,55
+Round median + check (same alpha only),do,order09,9,50.0,55
+Original formula,do,order09,10,39.0,57
+Original formula (margin 0.1),do,order09,10,39.0,54
+Revised formula,do,order09,10,39.0,54
+Revised formula (margin 0.1),do,order09,10,39.0,52
+Sparsity line + check (both datasets),do,order09,10,39.0,45
+Round median + check (both datasets),do,order09,10,39.0,45
+Sparsity line + check (same alpha only),do,order09,10,39.0,52
+Round median + check (same alpha only),do,order09,10,39.0,45
+Original formula,do,order10,1,80.0,80
+Original formula (margin 0.1),do,order10,1,80.0,80
+Revised formula,do,order10,1,80.0,80
+Revised formula (margin 0.1),do,order10,1,80.0,80
+Sparsity line + check (both datasets),do,order10,1,80.0,80
+Round median + check (both datasets),do,order10,1,80.0,80
+Sparsity line + check (same alpha only),do,order10,1,80.0,80
+Round median + check (same alpha only),do,order10,1,80.0,80
+Original formula,do,order10,2,80.0,80
+Original formula (margin 0.1),do,order10,2,80.0,80
+Revised formula,do,order10,2,80.0,80
+Revised formula (margin 0.1),do,order10,2,80.0,80
+Sparsity line + check (both datasets),do,order10,2,80.0,80
+Round median + check (both datasets),do,order10,2,80.0,80
+Sparsity line + check (same alpha only),do,order10,2,80.0,80
+Round median + check (same alpha only),do,order10,2,80.0,80
+Original formula,do,order10,3,80.0,80
+Original formula (margin 0.1),do,order10,3,80.0,80
+Revised formula,do,order10,3,80.0,80
+Revised formula (margin 0.1),do,order10,3,80.0,80
+Sparsity line + check (both datasets),do,order10,3,80.0,80
+Round median + check (both datasets),do,order10,3,80.0,80
+Sparsity line + check (same alpha only),do,order10,3,80.0,80
+Round median + check (same alpha only),do,order10,3,80.0,80
+Original formula,do,order10,4,80.0,80
+Original formula (margin 0.1),do,order10,4,80.0,80
+Revised formula,do,order10,4,80.0,80
+Revised formula (margin 0.1),do,order10,4,80.0,80
+Sparsity line + check (both datasets),do,order10,4,80.0,80
+Round median + check (both datasets),do,order10,4,80.0,80
+Sparsity line + check (same alpha only),do,order10,4,80.0,80
+Round median + check (same alpha only),do,order10,4,80.0,80
+Original formula,do,order10,5,78.0,79
+Original formula (margin 0.1),do,order10,5,78.0,79
+Revised formula,do,order10,5,78.0,79
+Revised formula (margin 0.1),do,order10,5,78.0,79
+Sparsity line + check (both datasets),do,order10,5,78.0,62
+Round median + check (both datasets),do,order10,5,78.0,71
+Sparsity line + check (same alpha only),do,order10,5,78.0,80
+Round median + check (same alpha only),do,order10,5,78.0,78
+Original formula,do,order10,6,75.0,79
+Original formula (margin 0.1),do,order10,6,75.0,79
+Revised formula,do,order10,6,75.0,79
+Revised formula (margin 0.1),do,order10,6,75.0,79
+Sparsity line + check (both datasets),do,order10,6,75.0,57
+Round median + check (both datasets),do,order10,6,75.0,73
+Sparsity line + check (same alpha only),do,order10,6,75.0,72
+Round median + check (same alpha only),do,order10,6,75.0,77
+Original formula,do,order10,7,67.0,78
+Original formula (margin 0.1),do,order10,7,67.0,78
+Revised formula,do,order10,7,67.0,78
+Revised formula (margin 0.1),do,order10,7,67.0,77
+Sparsity line + check (both datasets),do,order10,7,67.0,53
+Round median + check (both datasets),do,order10,7,67.0,55
+Sparsity line + check (same alpha only),do,order10,7,67.0,65
+Round median + check (same alpha only),do,order10,7,67.0,67
+Original formula,do,order10,8,60.0,75
+Original formula (margin 0.1),do,order10,8,60.0,74
+Revised formula,do,order10,8,60.0,69
+Revised formula (margin 0.1),do,order10,8,60.0,64
+Sparsity line + check (both datasets),do,order10,8,60.0,49
+Round median + check (both datasets),do,order10,8,60.0,58
+Sparsity line + check (same alpha only),do,order10,8,60.0,59
+Round median + check (same alpha only),do,order10,8,60.0,58
+Original formula,do,order10,9,55.0,65
+Original formula (margin 0.1),do,order10,9,55.0,59
+Revised formula,do,order10,9,55.0,51
+Revised formula (margin 0.1),do,order10,9,55.0,49
+Sparsity line + check (both datasets),do,order10,9,55.0,47
+Round median + check (both datasets),do,order10,9,55.0,55
+Sparsity line + check (same alpha only),do,order10,9,55.0,55
+Round median + check (same alpha only),do,order10,9,55.0,55
+Original formula,do,order10,10,50.0,57
+Original formula (margin 0.1),do,order10,10,50.0,55
+Revised formula,do,order10,10,50.0,54
+Revised formula (margin 0.1),do,order10,10,50.0,52
+Sparsity line + check (both datasets),do,order10,10,50.0,44
+Round median + check (both datasets),do,order10,10,50.0,41
+Sparsity line + check (same alpha only),do,order10,10,50.0,51
+Round median + check (same alpha only),do,order10,10,50.0,45

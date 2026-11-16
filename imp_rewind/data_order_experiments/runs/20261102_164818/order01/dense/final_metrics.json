@@ -1,0 +1,12 @@
+{
+  "seed": 1,
+  "epochs": 2,
+  "order_seed": 1,
+  "aug_seed": 1,
+  "val_loss": 1.297999853515625,
+  "val_acc": 57.54,
+  "train_loss": 1.27990712890625,
+  "train_acc": 57.51,
+  "test_loss": 1.3125901245117189,
+  "test_acc": 57.14
+}

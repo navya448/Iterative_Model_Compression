@@ -1,0 +1,13 @@
+{
+  "round": 9,
+  "t": 50,
+  "retrain_epochs": 30,
+  "order_seed": 2,
+  "aug_seed": 1,
+  "final_val_loss": 0.32085771484375,
+  "final_val_acc": 89.48,
+  "final_train_loss": 0.19553731842041017,
+  "final_train_acc": 93.24,
+  "final_test_loss": 0.3713538665771484,
+  "final_test_acc": 88.1
+}

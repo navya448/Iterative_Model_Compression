@@ -1,0 +1,17 @@
+
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\train_dense.py" --seed 1 --aug_seed 1 --order_seed 1 --run_dir "C:\Users\nj255\major project\imp_rewind\data_order_experiments\runs\20261102_163438\order01" --data_dir data --fresh --epochs 2
+Using device: cuda (NVIDIA RTX A4000, torch 2.8.0+cu126, CUDA 12.6)
+Traceback (most recent call last):
+  File "C:\Users\nj255\major project\imp_rewind\train_dense.py", line 113, in <module>
+    main()
+  File "C:\Users\nj255\major project\imp_rewind\train_dense.py", line 44, in main
+    device = get_device()
+  File "C:\Users\nj255\major project\imp_rewind\common.py", line 102, in get_device
+    torch.cuda.set_per_process_memory_fraction(THROTTLE.fraction, device)
+  File "C:\Users\nj255\AppData\Roaming\Python\Python39\site-packages\torch\cuda\memory.py", line 187, in set_per_process_memory_fraction
+    device = _get_device_index(device)
+  File "C:\Users\nj255\AppData\Roaming\Python\Python39\site-packages\torch\cuda\_utils.py", line 363, in _get_device_index
+    return _torch_get_device_index(device, optional, allow_cpu)
+  File "C:\Users\nj255\AppData\Roaming\Python\Python39\site-packages\torch\_utils.py", line 872, in _get_device_index
+    raise ValueError(
+ValueError: Expected a torch.device with a specified index or an integer, but got:cuda

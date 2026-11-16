@@ -10,6 +10,7 @@ import csv
 import json
 import os
 import random
+import time
 
 import numpy as np
 import torch
@@ -37,12 +38,71 @@ MEAN = torch.tensor([0.4914, 0.4822, 0.4465]).view(1, 3, 1, 1)
 STD = torch.tensor([0.2470, 0.2435, 0.2616]).view(1, 3, 1, 1)
 
 
+# --------------------------------------------------------------------------
+# Sharing the GPU
+# --------------------------------------------------------------------------
+
+class GpuThrottle:
+    """Keep this process at about `fraction` of the GPU, for a shared machine.
+
+    Compute: after every batch, measure how long the step took and sleep
+    step * (1 - fraction) / fraction, so the GPU is busy with this process
+    for about `fraction` of wall time and free for others the rest.
+    Sleeps are grouped into chunks of at least `min_sleep` seconds, and the
+    time actually slept is measured, so the coarse sleep timer on Windows
+    doesn't skew the ratio.
+
+    Memory: get_device() caps PyTorch's allocator at `fraction` of the GPU
+    memory (torch.cuda.set_per_process_memory_fraction).
+
+    Set with the IMP_GPU_FRACTION environment variable (e.g. 0.5).
+    1 or unset = no limit, same as before.
+    """
+
+    def __init__(self, fraction=1.0, min_sleep=0.02):
+        if not 0 < fraction <= 1:
+            raise ValueError(f"GPU fraction must be in (0, 1], got {fraction}")
+        self.fraction = fraction
+        self.min_sleep = min_sleep
+        self.owed = 0.0
+        self.last = None
+        self.enabled = False            # switched on by get_device() on CUDA
+
+    def start(self):
+        """Call before a loop of batches, so idle time before it isn't counted."""
+        self.last = time.perf_counter()
+
+    def tick(self):
+        """Call after every batch."""
+        if not self.enabled:
+            return
+        torch.cuda.synchronize()
+        now = time.perf_counter()
+        if self.last is not None:
+            busy = now - self.last
+            self.owed += busy * (1 - self.fraction) / self.fraction
+            if self.owed >= self.min_sleep:
+                t0 = time.perf_counter()
+                time.sleep(self.owed)
+                self.owed -= time.perf_counter() - t0
+        self.last = time.perf_counter()
+
+
+THROTTLE = GpuThrottle(float(os.environ.get("IMP_GPU_FRACTION", "1")))
+
+
 def get_device():
     """Use the CUDA GPU when PyTorch can see one, else the CPU. Prints which."""
     if torch.cuda.is_available():
         device = torch.device("cuda")
         print(f"Using device: cuda ({torch.cuda.get_device_name(0)}, "
               f"torch {torch.__version__}, CUDA {torch.version.cuda})")
+        if THROTTLE.fraction < 1:
+            THROTTLE.enabled = True
+            torch.cuda.set_per_process_memory_fraction(THROTTLE.fraction, device)
+            total = torch.cuda.get_device_properties(device).total_memory / 2**30
+            print(f"  GPU share limited to {THROTTLE.fraction:.0%}: compute duty cycle "
+                  f"and memory cap {THROTTLE.fraction * total:.1f} of {total:.1f} GiB")
     else:
         device = torch.device("cpu")
         print(f"Using device: cpu (torch {torch.__version__}, CUDA build: {torch.version.cuda})")
@@ -281,6 +341,7 @@ def train_one_epoch(model, data, opt, epoch, generator, mask=None, cfg=DEFAULTS)
     params = prunable_params(model) if mask is not None else None
     tot_loss = tot_correct = tot_n = 0
     grad_norms = []
+    THROTTLE.start()
     for x, y in data.train_batches(generator, epoch):
         out = model(x)
         loss = F.cross_entropy(out, y)
@@ -298,6 +359,7 @@ def train_one_epoch(model, data, opt, epoch, generator, mask=None, cfg=DEFAULTS)
         tot_loss += loss.item() * len(y)
         tot_correct += (out.argmax(1) == y).sum().item()
         tot_n += len(y)
+        THROTTLE.tick()
     return tot_loss / tot_n, 100.0 * tot_correct / tot_n, float(np.mean(grad_norms))
 
 
@@ -305,10 +367,12 @@ def train_one_epoch(model, data, opt, epoch, generator, mask=None, cfg=DEFAULTS)
 def evaluate(model, x, y, batch_size=1000):
     model.eval()
     tot_loss = tot_correct = 0.0
+    THROTTLE.start()
     for i in range(0, len(y), batch_size):
         out = model(x[i: i + batch_size])
         tot_loss += F.cross_entropy(out, y[i: i + batch_size], reduction="sum").item()
         tot_correct += (out.argmax(1) == y[i: i + batch_size]).sum().item()
+        THROTTLE.tick()
     return tot_loss / len(y), 100.0 * tot_correct / len(y)
 
 
@@ -331,10 +395,12 @@ def recalibrate_bn(model, data, generator, num_batches=100):
         m.reset_running_stats()
         m.momentum = None
     model.train()
+    THROTTLE.start()
     for i, (x, _) in enumerate(data.train_batches(generator)):
         if i >= num_batches:
             break
         model(x)
+        THROTTLE.tick()
     for m, mom in zip(bns, saved):
         m.momentum = mom
     model.eval()

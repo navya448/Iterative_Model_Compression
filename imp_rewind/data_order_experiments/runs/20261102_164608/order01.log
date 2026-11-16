@@ -1,0 +1,14 @@
+
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\train_dense.py" --seed 1 --aug_seed 1 --order_seed 1 --run_dir "C:\Users\nj255\major project\imp_rewind\data_order_experiments\runs\20261102_164608\order01" --data_dir data --fresh --epochs 2
+Using device: cuda (NVIDIA RTX A4000, torch 2.8.0+cu126, CUDA 12.6)
+epoch   1 | lr 0.1000 | train 2.216/36.26% | val 2.200/36.20%
+epoch   2 | lr 0.1000 | train 1.183/59.72% | val 1.194/60.76%
+Dense done: {'val_loss': 1.19388349609375, 'val_acc': 60.76, 'train_loss': 1.1830009765625, 'train_acc': 59.72, 'test_loss': 1.2013810546875, 'test_acc': 60.23}
+
+$ C:\ProgramData\Anaconda3\python.exe "C:\Users\nj255\major project\imp_rewind\run_imp.py" --seed 1 --aug_seed 1 --order_seed 1 --run_dir "C:\Users\nj255\major project\imp_rewind\data_order_experiments\runs\20261102_164608\order01" --data_dir data --fresh --rounds 1 --prune_frac 0.2 --tol 2.5 --resolution 2 --t_min 2 --bn_batches 100
+usage: run_imp.py [-h] --seed SEED --run_dir RUN_DIR [--data_dir DATA_DIR]
+                  [--rounds ROUNDS] [--prune_frac PRUNE_FRAC] [--tol TOL]
+                  [--resolution RESOLUTION] [--t_min T_MIN]
+                  [--bn_batches BN_BATCHES] [--order_seed ORDER_SEED]
+                  [--aug_seed AUG_SEED] [--fresh]
+run_imp.py: error: --t_min must be less than dense training epochs (2)
