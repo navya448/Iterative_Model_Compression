@@ -1,0 +1,9 @@
+# smoke-test output
+runs_smoke/
+analysis_smoke/
+# in-progress / lock files
+*.tmp
+*.part
+.run_all.lock
+runs/**/resume.pt
+runs/**/*_resume.pt

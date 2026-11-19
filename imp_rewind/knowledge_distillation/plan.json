@@ -1,0 +1,36 @@
+{
+  "_comment": "CIFAR-10 only. Jobs run top to bottom. Edit freely: remove models/seeds to save time, everything resumes. A setting is [dataset, model]. Methods: ce (control), kd (dense teacher), kd_parent (previous round's model as teacher).",
+  "defaults": {
+    "epochs": 80,
+    "rounds": 10,
+    "prune_frac": 0.2,
+    "rel_tol": 0.055,
+    "resolution": 2,
+    "t_min": 2,
+    "probe_frac": 0.82,
+    "kd_T": 4.0,
+    "kd_lambda": 0.9
+  },
+  "stages": [
+    {
+      "name": "step1_kd_vs_ce_resnet20",
+      "settings": [["cifar10", "resnet20"]],
+      "seeds": [1, 2, 3],
+      "methods": ["kd", "ce"]
+    },
+    {
+      "name": "step3_models_seed1",
+      "settings": [["cifar10", "resnet32"], ["cifar10", "resnet44"], ["cifar10", "vgg11"],
+                   ["cifar10", "resnet56"]],
+      "seeds": [1],
+      "methods": ["kd"]
+    },
+    {
+      "name": "step3_models_seed2",
+      "settings": [["cifar10", "resnet32"], ["cifar10", "resnet44"], ["cifar10", "vgg11"],
+                   ["cifar10", "resnet56"]],
+      "seeds": [2],
+      "methods": ["kd"]
+    }
+  ]
+}
